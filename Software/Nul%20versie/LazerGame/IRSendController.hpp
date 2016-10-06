@@ -1,0 +1,7 @@
+class IRSendController{
+private:
+	
+public:
+	
+	
+};
