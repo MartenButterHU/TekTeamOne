@@ -1,7 +1,0 @@
-class IRSendController{
-private:
-	
-public:
-	
-	
-};
