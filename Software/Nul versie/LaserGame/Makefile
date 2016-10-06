@@ -12,7 +12,7 @@
 SOURCES :=
 
 # header files in this project
-HEADERS := IRRecieve.hpp IRSend.hpp IRCommands.hpp
+HEADERS := IRLed.hpp IRSensor.hpp IRCommands.hpp
 
 # other places to look for files for this project
 SEARCH  := 

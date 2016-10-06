@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeLite_Workspace Name="example code" Database="">
-  <Project Name="01-01-keypad" Path="01-01-keypad/_codelite.project" Active="Yes"/>
+  <Project Name="01-01-keypad" Path="01-01-keypad/_codelite.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Project Name="01-01-keypad" ConfigName="Release"/>
@@ -66,7 +66,7 @@
       <Project Name="02-04-flag" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
-  <Project Name="02-05-mutex" Path="02-05-mutex/_codelite.project" Active="No"/>
+  <Project Name="02-05-mutex" Path="02-05-mutex/_codelite.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Project Name="02-05-mutex" ConfigName="Release"/>
@@ -82,6 +82,18 @@
   <BuildMatrix>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Project Name="02-07-channel" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix>
+  <Project Name="LaserGame" Path="LaserGame/_codelite.project" Active="No"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Release" Selected="yes">
+      <Project Name="LaserGame" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix>
+  <Project Name="Nul-Versie" Path="Nul-Versie/_codelite.project" Active="No"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Release" Selected="yes">
+      <Project Name="Nul-Versie" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>

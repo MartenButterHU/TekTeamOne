@@ -1,9 +1,8 @@
-.PHONY: doxygen clean
+.PHONY: clean All
 
+All:
+	@echo "----------Building project:[ Nul-Versie - Debug ]----------"
+	@cd "Nul-Versie" && "$(MAKE)" -f  "Nul-Versie.mk"
 clean:
-	bmptk-rm -rf html
-	@echo "**** cleanup completed succesfully"
-   
-doxygen:
-	doxygen
-	@echo "**** doxygend completed succesfully"
+	@echo "----------Cleaning project:[ Nul-Versie - Debug ]----------"
+	@cd "Nul-Versie" && "$(MAKE)" -f  "Nul-Versie.mk" clean
