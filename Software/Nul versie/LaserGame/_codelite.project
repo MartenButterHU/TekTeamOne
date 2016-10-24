@@ -26,17 +26,38 @@
  }]]]>
     </Plugin>
   </Plugins>
+  <Reconciliation>
+    <Regexes/>
+    <Excludepaths/>
+    <Ignorefiles/>
+    <Extensions>
+      <![CDATA[cpp;c;h;hpp;xrc;wxcp;fbp]]>
+    </Extensions>
+    <Topleveldir>../LaserGame</Topleveldir>
+  </Reconciliation>
   <Description/>
   <Dependencies/>
   <VirtualDirectory Name="source">
     <File Name="main.cpp"/>
-    <File Name="IRCommands.hpp"/>
-    <File Name="IRRecieve.cpp"/>
-    <File Name="IRRecieve.hpp"/>
-    <File Name="IRSend.cpp"/>
-    <File Name="IRSend.hpp"/>
-    <File Name="IRSendController.hpp"/>
-    <File Name="test.cpp"/>
+    <File Name="Makefile"/>
+    <File Name="Commands.cpp"/>
+    <File Name="Commands.hpp"/>
+    <File Name="IRLed.cpp"/>
+    <File Name="IRLed.hpp"/>
+    <File Name="IRLedController.cpp"/>
+    <File Name="IRLedController.hpp"/>
+    <File Name="IRSensor.cpp"/>
+    <File Name="IRSensor.hpp"/>
+    <File Name="IRSensorController.cpp"/>
+    <File Name="IRSensorController.hpp"/>
+    <File Name="CommandsBTS.hpp"/>
+    <File Name="CommandsBTS.cpp"/>
+    <File Name="CommandControl.hpp"/>
+    <File Name="CommandControl.cpp"/>
+    <File Name="SignalControl.cpp"/>
+    <File Name="SignalControl.hpp"/>
+    <File Name="Stack.hpp"/>
+    <File Name="Queue.hpp"/>
   </VirtualDirectory>
   <Settings Type="Dynamic Library">
     <GlobalSettings>
