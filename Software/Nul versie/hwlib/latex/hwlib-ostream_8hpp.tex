@@ -1,0 +1,220 @@
+\hypertarget{hwlib-ostream_8hpp}{}\section{hwlib-\/ostream.hpp File Reference}
+\label{hwlib-ostream_8hpp}\index{hwlib-\/ostream.\+hpp@{hwlib-\/ostream.\+hpp}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structhwlib_1_1setw}{hwlib\+::setw}
+\begin{DoxyCompactList}\small\item\em ostream output field width manipulator \end{DoxyCompactList}\item 
+struct \hyperlink{structhwlib_1_1__setbase}{hwlib\+::\+\_\+setbase}
+\item 
+struct \hyperlink{structhwlib_1_1__showpos}{hwlib\+::\+\_\+showpos}
+\item 
+struct \hyperlink{structhwlib_1_1__showbase}{hwlib\+::\+\_\+showbase}
+\item 
+struct \hyperlink{structhwlib_1_1__boolalpha}{hwlib\+::\+\_\+boolalpha}
+\item 
+struct \hyperlink{structhwlib_1_1setfill}{hwlib\+::setfill}
+\begin{DoxyCompactList}\small\item\em ostream filler character manipulator \end{DoxyCompactList}\item 
+struct \hyperlink{structhwlib_1_1__right}{hwlib\+::\+\_\+right}
+\item 
+struct \hyperlink{structhwlib_1_1__left}{hwlib\+::\+\_\+left}
+\item 
+struct \hyperlink{structhwlib_1_1__flush}{hwlib\+::\+\_\+flush}
+\item 
+class \hyperlink{classhwlib_1_1ostream}{hwlib\+::ostream}
+\begin{DoxyCompactList}\small\item\em formatted character output \end{DoxyCompactList}\item 
+class \hyperlink{classhwlib_1_1istream}{hwlib\+::istream}
+\begin{DoxyCompactList}\small\item\em character input stream \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+constexpr \+\_\+setbase \hyperlink{hwlib-ostream_01-_01_copy_8hpp_a2f624a643c9c8d30b5e4f3dca914e28e}{hwlib\+::bin} (2)
+\begin{DoxyCompactList}\small\item\em set ostream radix to 2 \end{DoxyCompactList}\item 
+constexpr \+\_\+setbase \hyperlink{hwlib-ostream_01-_01_copy_8hpp_a9711974fb746e16a55e130b461cad619}{hwlib\+::oct} (8)
+\begin{DoxyCompactList}\small\item\em set ostream radix to 8 \end{DoxyCompactList}\item 
+constexpr \+\_\+setbase \hyperlink{hwlib-ostream_01-_01_copy_8hpp_ab8f3a2357c88d53861c09dbd17f14f1b}{hwlib\+::dec} (10)
+\begin{DoxyCompactList}\small\item\em set ostream radix to 10 \end{DoxyCompactList}\item 
+constexpr \+\_\+setbase \hyperlink{hwlib-ostream_01-_01_copy_8hpp_a4726c8f4bef5591b6f6853041328a04f}{hwlib\+::hex} (16)
+\begin{DoxyCompactList}\small\item\em set ostream radix to 16 \end{DoxyCompactList}\item 
+constexpr \+\_\+showpos \hyperlink{hwlib-ostream_01-_01_copy_8hpp_a7bb9927f52011b4cc4a90b03e98f95fd}{hwlib\+::showpos} (true)
+\begin{DoxyCompactList}\small\item\em enable printing of a leading \textquotesingle{}+\textquotesingle{} \end{DoxyCompactList}\item 
+constexpr \+\_\+showpos \hyperlink{hwlib-ostream_01-_01_copy_8hpp_accdd72e1358d667a9458767d886b2a53}{hwlib\+::noshowpos} (false)
+\begin{DoxyCompactList}\small\item\em disable printing of a leading \textquotesingle{}+\textquotesingle{} \end{DoxyCompactList}\item 
+constexpr \+\_\+showbase \hyperlink{hwlib-ostream_01-_01_copy_8hpp_a84adb21b2d054d3b70c6b26af5f44566}{hwlib\+::showbase} (true)
+\begin{DoxyCompactList}\small\item\em enable printing of a leading radix indication \end{DoxyCompactList}\item 
+constexpr \+\_\+showbase \hyperlink{hwlib-ostream_01-_01_copy_8hpp_af813ae25dc70ae85e2f06dcf81f8963b}{hwlib\+::noshowbase} (false)
+\begin{DoxyCompactList}\small\item\em enable printing of a leading radix indication \end{DoxyCompactList}\item 
+constexpr \+\_\+boolalpha \hyperlink{hwlib-ostream_01-_01_copy_8hpp_a499e8cd6806e66c4c425b64c9512a21c}{hwlib\+::boolalpha} (true)
+\begin{DoxyCompactList}\small\item\em print a bool value as \textquotesingle{}0\textquotesingle{} or \textquotesingle{}1\textquotesingle{} \end{DoxyCompactList}\item 
+constexpr \+\_\+boolalpha \hyperlink{hwlib-ostream_01-_01_copy_8hpp_a6fe77cc67d9850cb262eb6e15e37724d}{hwlib\+::noboolalpha} (false)
+\begin{DoxyCompactList}\small\item\em print a bool value as \textquotesingle{}false\textquotesingle{} or \textquotesingle{}true\textquotesingle{} \end{DoxyCompactList}\item 
+void \hyperlink{hwlib-defines_8hpp_a04be4340016df60d6636c1d1c6d94fc9}{H\+W\+L\+I\+B\+\_\+\+W\+E\+AK} \hyperlink{hwlib-ostream_01-_01_copy_8hpp_a10ed5b50cabfea49044e22331ac6f284}{hwlib\+::uart\+\_\+putc\+\_\+bit\+\_\+banged\+\_\+pin} (char c, pin\+\_\+out \&pin)
+\begin{DoxyCompactList}\small\item\em a bit-\/banged U\+A\+RT putc \end{DoxyCompactList}\item 
+char \hyperlink{hwlib-defines_8hpp_a04be4340016df60d6636c1d1c6d94fc9}{H\+W\+L\+I\+B\+\_\+\+W\+E\+AK} \hyperlink{hwlib-ostream_01-_01_copy_8hpp_a7dcb57f59ee55d80c76b7b7c09044a2f}{hwlib\+::uart\+\_\+getc\+\_\+bit\+\_\+banged\+\_\+pin} (pin\+\_\+in \&pin)
+\begin{DoxyCompactList}\small\item\em a bit-\/banged U\+A\+RT char input \end{DoxyCompactList}\item 
+void \hyperlink{hwlib-due_8hpp_a67bf0f42feb7032baece1dbb91048324}{hwlib\+::uart\+\_\+putc} (char c)
+\begin{DoxyCompactList}\small\item\em console character output function \end{DoxyCompactList}\item 
+char \hyperlink{hwlib-due_8hpp_a0f433c14b5302d476ed723a38862d9d3}{hwlib\+::uart\+\_\+getc} ()
+\begin{DoxyCompactList}\small\item\em console character input function \end{DoxyCompactList}\item 
+bool {\bfseries hwlib\+::uart\+\_\+char\+\_\+available} ()\hypertarget{hwlib-ostream_01-_01_copy_8hpp_a043e544129f4478caa81dc3c57d8943e}{}\label{hwlib-ostream_01-_01_copy_8hpp_a043e544129f4478caa81dc3c57d8943e}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{hwlib-\/ostream.\+hpp@{hwlib-\/ostream.\+hpp}!bin@{bin}}
+\index{bin@{bin}!hwlib-\/ostream.\+hpp@{hwlib-\/ostream.\+hpp}}
+\subsubsection[{\texorpdfstring{bin(2)}{bin(2)}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr \+\_\+setbase hwlib\+::bin (
+\begin{DoxyParamCaption}
+\item[{2}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{hwlib-ostream_01-_01_copy_8hpp_file_a2f624a643c9c8d30b5e4f3dca914e28e}{}\label{hwlib-ostream_01-_01_copy_8hpp_file_a2f624a643c9c8d30b5e4f3dca914e28e}
+
+
+set ostream radix to 2 
+
+When this manipulator is written to an ostream the base for printing numbers is set to 2 (binary). \index{hwlib-\/ostream.\+hpp@{hwlib-\/ostream.\+hpp}!boolalpha@{boolalpha}}
+\index{boolalpha@{boolalpha}!hwlib-\/ostream.\+hpp@{hwlib-\/ostream.\+hpp}}
+\subsubsection[{\texorpdfstring{boolalpha(true)}{boolalpha(true)}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr \+\_\+boolalpha hwlib\+::boolalpha (
+\begin{DoxyParamCaption}
+\item[{true}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{hwlib-ostream_01-_01_copy_8hpp_file_a499e8cd6806e66c4c425b64c9512a21c}{}\label{hwlib-ostream_01-_01_copy_8hpp_file_a499e8cd6806e66c4c425b64c9512a21c}
+
+
+print a bool value as \textquotesingle{}0\textquotesingle{} or \textquotesingle{}1\textquotesingle{} 
+
+When this manipulator is written to an ostream subsequent boolean values will be written as \textquotesingle{}0\textquotesingle{} or \textquotesingle{}1\textquotesingle{}. This is the initial situation. \index{hwlib-\/ostream.\+hpp@{hwlib-\/ostream.\+hpp}!dec@{dec}}
+\index{dec@{dec}!hwlib-\/ostream.\+hpp@{hwlib-\/ostream.\+hpp}}
+\subsubsection[{\texorpdfstring{dec(10)}{dec(10)}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr \+\_\+setbase hwlib\+::dec (
+\begin{DoxyParamCaption}
+\item[{10}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{hwlib-ostream_01-_01_copy_8hpp_file_ab8f3a2357c88d53861c09dbd17f14f1b}{}\label{hwlib-ostream_01-_01_copy_8hpp_file_ab8f3a2357c88d53861c09dbd17f14f1b}
+
+
+set ostream radix to 10 
+
+When this manipulator is written to an ostream the base for printing numbers is set to 10 (decimal). This is the inital situation. \index{hwlib-\/ostream.\+hpp@{hwlib-\/ostream.\+hpp}!hex@{hex}}
+\index{hex@{hex}!hwlib-\/ostream.\+hpp@{hwlib-\/ostream.\+hpp}}
+\subsubsection[{\texorpdfstring{hex(16)}{hex(16)}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr \+\_\+setbase hwlib\+::hex (
+\begin{DoxyParamCaption}
+\item[{16}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{hwlib-ostream_01-_01_copy_8hpp_file_a4726c8f4bef5591b6f6853041328a04f}{}\label{hwlib-ostream_01-_01_copy_8hpp_file_a4726c8f4bef5591b6f6853041328a04f}
+
+
+set ostream radix to 16 
+
+When this manipulator is written to an ostream the base for printing numbers is set to 16 (hexadecimal). \index{hwlib-\/ostream.\+hpp@{hwlib-\/ostream.\+hpp}!noboolalpha@{noboolalpha}}
+\index{noboolalpha@{noboolalpha}!hwlib-\/ostream.\+hpp@{hwlib-\/ostream.\+hpp}}
+\subsubsection[{\texorpdfstring{noboolalpha(false)}{noboolalpha(false)}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr \+\_\+boolalpha hwlib\+::noboolalpha (
+\begin{DoxyParamCaption}
+\item[{false}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{hwlib-ostream_01-_01_copy_8hpp_file_a6fe77cc67d9850cb262eb6e15e37724d}{}\label{hwlib-ostream_01-_01_copy_8hpp_file_a6fe77cc67d9850cb262eb6e15e37724d}
+
+
+print a bool value as \textquotesingle{}false\textquotesingle{} or \textquotesingle{}true\textquotesingle{} 
+
+When this manipulator is written to an ostream subsequent boolean values will be written as \textquotesingle{}false\textquotesingle{} or \textquotesingle{}true\textquotesingle{}. This is the initial situation. \index{hwlib-\/ostream.\+hpp@{hwlib-\/ostream.\+hpp}!noshowbase@{noshowbase}}
+\index{noshowbase@{noshowbase}!hwlib-\/ostream.\+hpp@{hwlib-\/ostream.\+hpp}}
+\subsubsection[{\texorpdfstring{noshowbase(false)}{noshowbase(false)}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr \+\_\+showbase hwlib\+::noshowbase (
+\begin{DoxyParamCaption}
+\item[{false}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{hwlib-ostream_01-_01_copy_8hpp_file_af813ae25dc70ae85e2f06dcf81f8963b}{}\label{hwlib-ostream_01-_01_copy_8hpp_file_af813ae25dc70ae85e2f06dcf81f8963b}
+
+
+enable printing of a leading radix indication 
+
+When this manipulator is written to an ostream no a leading radix indication will be printed when a integer value is printed. This is the initial situation. \index{hwlib-\/ostream.\+hpp@{hwlib-\/ostream.\+hpp}!noshowpos@{noshowpos}}
+\index{noshowpos@{noshowpos}!hwlib-\/ostream.\+hpp@{hwlib-\/ostream.\+hpp}}
+\subsubsection[{\texorpdfstring{noshowpos(false)}{noshowpos(false)}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr \+\_\+showpos hwlib\+::noshowpos (
+\begin{DoxyParamCaption}
+\item[{false}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{hwlib-ostream_01-_01_copy_8hpp_file_accdd72e1358d667a9458767d886b2a53}{}\label{hwlib-ostream_01-_01_copy_8hpp_file_accdd72e1358d667a9458767d886b2a53}
+
+
+disable printing of a leading \textquotesingle{}+\textquotesingle{} 
+
+When this manipulator is written to an ostream the a leading \textquotesingle{}+\textquotesingle{} will be printed when a positive value is printed. This is the initial situation. \index{hwlib-\/ostream.\+hpp@{hwlib-\/ostream.\+hpp}!oct@{oct}}
+\index{oct@{oct}!hwlib-\/ostream.\+hpp@{hwlib-\/ostream.\+hpp}}
+\subsubsection[{\texorpdfstring{oct(8)}{oct(8)}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr \+\_\+setbase hwlib\+::oct (
+\begin{DoxyParamCaption}
+\item[{8}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{hwlib-ostream_01-_01_copy_8hpp_file_a9711974fb746e16a55e130b461cad619}{}\label{hwlib-ostream_01-_01_copy_8hpp_file_a9711974fb746e16a55e130b461cad619}
+
+
+set ostream radix to 8 
+
+When this manipulator is written to an ostream the base for printing numbers is set to 8 (octal). \index{hwlib-\/ostream.\+hpp@{hwlib-\/ostream.\+hpp}!showbase@{showbase}}
+\index{showbase@{showbase}!hwlib-\/ostream.\+hpp@{hwlib-\/ostream.\+hpp}}
+\subsubsection[{\texorpdfstring{showbase(true)}{showbase(true)}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr \+\_\+showbase hwlib\+::showbase (
+\begin{DoxyParamCaption}
+\item[{true}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{hwlib-ostream_01-_01_copy_8hpp_file_a84adb21b2d054d3b70c6b26af5f44566}{}\label{hwlib-ostream_01-_01_copy_8hpp_file_a84adb21b2d054d3b70c6b26af5f44566}
+
+
+enable printing of a leading radix indication 
+
+When this manipulator is written to an ostream a leading radix indication (0b, 0d, 0o, 0x) will be printed when a integer value is printed. \index{hwlib-\/ostream.\+hpp@{hwlib-\/ostream.\+hpp}!showpos@{showpos}}
+\index{showpos@{showpos}!hwlib-\/ostream.\+hpp@{hwlib-\/ostream.\+hpp}}
+\subsubsection[{\texorpdfstring{showpos(true)}{showpos(true)}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr \+\_\+showpos hwlib\+::showpos (
+\begin{DoxyParamCaption}
+\item[{true}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{hwlib-ostream_01-_01_copy_8hpp_file_a7bb9927f52011b4cc4a90b03e98f95fd}{}\label{hwlib-ostream_01-_01_copy_8hpp_file_a7bb9927f52011b4cc4a90b03e98f95fd}
+
+
+enable printing of a leading \textquotesingle{}+\textquotesingle{} 
+
+When this manipulator is written to an ostream the a leading \textquotesingle{}+\textquotesingle{} will be printed when a positive value is printed. \index{hwlib-\/ostream.\+hpp@{hwlib-\/ostream.\+hpp}!uart\+\_\+getc@{uart\+\_\+getc}}
+\index{uart\+\_\+getc@{uart\+\_\+getc}!hwlib-\/ostream.\+hpp@{hwlib-\/ostream.\+hpp}}
+\subsubsection[{\texorpdfstring{uart\+\_\+getc()}{uart_getc()}}]{\setlength{\rightskip}{0pt plus 5cm}char hwlib\+::uart\+\_\+getc (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{hwlib-due_8hpp_file_a0f433c14b5302d476ed723a38862d9d3}{}\label{hwlib-due_8hpp_file_a0f433c14b5302d476ed723a38862d9d3}
+
+
+console character input function 
+
+This is the function used for console (istream) input. The embedded targets provide an implementation that reads from the serial port. This definition is weak, which allows an application to provide its own definition. \index{hwlib-\/ostream.\+hpp@{hwlib-\/ostream.\+hpp}!uart\+\_\+getc\+\_\+bit\+\_\+banged\+\_\+pin@{uart\+\_\+getc\+\_\+bit\+\_\+banged\+\_\+pin}}
+\index{uart\+\_\+getc\+\_\+bit\+\_\+banged\+\_\+pin@{uart\+\_\+getc\+\_\+bit\+\_\+banged\+\_\+pin}!hwlib-\/ostream.\+hpp@{hwlib-\/ostream.\+hpp}}
+\subsubsection[{\texorpdfstring{uart\+\_\+getc\+\_\+bit\+\_\+banged\+\_\+pin(pin\+\_\+in \&pin)}{uart_getc_bit_banged_pin(pin_in &pin)}}]{\setlength{\rightskip}{0pt plus 5cm}char {\bf H\+W\+L\+I\+B\+\_\+\+W\+E\+AK} hwlib\+::uart\+\_\+getc\+\_\+bit\+\_\+banged\+\_\+pin (
+\begin{DoxyParamCaption}
+\item[{{\bf pin\+\_\+in} \&}]{pin}
+\end{DoxyParamCaption}
+)}\hypertarget{hwlib-ostream_01-_01_copy_8hpp_file_a7dcb57f59ee55d80c76b7b7c09044a2f}{}\label{hwlib-ostream_01-_01_copy_8hpp_file_a7dcb57f59ee55d80c76b7b7c09044a2f}
+
+
+a bit-\/banged U\+A\+RT char input 
+
+This function implements a bit-\/banged input U\+A\+RT pin using the B\+M\+P\+T\+K\+\_\+\+B\+A\+U\+D\+R\+A\+TE. \index{hwlib-\/ostream.\+hpp@{hwlib-\/ostream.\+hpp}!uart\+\_\+putc@{uart\+\_\+putc}}
+\index{uart\+\_\+putc@{uart\+\_\+putc}!hwlib-\/ostream.\+hpp@{hwlib-\/ostream.\+hpp}}
+\subsubsection[{\texorpdfstring{uart\+\_\+putc(char c)}{uart_putc(char c)}}]{\setlength{\rightskip}{0pt plus 5cm}void hwlib\+::uart\+\_\+putc (
+\begin{DoxyParamCaption}
+\item[{char}]{c}
+\end{DoxyParamCaption}
+)}\hypertarget{hwlib-due_8hpp_file_a67bf0f42feb7032baece1dbb91048324}{}\label{hwlib-due_8hpp_file_a67bf0f42feb7032baece1dbb91048324}
+
+
+console character output function 
+
+This is the function used for console (ostream) output. The embedded targets provide an implementation that writes to the serial port. This definition is weak, which allows an application to provide its own definition. \index{hwlib-\/ostream.\+hpp@{hwlib-\/ostream.\+hpp}!uart\+\_\+putc\+\_\+bit\+\_\+banged\+\_\+pin@{uart\+\_\+putc\+\_\+bit\+\_\+banged\+\_\+pin}}
+\index{uart\+\_\+putc\+\_\+bit\+\_\+banged\+\_\+pin@{uart\+\_\+putc\+\_\+bit\+\_\+banged\+\_\+pin}!hwlib-\/ostream.\+hpp@{hwlib-\/ostream.\+hpp}}
+\subsubsection[{\texorpdfstring{uart\+\_\+putc\+\_\+bit\+\_\+banged\+\_\+pin(char c, pin\+\_\+out \&pin)}{uart_putc_bit_banged_pin(char c, pin_out &pin)}}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf H\+W\+L\+I\+B\+\_\+\+W\+E\+AK} hwlib\+::uart\+\_\+putc\+\_\+bit\+\_\+banged\+\_\+pin (
+\begin{DoxyParamCaption}
+\item[{char}]{c, }
+\item[{{\bf pin\+\_\+out} \&}]{pin}
+\end{DoxyParamCaption}
+)}\hypertarget{hwlib-ostream_01-_01_copy_8hpp_file_a10ed5b50cabfea49044e22331ac6f284}{}\label{hwlib-ostream_01-_01_copy_8hpp_file_a10ed5b50cabfea49044e22331ac6f284}
+
+
+a bit-\/banged U\+A\+RT putc 
+
+This function implements a bit-\/banged output-\/only U\+A\+RT using the B\+M\+P\+T\+K\+\_\+\+B\+A\+U\+D\+R\+A\+TE. 
