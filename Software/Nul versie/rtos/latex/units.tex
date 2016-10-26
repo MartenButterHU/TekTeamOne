@@ -1,0 +1,11 @@
+These constants make it easier to specify (interval) times
+
+
+\begin{DoxyCode}
+\textcolor{keyword}{const} \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long} \textcolor{keywordtype}{int}  s = ...;
+\textcolor{keyword}{const} unsigend \textcolor{keywordtype}{long} \textcolor{keywordtype}{int} ms = ...;
+\textcolor{keyword}{const} \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long} \textcolor{keywordtype}{int} us = ...;
+\end{DoxyCode}
+
+
+Time in the rtos is expressed in some multiple of microseconds, but use these constants to avoid knowledge of this detail. 

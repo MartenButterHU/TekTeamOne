@@ -1,0 +1,157 @@
+\hypertarget{rtos_8hpp}{}\section{rtos.\+hpp File Reference}
+\label{rtos_8hpp}\index{rtos.\+hpp@{rtos.\+hpp}}
+{\ttfamily \#include \char`\"{}hwlib.\+hpp\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}coroutine.\+hpp\char`\"{}}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classrtos}{rtos}
+\begin{DoxyCompactList}\small\item\em static class, namespace-\/like container for R\+T\+OS declarations \end{DoxyCompactList}\item 
+class \hyperlink{classrtos_1_1mailbox}{rtos\+::mailbox$<$ T $>$}
+\begin{DoxyCompactList}\small\item\em Synchronously handing over of a data item. \end{DoxyCompactList}\item 
+class \hyperlink{classrtos_1_1channel}{rtos\+::channel$<$ T, S\+I\+Z\+E $>$}
+\begin{DoxyCompactList}\small\item\em waitable data queue \end{DoxyCompactList}\item 
+class \hyperlink{classrtos_1_1pool}{rtos\+::pool$<$ T $>$}
+\begin{DoxyCompactList}\small\item\em place to store and rectrieve data, no built-\/in synchronisation \end{DoxyCompactList}\item 
+class \hyperlink{classrtos_1_1event}{rtos\+::event}
+\begin{DoxyCompactList}\small\item\em set of things that can happen, or a thing that has happened \end{DoxyCompactList}\item 
+class \hyperlink{classrtos_1_1waitable}{rtos\+::waitable}
+\begin{DoxyCompactList}\small\item\em abstract thing that a task can wait for \end{DoxyCompactList}\item 
+class \hyperlink{classrtos_1_1flag}{rtos\+::flag}
+\begin{DoxyCompactList}\small\item\em basic synchronisation mechanism. \end{DoxyCompactList}\item 
+class \hyperlink{classrtos_1_1timer}{rtos\+::timer}
+\begin{DoxyCompactList}\small\item\em one-\/shot timer \end{DoxyCompactList}\item 
+class \hyperlink{classrtos_1_1clock}{rtos\+::clock}
+\begin{DoxyCompactList}\small\item\em free-\/running clock, ticks at a fixed frequency \end{DoxyCompactList}\item 
+class \hyperlink{classrtos_1_1task__base}{rtos\+::task\+\_\+base}
+\begin{DoxyCompactList}\small\item\em an independent thread of execution \end{DoxyCompactList}\item 
+class \hyperlink{classrtos_1_1task}{rtos\+::task$<$ N $>$}
+\item 
+class \hyperlink{classrtos_1_1pool__base}{rtos\+::pool\+\_\+base}
+\begin{DoxyCompactList}\small\item\em rtos private implementation class \end{DoxyCompactList}\item 
+class \hyperlink{classrtos_1_1pool}{rtos\+::pool$<$ T $>$}
+\begin{DoxyCompactList}\small\item\em place to store and rectrieve data, no built-\/in synchronisation \end{DoxyCompactList}\item 
+class \hyperlink{classrtos_1_1mutex}{rtos\+::mutex}
+\begin{DoxyCompactList}\small\item\em mutual execlusion semaphore \end{DoxyCompactList}\item 
+class \hyperlink{classrtos_1_1mailbox__base}{rtos\+::mailbox\+\_\+base}
+\begin{DoxyCompactList}\small\item\em rtos private implementation class \end{DoxyCompactList}\item 
+class \hyperlink{classrtos_1_1mailbox}{rtos\+::mailbox$<$ T $>$}
+\begin{DoxyCompactList}\small\item\em Synchronously handing over of a data item. \end{DoxyCompactList}\item 
+class \hyperlink{classrtos_1_1channel__base}{rtos\+::channel\+\_\+base}
+\begin{DoxyCompactList}\small\item\em rtos private implementation class \end{DoxyCompactList}\item 
+class \hyperlink{classrtos_1_1channel}{rtos\+::channel$<$ T, S\+I\+Z\+E $>$}
+\begin{DoxyCompactList}\small\item\em waitable data queue \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{rtos_8hpp_abfa316bed6b196f75543311127f43986}{R\+T\+O\+S\+\_\+\+V\+E\+R\+S\+I\+ON}~\char`\"{}V5.\+00 (2016-\/09-\/22)\char`\"{}
+\item 
+\#define {\bfseries global\+\_\+logging}~1\hypertarget{rtos_8hpp_a4b2b55d79d31e12020b8f707eedb7cd2}{}\label{rtos_8hpp_a4b2b55d79d31e12020b8f707eedb7cd2}
+
+\item 
+\#define {\bfseries R\+T\+O\+S\+\_\+\+S\+T\+A\+T\+I\+S\+T\+I\+C\+S\+\_\+\+E\+N\+A\+B\+L\+ED}~1\hypertarget{rtos_8hpp_af93a1b38de08a8b420bc9f3ad607c125}{}\label{rtos_8hpp_af93a1b38de08a8b420bc9f3ad607c125}
+
+\item 
+\#define {\bfseries R\+T\+O\+S\+\_\+\+S\+T\+A\+T\+I\+S\+T\+I\+CS}(x)~x\hypertarget{rtos_8hpp_aef4095af1e8af3fa6a1b3b19db8adea7}{}\label{rtos_8hpp_aef4095af1e8af3fa6a1b3b19db8adea7}
+
+\item 
+\#define \hyperlink{rtos_8hpp_a16007cfcb67f373b8f39dcd63d3b40dc}{rtos\+\_\+fatal}(msg)                            
+\begin{DoxyCompactList}\small\item\em fatal error handler \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries task\+\_\+trampoline} ()\hypertarget{rtos_8hpp_a376fdffc11fe9fb4f531835b94320825}{}\label{rtos_8hpp_a376fdffc11fe9fb4f531835b94320825}
+
+\item 
+hwlib\+::ostream \& {\bfseries operator$<$$<$} (hwlib\+::ostream \&s, const \hyperlink{classrtos_1_1task__base}{rtos\+::task\+\_\+base} \&t)\hypertarget{rtos_8hpp_acd1adab821ceb11882d03cdc94740fb8}{}\label{rtos_8hpp_acd1adab821ceb11882d03cdc94740fb8}
+
+\item 
+hwlib\+::ostream \& {\bfseries operator$<$$<$} (hwlib\+::ostream \&s, const \hyperlink{classrtos_1_1flag}{rtos\+::flag} \&f)\hypertarget{rtos_8hpp_a1c952501b070d931fadef7b1e8ced31a}{}\label{rtos_8hpp_a1c952501b070d931fadef7b1e8ced31a}
+
+\item 
+hwlib\+::ostream \& {\bfseries operator$<$$<$} (hwlib\+::ostream \&s, const \hyperlink{classrtos_1_1event}{rtos\+::event} \&e)\hypertarget{rtos_8hpp_a58a2e8b4106de986138812978cb63d21}{}\label{rtos_8hpp_a58a2e8b4106de986138812978cb63d21}
+
+\item 
+hwlib\+::ostream \& {\bfseries operator$<$$<$} (hwlib\+::ostream \&s, const \hyperlink{classrtos_1_1timer}{rtos\+::timer} \&t)\hypertarget{rtos_8hpp_ae9b87b3354b0733e883e0dd3f3294746}{}\label{rtos_8hpp_ae9b87b3354b0733e883e0dd3f3294746}
+
+\item 
+hwlib\+::ostream \& {\bfseries operator$<$$<$} (hwlib\+::ostream \&s, const \hyperlink{classrtos_1_1clock}{rtos\+::clock} \&c)\hypertarget{rtos_8hpp_a86e77aef1449ab6f641fc2ea8acb1f88}{}\label{rtos_8hpp_a86e77aef1449ab6f641fc2ea8acb1f88}
+
+\item 
+hwlib\+::ostream \& {\bfseries operator$<$$<$} (hwlib\+::ostream \&s, const \hyperlink{classrtos_1_1channel__base}{rtos\+::channel\+\_\+base} \&cb)\hypertarget{rtos_8hpp_adf29e83bfb04abcc6ad2aac692b40cc7}{}\label{rtos_8hpp_adf29e83bfb04abcc6ad2aac692b40cc7}
+
+\item 
+hwlib\+::ostream \& {\bfseries operator$<$$<$} (hwlib\+::ostream \&s, const \hyperlink{classrtos_1_1mutex}{rtos\+::mutex} \&m)\hypertarget{rtos_8hpp_a0a9635ce1cbf0d771803225774d495b2}{}\label{rtos_8hpp_a0a9635ce1cbf0d771803225774d495b2}
+
+\item 
+hwlib\+::ostream \& {\bfseries operator$<$$<$} (hwlib\+::ostream \&s, const \hyperlink{classrtos_1_1mailbox__base}{rtos\+::mailbox\+\_\+base} \&mb)\hypertarget{rtos_8hpp_ae2156623baa17550769a59cebf9e5a4c}{}\label{rtos_8hpp_ae2156623baa17550769a59cebf9e5a4c}
+
+\item 
+hwlib\+::ostream \& {\bfseries operator$<$$<$} (hwlib\+::ostream \&s, const \hyperlink{classrtos_1_1pool__base}{rtos\+::pool\+\_\+base} \&pb)\hypertarget{rtos_8hpp_a0bd0343f3c907032aaa99849358ee153}{}\label{rtos_8hpp_a0bd0343f3c907032aaa99849358ee153}
+
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const unsigned int {\bfseries R\+T\+O\+S\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+T\+A\+C\+K\+\_\+\+S\+I\+ZE} = 4 $\ast$ 1024\hypertarget{rtos_8hpp_aa4ceb170e19542deafd35a02806255aa}{}\label{rtos_8hpp_aa4ceb170e19542deafd35a02806255aa}
+
+\item 
+const unsigned int {\bfseries R\+T\+O\+S\+\_\+\+M\+I\+N\+\_\+\+P\+R\+I\+O\+R\+I\+TY} = 1000\hypertarget{rtos_8hpp_afd71254a7c44ee6aa1332a73712a8f11}{}\label{rtos_8hpp_afd71254a7c44ee6aa1332a73712a8f11}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{rtos.\+hpp@{rtos.\+hpp}!rtos\+\_\+fatal@{rtos\+\_\+fatal}}
+\index{rtos\+\_\+fatal@{rtos\+\_\+fatal}!rtos.\+hpp@{rtos.\+hpp}}
+\subsubsection[{\texorpdfstring{rtos\+\_\+fatal}{rtos_fatal}}]{\setlength{\rightskip}{0pt plus 5cm}\#define rtos\+\_\+fatal(
+\begin{DoxyParamCaption}
+\item[{}]{msg}
+\end{DoxyParamCaption}
+)}\hypertarget{rtos_8hpp_a16007cfcb67f373b8f39dcd63d3b40dc}{}\label{rtos_8hpp_a16007cfcb67f373b8f39dcd63d3b40dc}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{                                \(\backslash\)
+       hwlib::cout                     \(\backslash\)
+          << \textcolor{stringliteral}{"\(\backslash\)n>> Fatal error: "}      \(\backslash\)
+          << msg << \textcolor{stringliteral}{"\(\backslash\)n"};              \(\backslash\)
+       for(;;);                        \(\backslash\)
+   \} \textcolor{keywordflow}{while} (0)                         \(\backslash\)
+\end{DoxyCode}
+
+
+fatal error handler 
+
+\index{rtos.\+hpp@{rtos.\+hpp}!R\+T\+O\+S\+\_\+\+V\+E\+R\+S\+I\+ON@{R\+T\+O\+S\+\_\+\+V\+E\+R\+S\+I\+ON}}
+\index{R\+T\+O\+S\+\_\+\+V\+E\+R\+S\+I\+ON@{R\+T\+O\+S\+\_\+\+V\+E\+R\+S\+I\+ON}!rtos.\+hpp@{rtos.\+hpp}}
+\subsubsection[{\texorpdfstring{R\+T\+O\+S\+\_\+\+V\+E\+R\+S\+I\+ON}{RTOS_VERSION}}]{\setlength{\rightskip}{0pt plus 5cm}\#define R\+T\+O\+S\+\_\+\+V\+E\+R\+S\+I\+ON~\char`\"{}V5.\+00 (2016-\/09-\/22)\char`\"{}}\hypertarget{rtos_8hpp_abfa316bed6b196f75543311127f43986}{}\label{rtos_8hpp_abfa316bed6b196f75543311127f43986}
+Coroutine-\/based tasking service with synchronisation mechanisms
+
+\begin{DoxyAuthor}{Authors}
+
+\begin{DoxyItemize}
+\item Marten Wensink (\href{mailto:marten.wensink@hu.nl}{\tt marten.\+wensink@hu.\+nl})
+\item Wouter van Ooijen (\href{mailto:wouter@voti.nl}{\tt wouter@voti.\+nl})
+\end{DoxyItemize}
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+V5.\+00 (2016-\/09-\/22)
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Introduction}
+
+\end{DoxyParagraph}
+This R\+T\+OS provides a simple coroutine-\/based tasking service (R\+T\+OS) for use on the Arduino Due. It provides synchronization mechanisms like clocks, timers, semaphores, flags, queues and mutexes.
+
+This R\+T\+OS (Real Time Operating Stystem) is used by the courses V2\+R\+T\+S\+P1 (Realtime System Programming) and V2\+T\+H06 (Themaopdracht 6 Technische Informatica).
+
+The R\+T\+OS consists of the files \hyperlink{rtos_8hpp}{rtos.\+hpp} and rtos.\+cpp and the file libfiber.\+h and libfiber.\+cpp for the implementation of coroutines. It is meant to be compiled using bmprk.
+
+Whenever this documentation states that something is or produces an error this means that rtos\+\_\+fatal will be called, which will show the error on stdout and terminate the process.
+
+\begin{DoxyParagraph}{Files}
+
+\begin{DoxyItemize}
+\item \hyperlink{rtos_8hpp}{rtos.\+hpp}
+\item rtos.\+cpp 
+\end{DoxyItemize}
+\end{DoxyParagraph}
