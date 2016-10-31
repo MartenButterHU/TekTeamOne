@@ -61,15 +61,15 @@
       </counter>
       <counter>
         <item-type type-id="concurrency-task" type="ConcurrencyTask" />
-        <value>6</value>
+        <value>7</value>
       </counter>
       <counter>
         <item-type type-id="concurrency-queue" type="ConcurrencyQueue" />
-        <value>4</value>
+        <value>5</value>
       </counter>
       <counter>
         <item-type type-id="concurrency-timer" type="ConcurrencyTimer" />
-        <value>6</value>
+        <value>7</value>
       </counter>
       <counter>
         <item-type type-id="initial-state" type="UmlInitialState" />
@@ -89,6 +89,30 @@
       </counter>
       <counter>
         <item-type type-id="terminate-node" type="UmlTerminateNode" />
+        <value>1</value>
+      </counter>
+      <counter>
+        <item-type type-id="concurrency-semaphore" type="ConcurrencySemaphore" />
+        <value>1</value>
+      </counter>
+      <counter>
+        <item-type type-id="concurrency-mutex" type="ConcurrencyMutex" />
+        <value>1</value>
+      </counter>
+      <counter>
+        <item-type type-id="concurrency-pool" type="ConcurrencyPool" />
+        <value>1</value>
+      </counter>
+      <counter>
+        <item-type type-id="concurrency-mailbox" type="ConcurrencyMailBox" />
+        <value>1</value>
+      </counter>
+      <counter>
+        <item-type type-id="concurrency-eventflag" type="ConcurrencyEventFlag" />
+        <value>1</value>
+      </counter>
+      <counter>
+        <item-type type-id="concurrency-hardware-boundary" type="ConcurrencyHardwareBoundary" />
         <value>1</value>
       </counter>
     </entity-names>
@@ -191,11 +215,11 @@
       </counter>
       <counter>
         <item-type type-id="concurrency-task" type="ConcurrencyTask" />
-        <value>7</value>
+        <value>8</value>
       </counter>
       <counter>
         <item-type type-id="concurrency-queue" type="ConcurrencyQueue" />
-        <value>5</value>
+        <value>6</value>
       </counter>
       <counter>
         <item-type type-id="communication-message" type="UmlCommunicationMessage" />
@@ -203,7 +227,7 @@
       </counter>
       <counter>
         <item-type type-id="concurrency-timer" type="ConcurrencyTimer" />
-        <value>7</value>
+        <value>8</value>
       </counter>
       <counter>
         <item-type type-id="initial-state" type="UmlInitialState" />
@@ -215,7 +239,7 @@
       </counter>
       <counter>
         <item-type type-id="general-transition" type="UmlTransition" />
-        <value>140</value>
+        <value>142</value>
       </counter>
       <counter>
         <item-type type-id="exit-point" type="UmlExitPoint" />
@@ -226,12 +250,40 @@
         <value>3</value>
       </counter>
       <counter>
-        <item-type type-id="" type="AbstractElementGroup" />
-        <value>199</value>
-      </counter>
-      <counter>
         <item-type type-id="terminate-node" type="UmlTerminateNode" />
         <value>2</value>
+      </counter>
+      <counter>
+        <item-type type-id="concurrency-semaphore" type="ConcurrencySemaphore" />
+        <value>2</value>
+      </counter>
+      <counter>
+        <item-type type-id="concurrency-mutex" type="ConcurrencyMutex" />
+        <value>2</value>
+      </counter>
+      <counter>
+        <item-type type-id="concurrency-pool" type="ConcurrencyPool" />
+        <value>2</value>
+      </counter>
+      <counter>
+        <item-type type-id="concurrency-mailbox" type="ConcurrencyMailBox" />
+        <value>2</value>
+      </counter>
+      <counter>
+        <item-type type-id="concurrency-eventflag" type="ConcurrencyEventFlag" />
+        <value>2</value>
+      </counter>
+      <counter>
+        <item-type type-id="concurrency-hardware-boundary" type="ConcurrencyHardwareBoundary" />
+        <value>2</value>
+      </counter>
+      <counter>
+        <item-type type-id="shape" type="AbstractShapeItem" />
+        <value>35</value>
+      </counter>
+      <counter>
+        <item-type type-id="" type="AbstractElementGroup" />
+        <value>50</value>
       </counter>
     </entity-ids>
     <diagrams>
@@ -253,7 +305,7 @@
       </counter>
       <counter>
         <type>SoftwareIdeasModeler.Core.Diagrams.Other.ConcurrencyDiagram</type>
-        <value>1</value>
+        <value>2</value>
       </counter>
       <counter>
         <type>SoftwareIdeasModeler.Core.Diagrams.Other.StructureChart</type>
@@ -573,7 +625,7 @@
           </item>
         </layer>
       </diagram>
-      <diagram type="uml-activity" id="p99784d84fcb24b3b9bc49fe9c293eb30_520169936" name="Init game" order-index="2" overview-order-index="0" show-id="false" show-name="true" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-special-indicators="false" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-description="false" show-field-description="false" auto-routed-paths="false" view-location="-22,-283">
+      <diagram type="uml-activity" id="p99784d84fcb24b3b9bc49fe9c293eb30_520169936" name="Init game" order-index="2" overview-order-index="0" show-id="false" show-name="true" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-special-indicators="false" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-description="false" show-field-description="false" auto-routed-paths="false" view-location="-15,-189">
         <style>
           <background-color index="1" color="#FFFFFFFF" />
           <background-color index="2" color="#FFFFFFFF" />
@@ -1188,7 +1240,7 @@
           </item>
         </layer>
       </diagram>
-      <diagram type="uml-activity" id="p34c09615dd42473aa7fc708deca72181_548841446" name="Run game" order-index="3" overview-order-index="4" show-id="false" show-name="true" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-special-indicators="false" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-description="false" show-field-description="false" auto-routed-paths="false" view-location="-5,-396">
+      <diagram type="uml-activity" id="p34c09615dd42473aa7fc708deca72181_548841446" name="Run game" order-index="3" overview-order-index="4" show-id="false" show-name="true" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-special-indicators="false" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-description="false" show-field-description="false" auto-routed-paths="false" view-location="3,-300">
         <style>
           <background-color index="1" color="#FFFFFFFF" />
           <background-color index="2" color="#FFFFFFFF" />
@@ -2988,7 +3040,7 @@
           </authors>
           <description />
           <creation-date>10/25/2016 12:28:57</creation-date>
-          <change-date>10/26/2016 13:59:46</change-date>
+          <change-date>10/26/2016 14:04:07</change-date>
           <revision-count>0</revision-count>
           <version />
         </meta>
@@ -3039,10 +3091,16 @@
               <action name="entry" behavior="LoadLatestData" />
             </actions>
           </item>
-          <item id="di639220514306726032" cid="ELEM139" type="general-transition" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2016 13:59:46">
+          <item id="di639220514306726032" cid="ELEM139" type="general-transition" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2016 13:59:46" from="di877750439131089211" to="di877750439131089211">
             <style class="default" />
             <transition guard="" behaviourExpression="UpdateScreenData">
               <trigger>ScreenDataUpdate</trigger>
+            </transition>
+          </item>
+          <item id="di610164831267797185" cid="ELEM140" type="general-transition" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2016 14:04:03" from="di877750439131089211" to="di954075806807679367">
+            <style class="default" />
+            <transition guard="EndSignal" behaviourExpression=" ">
+              <trigger />
             </transition>
           </item>
         </abstract-items>
@@ -3098,15 +3156,24 @@
             <relation from="di954075806807679367" from-iid="cde02d54585e4522b28caf93c1940c8e" to="di877750439131089211" to-iid="71c2e5f3513544ddadf941345b48582a" />
           </item>
           <item id="di639220514306726032" iid="b3a4b53671ec499089d4ffe2352acc35" creation-date="10/26/2016 13:59:46" order-index="11" type="relation">
-            <layout line-style="oblique" lock-start-point="true" lock-end-point="false" lock-to-fields="false" auto-path="" x1="539" y1="281" x2="468" y2="281" start-border-pos="0.13556338028169" end-border-pos="-1" name-position="0,-17" name-width="124">
+            <layout line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="567" y1="281" x2="499" y2="281" start-border-pos="0.106681033968925" end-border-pos="0.0334051735699177" name-position="0,-17" name-width="124">
               <points>
-                <point x="539" y="281" />
-                <point x="539" y="183" />
-                <point x="468" y="183" />
-                <point x="468" y="281" />
+                <point x="567" y="281" />
+                <point x="566" y="180" />
+                <point x="497" y="180" />
+                <point x="499" y="281" />
               </points>
             </layout>
-            <relation />
+            <relation from="di877750439131089211" from-iid="71c2e5f3513544ddadf941345b48582a" to="di877750439131089211" to-iid="71c2e5f3513544ddadf941345b48582a" />
+          </item>
+          <item id="di610164831267797185" iid="148c1392c55949588f2a5d61fa4d086b" creation-date="10/26/2016 14:04:03" order-index="12" type="relation">
+            <layout line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="468" y1="370" x2="297" y2="371" start-border-pos="0.799549549818039" end-border-pos="0.469780221581459" name-position="0,18" name-width="104">
+              <points>
+                <point x="468" y="370" />
+                <point x="297" y="371" />
+              </points>
+            </layout>
+            <relation from="di877750439131089211" from-iid="71c2e5f3513544ddadf941345b48582a" to="di954075806807679367" to-iid="cde02d54585e4522b28caf93c1940c8e" />
           </item>
         </layer>
       </diagram>
