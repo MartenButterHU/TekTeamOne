@@ -243,7 +243,7 @@
       </counter>
       <counter>
         <item-type type-id="" type="AbstractElementGroup" />
-        <value>130</value>
+        <value>108</value>
       </counter>
     </entity-ids>
     <diagrams>
@@ -341,7 +341,7 @@
     <item id="di334123008796946580" cid="ELEM013" type="merge" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="06/20/2016 21:59:32">
       <style class="default" />
     </item>
-    <item id="di809644413993925494" cid="ELEM140" type="general-transition" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2016 11:25:35" from="di935669384629818750" to="di882554895289790643">
+    <item id="di809644413993925494" cid="ELEM140" type="general-transition" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2016 11:25:35" from="di935669384629818750">
       <style class="default" />
       <transition guard="MessageSendCounter == 2" behaviourExpression=" ">
         <trigger />
@@ -372,7 +372,7 @@
       <state-invariant />
       <actions />
     </item>
-    <item id="di296897746625629051" cid="ELEM003" type="general-transition" name="" style-class="" visibility="private" creation-date="10/26/2016 12:50:02" from="di996280309282563159" to="di873488124273281204">
+    <item id="di296897746625629051" cid="ELEM003" type="general-transition" name="" style-class="" visibility="private" creation-date="10/26/2016 12:50:02">
       <style class="default" />
       <transition guard="Command == valid" behaviourExpression=" executeCommand(recieved_Command)">
         <trigger />
@@ -2657,7 +2657,7 @@
           </item>
         </layer>
       </diagram>
-      <diagram type="uml-statechart" id="p638027ab9b7443f2ae97815b36e2541b_285047593" name="20161025 LaserGunController STD" order-index="13" overview-order-index="10" show-id="false" show-name="true" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-special-indicators="false" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-description="false" show-field-description="false" auto-routed-paths="false" view-location="-319,-286">
+      <diagram type="uml-statechart" id="p638027ab9b7443f2ae97815b36e2541b_285047593" name="20161025 LaserGunController STD" order-index="13" overview-order-index="10" show-id="false" show-name="true" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-special-indicators="false" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-description="false" show-field-description="false" auto-routed-paths="false" view-location="-337,-286">
         <style>
           <background-color index="1" color="#FFFFFFFF" />
           <background-color index="2" color="#FFFFFFFF" />
@@ -2884,16 +2884,16 @@
             <layout ax="499.7737" ay="280" awidth="232.429" aheight="53.27778" x="499.7737" y="280" width="232.429" height="53.27778" />
           </item>
           <item id="di729821707529862101" iid="f73d0b402055424e89e90327913da993" container="di723034543694806647" container-iid="e6e5fa5a5f374a30bcc387da7f990279" creation-date="10/31/2016 15:20:45" order-index="31" type="entity">
-            <layout ax="952.2737" ay="88.5" awidth="176.3254" aheight="66.2801" x="952.2737" y="88.5" width="176.3254" height="66.2801" />
+            <layout ax="952.2987" ay="87.07292" awidth="176.3254" aheight="66.28011" x="952.2987" y="87.07292" width="176.3254" height="66.28011" />
           </item>
           <item id="di299901533821100763" iid="1ad4c5f014024ba88549f38769b7936b" container="di723034543694806647" container-iid="e6e5fa5a5f374a30bcc387da7f990279" creation-date="10/31/2016 15:18:10" order-index="28" type="entity">
             <layout ax="49.77367" ay="344" awidth="194.3587" aheight="63.42593" x="49.77367" y="344" width="194.3587" height="63.42593" />
           </item>
           <item id="di521888640145392806" iid="d0d50664f6194c0ab613035a6ecb6a3c" creation-date="10/31/2016 15:20:56" order-index="32" type="relation">
-            <layout line-style="oblique" lock-start-point="true" lock-end-point="false" lock-to-fields="false" auto-path="" x1="635" y1="119" x2="952" y2="121" start-border-pos="0.368749998509884" end-border-pos="0.876100997241428" name-position="0,-13">
+            <layout line-style="perpendicular" lock-start-point="true" lock-end-point="false" lock-to-fields="false" auto-path="" x1="635" y1="119" x2="952" y2="120" start-border-pos="0.368749998509884" end-border-pos="0.875" name-position="0,-13">
               <points>
                 <point x="635" y="119" />
-                <point x="952" y="121" />
+                <point x="952" y="120" />
               </points>
             </layout>
             <relation from="di916868606415921414" from-iid="c95ccc28233348f193cfecee08607e40" to="di729821707529862101" to-iid="f73d0b402055424e89e90327913da993" />
@@ -2902,9 +2902,9 @@
             <layout ax="938.7737" ay="181.125" awidth="203.3754" aheight="63.42593" x="938.7737" y="181.125" width="203.3754" height="63.42593" />
           </item>
           <item id="di644538954432510514" iid="75a27d3a887a48469ec4bd48a5a978ea" creation-date="10/31/2016 15:23:30" order-index="34" type="relation">
-            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="1040" y1="155" x2="1040" y2="181" start-border-pos="0.625618776805585" end-border-pos="0.124432846828691" name-position="19,-2">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="1040" y1="153" x2="1040" y2="181" start-border-pos="0.625654224629584" end-border-pos="0.124432846828691" name-position="19,-2">
               <points>
-                <point x="1040" y="155" />
+                <point x="1040" y="153" />
                 <point x="1040" y="181" />
               </points>
             </layout>
@@ -2962,7 +2962,7 @@
             <relation from="di252780380901307293" from-iid="b56d77fb6575470fad5974d8b00eb173" to="di861386717922168971" to-iid="68559cf7790f4a64888c2bf8f3afdb38" />
           </item>
           <item id="di771513042832831937" iid="b69fdb0743604942800df5a32801c09d" creation-date="11/01/2016 11:40:07" order-index="48" type="relation">
-            <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="294" y1="152" x2="136" y2="344" start-border-pos="0.75" end-border-pos="0.111469072164948" name-position="72,-8">
+            <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="294" y1="152" x2="136" y2="344" start-border-pos="0.75" end-border-pos="0.111469072164948" name-position="71,-24">
               <points>
                 <point x="294" y="152" />
                 <point x="136" y="344" />
@@ -3247,7 +3247,7 @@
               <trigger>*PressedFlag</trigger>
             </transition>
           </item>
-          <item id="di558374911156897356" cid="FS008" type="final-state" name="" style-class="" owner="di645970860371771294" visibility="package" change-tracking-state="added" creation-date="11/01/2016 12:42:15">
+          <item id="di558374911156897356" cid="FS008" type="final-state" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="11/01/2016 12:42:15">
             <style class="default" />
           </item>
           <item id="di506665109853077952" cid="ELEM266" type="general-transition" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="11/01/2016 12:42:39" from="di471604597970592636" to="di558374911156897356">
@@ -3291,10 +3291,10 @@
             <layout ax="-184" ay="47.5" awidth="970.5" aheight="474" x="-184" y="47.5" width="970.5" height="474" />
           </item>
           <item id="di210967208651039903" iid="7c03abfeb6c946959cc08adc2d85948e" creation-date="11/01/2016 12:26:59" order-index="25" type="relation">
-            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="-102" y1="136" x2="48" y2="136" start-border-pos="0.375" end-border-pos="0.875" name-position="0,0">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="-102" y1="136" x2="41" y2="136" start-border-pos="0.375" end-border-pos="0.875" name-position="0,0">
               <points>
                 <point x="-102" y="136" />
-                <point x="48" y="136" />
+                <point x="41" y="136" />
               </points>
             </layout>
             <relation from="di361056331201112705" from-iid="4e44fb890a2242dcabde3b86fcecb16b" to="di353450774507308930" to-iid="4ecbd140f2104ea587e05d523f5645a4" />
@@ -3319,7 +3319,7 @@
             <relation from="di471604597970592636" from-iid="bbc9389ff1284c48aa4fbb1e0d9ecc98" to="di379175900631693723" to-iid="6325c7ce84df4ab38be969b6b77d69f7" />
           </item>
           <item id="di287214394571690651" iid="14ef93a5f7fb480dbf585cc2c14858cf" creation-date="11/01/2016 12:40:36" order-index="29" type="relation">
-            <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="319" y1="359" x2="269" y2="372" start-border-pos="0.4375" end-border-pos="0.625" name-position="-45,11" name-width="353">
+            <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="319" y1="359" x2="269" y2="372" start-border-pos="0.4375" end-border-pos="0.625" name-position="-46,17" name-width="353">
               <points>
                 <point x="319" y="359" />
                 <point x="269" y="372" />
@@ -3328,10 +3328,10 @@
             <relation from="di471604597970592636" from-iid="bbc9389ff1284c48aa4fbb1e0d9ecc98" to="di471604597970592636" to-iid="bbc9389ff1284c48aa4fbb1e0d9ecc98" />
           </item>
           <item id="di506665109853077952" iid="c5bcb939e19547f5b365f6b4f4b6f665" creation-date="11/01/2016 12:42:39" order-index="31" type="relation">
-            <layout line-style="oblique" lock-start-point="true" lock-end-point="false" lock-to-fields="false" auto-path="" x1="319" y1="346" x2="745" y2="346" start-border-pos="0.375" end-border-pos="0.88" name-position="12,-9">
+            <layout line-style="oblique" lock-start-point="true" lock-end-point="false" lock-to-fields="false" auto-path="" x1="319" y1="346" x2="856" y2="346" start-border-pos="0.375" end-border-pos="0.88" name-position="12,-9">
               <points>
                 <point x="319" y="346" />
-                <point x="745" y="346" />
+                <point x="856" y="346" />
               </points>
             </layout>
             <relation from="di471604597970592636" from-iid="bbc9389ff1284c48aa4fbb1e0d9ecc98" to="di558374911156897356" to-iid="4ffc13ef72794b67982e50f5aa824673" />
@@ -3348,8 +3348,8 @@
           <item id="di379175900631693723" iid="6325c7ce84df4ab38be969b6b77d69f7" container="di645970860371771294" container-iid="7d02d9f858c9469e901bbe5e45c6aed5" creation-date="11/01/2016 12:47:51" order-index="32" type="entity">
             <layout ax="183" ay="215.5" awidth="172" aheight="50" x="183" y="215.5" width="172" height="50" />
           </item>
-          <item id="di558374911156897356" iid="4ffc13ef72794b67982e50f5aa824673" container="di645970860371771294" container-iid="7d02d9f858c9469e901bbe5e45c6aed5" creation-date="11/01/2016 12:42:15" order-index="30" type="entity">
-            <layout ax="744.5" ay="334" awidth="25" aheight="25" x="744.5" y="334" width="25" height="25" name-position="0,10" name-anchor="bottom" />
+          <item id="di558374911156897356" iid="4ffc13ef72794b67982e50f5aa824673" creation-date="11/01/2016 12:42:15" order-index="30" type="entity">
+            <layout ax="855.5" ay="334" awidth="25" aheight="25" x="855.5" y="334" width="25" height="25" name-position="0,10" name-anchor="bottom" />
           </item>
           <item id="di312318304405345482" iid="bf793a144a504c9ea7495ec43312b68c" container="di645970860371771294" container-iid="7d02d9f858c9469e901bbe5e45c6aed5" creation-date="11/01/2016 12:27:19" order-index="26" type="entity">
             <layout ax="-127" ay="334" awidth="25" aheight="25" x="-127" y="334" width="25" height="25" name-position="0,10" name-anchor="bottom" />
@@ -3361,7 +3361,7 @@
             <layout ax="219" ay="321.5" awidth="100" aheight="50" x="219" y="321.5" width="100" height="50" />
           </item>
           <item id="di353450774507308930" iid="4ecbd140f2104ea587e05d523f5645a4" container="di645970860371771294" container-iid="7d02d9f858c9469e901bbe5e45c6aed5" creation-date="11/01/2016 10:01:03" order-index="21" type="entity">
-            <layout ax="48" ay="103.5" awidth="247" aheight="65" x="48" y="103.5" width="247" height="65" />
+            <layout ax="41" ay="103.5" awidth="247" aheight="65" x="41" y="103.5" width="247" height="65" />
           </item>
           <item id="di484520343350173715" iid="8196dbd869f845a5af3083eff1f77dce" creation-date="11/01/2016 14:07:47" order-index="35" type="entity">
             <layout ax="868" ay="115.5" awidth="140" aheight="100" x="868" y="115.5" width="140" height="100" />
@@ -4058,7 +4058,7 @@ hoe werkt uart_putc(char c) van hwlib, wat doet de pc? </comment>
           </item>
         </layer>
       </diagram>
-      <diagram type="uml-statechart" id="peafe3976c21542b18263d86a9698e1ad_646182457" name="20161101 GameLeaderController" order-index="25" overview-order-index="32" show-id="false" show-name="true" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-special-indicators="false" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-description="false" show-field-description="false" auto-routed-paths="false" view-location="0,-29">
+      <diagram type="uml-statechart" id="peafe3976c21542b18263d86a9698e1ad_646182457" name="20161101 GameLeaderController" order-index="25" overview-order-index="32" show-id="false" show-name="true" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-special-indicators="false" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-description="false" show-field-description="false" auto-routed-paths="false" view-location="0,61">
         <style>
           <background-color index="1" color="#FFFFFFFF" />
           <background-color index="2" color="#FFFFFFFF" />
@@ -4207,7 +4207,7 @@ hoe werkt uart_putc(char c) van hwlib, wat doet de pc? </comment>
             <layout ax="803" ay="401.1559" awidth="100" aheight="48.80618" x="803" y="401.1559" width="100" height="48.80618" />
           </item>
           <item id="di665324292384725184" iid="9f94b74fa53649ed9535a95fa8590503" creation-date="11/01/2016 14:30:58" order-index="7" type="relation">
-            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="606" y1="426" x2="803" y2="426" start-border-pos="0.377259071987589" end-border-pos="0.872740947552443" name-position="0,0">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="606" y1="426" x2="803" y2="426" start-border-pos="0.377258915667331" end-border-pos="0.872741103872702" name-position="0,0">
               <points>
                 <point x="606" y="426" />
                 <point x="803" y="426" />
@@ -4277,7 +4277,7 @@ hoe werkt uart_putc(char c) van hwlib, wat doet de pc? </comment>
             <relation from="di294510805682246834" from-iid="abf8acda2cdd4b0bbae31fa083c41dfc" to="di294510805682246834" to-iid="abf8acda2cdd4b0bbae31fa083c41dfc" />
           </item>
           <item id="di366752015461421582" iid="a94ffe928aab44c8b12cae73b7fa1176" creation-date="11/01/2016 14:39:36" order-index="16" type="relation">
-            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="295" y1="424" x2="506" y2="426" start-border-pos="0.379929334645486" end-border-pos="0.874617259616764" name-position="1,-13">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="295" y1="424" x2="506" y2="426" start-border-pos="0.379929334645486" end-border-pos="0.874617415937022" name-position="1,-13">
               <points>
                 <point x="295" y="424" />
                 <point x="506" y="426" />
