@@ -42,10 +42,6 @@
         <value>2</value>
       </counter>
       <counter>
-        <item-type type-id="" type="AbstractElementGroup" />
-        <value>132</value>
-      </counter>
-      <counter>
         <item-type type-id="frame" type="UmlFrame" />
         <value>3</value>
       </counter>
@@ -67,7 +63,7 @@
       </counter>
       <counter>
         <type>SoftwareIdeasModeler.Core.DiagramItems.Fields.OperationField</type>
-        <value>26</value>
+        <value>33</value>
       </counter>
     </fields>
   </counters>
@@ -117,6 +113,20 @@
         <start-role id="" name="" navigability="" association-type="association" visibility="private" />
         <end-role id="" name="" navigability="" association-type="association" visibility="private" />
       </relation>
+    </item>
+    <item id="di227721001746534099" cid="C019" type="class" name="SensorController" style-class="" owner="di223018221125158903" visibility="package" change-tracking-state="added" creation-date="10/27/2016 16:04:48">
+      <style class="default" />
+      <operations>
+        <operation id="o39a2f224dff842a880c72ce798aa12f0569" cid="ELEM027" name="checkSensor" type="" type-id="" visibility="private">
+          <style class="default" />
+        </operation>
+        <operation id="o353534e4082e479c889d2d0f44a969f2110" cid="ELEM028" name="setFlag" type="" type-id="" visibility="private">
+          <style class="default" />
+        </operation>
+      </operations>
+      <source-codes>
+        <source-code language="ActionScript" />
+      </source-codes>
     </item>
   </items>
   <models>
@@ -604,7 +614,7 @@ Het zenden en ontvangen staan er nu nog als functies in, deze moeten nog verande
         <abstract-items />
         <layer name="Default" visible="true" enabled="true" locked="false" />
       </diagram>
-      <diagram type="uml-class" id="p9d6b4a293a1a4e62818e5d41ed8891f2_467217949" name="ClassDiagram2" order-index="3" overview-order-index="1" show-id="false" show-name="true" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-special-indicators="false" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-description="false" show-field-description="false" auto-routed-paths="true" view-location="0,-25" zoom="0.7">
+      <diagram type="uml-class" id="p9d6b4a293a1a4e62818e5d41ed8891f2_467217949" name="ClassDiagram2" order-index="3" overview-order-index="1" show-id="false" show-name="true" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-special-indicators="false" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-description="false" show-field-description="false" auto-routed-paths="true" view-location="-49,313" zoom="0.7">
         <style>
           <background-color index="1" color="#FFFFFFFF" />
           <background-color index="2" color="#FFFFFFFF" />
@@ -616,7 +626,7 @@ Het zenden en ontvangen staan er nu nog als functies in, deze moeten nog verande
           </authors>
           <description />
           <creation-date>10/27/2016 16:01:17</creation-date>
-          <change-date>10/28/2016 13:21:19</change-date>
+          <change-date>10/28/2016 14:17:41</change-date>
           <revision-count>0</revision-count>
           <version />
         </meta>
@@ -668,9 +678,6 @@ Het zenden en ontvangen staan er nu nog als functies in, deze moeten nog verande
             <source-codes>
               <source-code language="ActionScript" />
             </source-codes>
-          </item>
-          <item id="di227721001746534099" cid="C019" type="class" name="SensorController" style-class="" owner="di223018221125158903" visibility="package" change-tracking-state="added" creation-date="10/27/2016 16:04:48">
-            <style class="default" />
           </item>
           <item id="di880831475302191704" cid="C020" type="class" name="IRSensor" style-class="" visibility="package" change-tracking-state="added" creation-date="10/27/2016 16:05:22">
             <style class="default" />
@@ -780,6 +787,20 @@ Het zenden en ontvangen staan er nu nog als functies in, deze moeten nog verande
           </item>
           <item id="di675532963449528527" cid="C034" type="class" name="TriggerController" style-class="" owner="di223018221125158903" visibility="package" change-tracking-state="added" creation-date="10/28/2016 11:53:39">
             <style class="default" />
+            <operations>
+              <operation id="o36096e648037455ba2f62b2f8e12b83b36" cid="ELEM031" name="checkTriggerButon" type="" type-id="" visibility="private">
+                <style class="default" />
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="ob0a1ebacfa7a4633985cd9973b08be1a220" cid="ELEM032" name="setFlag" type="" type-id="" visibility="public">
+                <style class="default" />
+              </operation>
+            </operations>
+            <source-codes>
+              <source-code language="ActionScript" />
+            </source-codes>
           </item>
           <item id="di858341657929030425" cid="C026" type="class" name="LaserGunControlState" style-class="" owner="di223018221125158903" visibility="package" change-tracking-state="added" creation-date="10/28/2016 11:17:09">
             <style class="default" />
@@ -968,7 +989,7 @@ Het zenden en ontvangen staan er nu nog als functies in, deze moeten nog verande
             <relation from="di575685089472198037" from-iid="5518114971d14ee39e9b8256de4d93ff" to="di858341657929030425" to-iid="ec34beb4e39d440788538950196c5b0d" />
           </item>
           <item id="di572184845757797906" iid="9cc784df174645aa8156a8d24a853ee0" creation-date="10/28/2016 11:34:13" order-index="40" type="relation">
-            <layout start-role-position="25,15" end-role-position="25,-15" start-multiplicity-position="25,-15" end-multiplicity-position="25,15" line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="1514" y1="413" x2="1415" y2="184" start-border-pos="0.0633943830217634" end-border-pos="0.551915317111545" name-position="0,0">
+            <layout start-role-position="25,15" end-role-position="25,-15" start-multiplicity-position="25,-15" end-multiplicity-position="25,15" line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="1514" y1="413" x2="1415" y2="184" start-border-pos="0.063395254952567" end-border-pos="0.551915317111545" name-position="0,0">
               <points>
                 <point x="1514" y="413" />
                 <point x="1415" y="184" />
@@ -1044,10 +1065,6 @@ Het zenden en ontvangen staan er nu nog als functies in, deze moeten nog verande
             <layout ax="809" ay="701" awidth="140" aheight="160" x="809" y="701" width="140" height="160" />
             <class />
           </item>
-          <item id="di227721001746534099" iid="c0276a9b1fee49d59cd16acbe13c4168" container="di223018221125158903" container-iid="c5e605a263a0407da2162b6372dfee34" creation-date="10/27/2016 16:04:48" order-index="7" type="entity">
-            <layout ax="471" ay="721" awidth="140" aheight="160" x="471" y="721" width="140" height="160" />
-            <class />
-          </item>
           <item id="di468748990937947062" iid="14b7cf76e5c34f9d99e0ad6edb5159e8" container="di223018221125158903" container-iid="c5e605a263a0407da2162b6372dfee34" creation-date="10/28/2016 11:33:43" order-index="39" type="entity">
             <layout ax="1478.708" ay="413" awidth="140" aheight="160" x="1478.708" y="413" width="140" height="160" />
             <class />
@@ -1073,10 +1090,12 @@ Het zenden en ontvangen staan er nu nog als functies in, deze moeten nog verande
             <class />
           </item>
           <item id="di562898107749847903" iid="b6aa0f33ad184217a973fe8ec4af6e78" creation-date="10/28/2016 12:00:19" order-index="46" type="relation">
-            <layout start-role-position="25,15" end-role-position="94.83725,-139.991" start-multiplicity-position="25,-15" end-multiplicity-position="25,15" line-style="straight" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="auto" x1="380" y1="782" x2="546" y2="615" start-border-pos="0.265267562866211" end-border-pos="0.765267562866211" name-position="0,0">
+            <layout start-role-position="25,15" end-role-position="94.83725,-139.991" start-multiplicity-position="25,-15" end-multiplicity-position="25,15" line-style="perpendicular" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="auto" x1="310" y1="772" x2="616" y2="625" start-border-pos="0.125" end-border-pos="0.625" name-position="0,0">
               <points>
-                <point x="380" y="782" />
-                <point x="546" y="615" />
+                <point x="310" y="772" />
+                <point x="310" y="698.5" />
+                <point x="593" y="698.5" />
+                <point x="616" y="625" />
               </points>
             </layout>
             <relation from="di675532963449528527" from-iid="abb9b9e5243d45e192a2c56e48b32687" to="di324641536306862399" to-iid="c65a65085a0342538a02b9d0fbda2e64" />
@@ -1096,6 +1115,10 @@ Het zenden en ontvangen staan er nu nog als functies in, deze moeten nog verande
           </item>
           <item id="di219270911952124547" iid="5404aafca1dc4f199e937c3831fd5946" container="di223018221125158903" container-iid="c5e605a263a0407da2162b6372dfee34" creation-date="10/28/2016 13:20:09" order-index="49" type="entity">
             <layout ax="-33" ay="482" awidth="140" aheight="160" x="-33" y="482" width="140" height="160" />
+            <class />
+          </item>
+          <item id="di227721001746534099" iid="c0276a9b1fee49d59cd16acbe13c4168" container="di223018221125158903" container-iid="c5e605a263a0407da2162b6372dfee34" creation-date="10/27/2016 16:04:48" order-index="7" type="entity">
+            <layout ax="471" ay="721" awidth="140" aheight="160" x="471" y="721" width="140" height="160" />
             <class />
           </item>
         </layer>
