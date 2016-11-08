@@ -1,12 +1,12 @@
-#ifndef RUNGAME_HPP
-#define RUNGAME_HPP
+#ifndef RUNGAMESTATE_HPP
+#define RUNGAMESTATE_HPP
 
-class RunGame
+class RunGameState
 {
 public:
-	RunGame();
-	~RunGame();
+	RunGameState();
+	~RunGameState();
 
 };
 
-#endif // RUNGAME_HPP
+#endif // RUNGAMESTATE_HPP
