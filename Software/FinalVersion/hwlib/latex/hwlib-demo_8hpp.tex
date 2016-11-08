@@ -1,0 +1,91 @@
+\hypertarget{hwlib-demo_8hpp}{}\section{hwlib-\/demo.hpp File Reference}
+\label{hwlib-demo_8hpp}\index{hwlib-\/demo.\+hpp@{hwlib-\/demo.\+hpp}}
+{\ttfamily \#include \char`\"{}hwlib-\/pin.\+hpp\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}hwlib-\/port.\+hpp\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}hwlib-\/wait.\+hpp\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{hwlib-defines_8hpp_a04be4340016df60d6636c1d1c6d94fc9}{H\+W\+L\+I\+B\+\_\+\+W\+E\+AK} \hyperlink{hwlib-defines_8hpp_aef311f1f416fdcbd1fa22376dcc01029}{H\+W\+L\+I\+B\+\_\+\+N\+O\+R\+E\+T\+U\+RN} \hyperlink{hwlib-demo_8hpp_a80ba9dfd5a09c9da29bcc865a5fc85ff}{hwlib\+::blink} (pin\+\_\+out \&pin, int ms=200)
+\begin{DoxyCompactList}\small\item\em blink function \end{DoxyCompactList}\item 
+void \hyperlink{hwlib-defines_8hpp_a04be4340016df60d6636c1d1c6d94fc9}{H\+W\+L\+I\+B\+\_\+\+W\+E\+AK} \hyperlink{hwlib-defines_8hpp_aef311f1f416fdcbd1fa22376dcc01029}{H\+W\+L\+I\+B\+\_\+\+N\+O\+R\+E\+T\+U\+RN} \hyperlink{hwlib-demo_8hpp_af01d061e28150ea14c1e9d01183792d3}{hwlib\+::kitt} (port\+\_\+in\+\_\+out \&port, int ms=100)
+\begin{DoxyCompactList}\small\item\em kitt functions \end{DoxyCompactList}\item 
+void \hyperlink{hwlib-defines_8hpp_a04be4340016df60d6636c1d1c6d94fc9}{H\+W\+L\+I\+B\+\_\+\+W\+E\+AK} \hyperlink{hwlib-defines_8hpp_aef311f1f416fdcbd1fa22376dcc01029}{H\+W\+L\+I\+B\+\_\+\+N\+O\+R\+E\+T\+U\+RN} {\bfseries hwlib\+::kitt} (port\+\_\+out \&port, int ms=100)\hypertarget{hwlib-demo_8hpp_afe638539acc989325624e978e3d1f329}{}\label{hwlib-demo_8hpp_afe638539acc989325624e978e3d1f329}
+
+\item 
+void \hyperlink{hwlib-defines_8hpp_a04be4340016df60d6636c1d1c6d94fc9}{H\+W\+L\+I\+B\+\_\+\+W\+E\+AK} \hyperlink{hwlib-defines_8hpp_aef311f1f416fdcbd1fa22376dcc01029}{H\+W\+L\+I\+B\+\_\+\+N\+O\+R\+E\+T\+U\+RN} {\bfseries hwlib\+::kitt} (port\+\_\+oc \&port, int ms=100)\hypertarget{hwlib-demo_8hpp_aa809d974c66cb1552aae0ae0fee7bb36}{}\label{hwlib-demo_8hpp_aa809d974c66cb1552aae0ae0fee7bb36}
+
+\item 
+int \hyperlink{hwlib-defines_8hpp_a04be4340016df60d6636c1d1c6d94fc9}{H\+W\+L\+I\+B\+\_\+\+W\+E\+AK} {\bfseries hwlib\+::rand} ()\hypertarget{hwlib-demo_8hpp_a9036fd0378141680d2e2a1b4a4eb52c9}{}\label{hwlib-demo_8hpp_a9036fd0378141680d2e2a1b4a4eb52c9}
+
+\item 
+unsigned int \hyperlink{hwlib-defines_8hpp_a04be4340016df60d6636c1d1c6d94fc9}{H\+W\+L\+I\+B\+\_\+\+W\+E\+AK} {\bfseries hwlib\+::random\+\_\+in\+\_\+range} (unsigned int min, unsigned int max)\hypertarget{hwlib-demo_8hpp_a0b714101e3779c837076fdc3bc6017bf}{}\label{hwlib-demo_8hpp_a0b714101e3779c837076fdc3bc6017bf}
+
+\item 
+void \hyperlink{hwlib-defines_8hpp_a04be4340016df60d6636c1d1c6d94fc9}{H\+W\+L\+I\+B\+\_\+\+W\+E\+AK} \hyperlink{hwlib-defines_8hpp_aef311f1f416fdcbd1fa22376dcc01029}{H\+W\+L\+I\+B\+\_\+\+N\+O\+R\+E\+T\+U\+RN} \hyperlink{hwlib-demo_8hpp_ae834adde804bdf781c39695800879a1f}{hwlib\+::graphics\+\_\+random\+\_\+lines} (window \&w)
+\begin{DoxyCompactList}\small\item\em random lines demo \end{DoxyCompactList}\item 
+void \hyperlink{hwlib-defines_8hpp_a04be4340016df60d6636c1d1c6d94fc9}{H\+W\+L\+I\+B\+\_\+\+W\+E\+AK} \hyperlink{hwlib-defines_8hpp_aef311f1f416fdcbd1fa22376dcc01029}{H\+W\+L\+I\+B\+\_\+\+N\+O\+R\+E\+T\+U\+RN} \hyperlink{hwlib-demo_8hpp_a51b02af57df1cd71b9bea0bf5f9fdc63}{hwlib\+::graphics\+\_\+random\+\_\+circles} (window \&w)
+\begin{DoxyCompactList}\small\item\em random circles demo \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{hwlib-\/demo.\+hpp@{hwlib-\/demo.\+hpp}!blink@{blink}}
+\index{blink@{blink}!hwlib-\/demo.\+hpp@{hwlib-\/demo.\+hpp}}
+\subsubsection[{\texorpdfstring{blink(pin\+\_\+out \&pin, int ms=200)}{blink(pin_out &pin, int ms=200)}}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf H\+W\+L\+I\+B\+\_\+\+W\+E\+AK} {\bf H\+W\+L\+I\+B\+\_\+\+N\+O\+R\+E\+T\+U\+RN} hwlib\+::blink (
+\begin{DoxyParamCaption}
+\item[{{\bf pin\+\_\+out} \&}]{pin, }
+\item[{int}]{ms = {\ttfamily 200}}
+\end{DoxyParamCaption}
+)}\hypertarget{hwlib-demo_8hpp_file_a80ba9dfd5a09c9da29bcc865a5fc85ff}{}\label{hwlib-demo_8hpp_file_a80ba9dfd5a09c9da29bcc865a5fc85ff}
+
+
+blink function 
+
+This function blinks the pin\+: ms milliseconds on, and ms milliseconds off. It never returns. \index{hwlib-\/demo.\+hpp@{hwlib-\/demo.\+hpp}!graphics\+\_\+random\+\_\+circles@{graphics\+\_\+random\+\_\+circles}}
+\index{graphics\+\_\+random\+\_\+circles@{graphics\+\_\+random\+\_\+circles}!hwlib-\/demo.\+hpp@{hwlib-\/demo.\+hpp}}
+\subsubsection[{\texorpdfstring{graphics\+\_\+random\+\_\+circles(window \&w)}{graphics_random_circles(window &w)}}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf H\+W\+L\+I\+B\+\_\+\+W\+E\+AK} {\bf H\+W\+L\+I\+B\+\_\+\+N\+O\+R\+E\+T\+U\+RN} hwlib\+::graphics\+\_\+random\+\_\+circles (
+\begin{DoxyParamCaption}
+\item[{{\bf window} \&}]{w}
+\end{DoxyParamCaption}
+)}\hypertarget{hwlib-demo_8hpp_file_a51b02af57df1cd71b9bea0bf5f9fdc63}{}\label{hwlib-demo_8hpp_file_a51b02af57df1cd71b9bea0bf5f9fdc63}
+
+
+random circles demo 
+
+This functions repeats the following actions\+:
+\begin{DoxyItemize}
+\item clears the window
+\item draws 30 random circles (which might be partially out-\/of-\/screen),
+\item waits half a second. 
+\end{DoxyItemize}\index{hwlib-\/demo.\+hpp@{hwlib-\/demo.\+hpp}!graphics\+\_\+random\+\_\+lines@{graphics\+\_\+random\+\_\+lines}}
+\index{graphics\+\_\+random\+\_\+lines@{graphics\+\_\+random\+\_\+lines}!hwlib-\/demo.\+hpp@{hwlib-\/demo.\+hpp}}
+\subsubsection[{\texorpdfstring{graphics\+\_\+random\+\_\+lines(window \&w)}{graphics_random_lines(window &w)}}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf H\+W\+L\+I\+B\+\_\+\+W\+E\+AK} {\bf H\+W\+L\+I\+B\+\_\+\+N\+O\+R\+E\+T\+U\+RN} hwlib\+::graphics\+\_\+random\+\_\+lines (
+\begin{DoxyParamCaption}
+\item[{{\bf window} \&}]{w}
+\end{DoxyParamCaption}
+)}\hypertarget{hwlib-demo_8hpp_file_ae834adde804bdf781c39695800879a1f}{}\label{hwlib-demo_8hpp_file_ae834adde804bdf781c39695800879a1f}
+
+
+random lines demo 
+
+This functions repeats the following actions\+:
+\begin{DoxyItemize}
+\item clears the window
+\item draws a border
+\item draws 30 random lines,
+\item waits half a second. 
+\end{DoxyItemize}\index{hwlib-\/demo.\+hpp@{hwlib-\/demo.\+hpp}!kitt@{kitt}}
+\index{kitt@{kitt}!hwlib-\/demo.\+hpp@{hwlib-\/demo.\+hpp}}
+\subsubsection[{\texorpdfstring{kitt(port\+\_\+in\+\_\+out \&port, int ms=100)}{kitt(port_in_out &port, int ms=100)}}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf H\+W\+L\+I\+B\+\_\+\+W\+E\+AK} {\bf H\+W\+L\+I\+B\+\_\+\+N\+O\+R\+E\+T\+U\+RN} hwlib\+::kitt (
+\begin{DoxyParamCaption}
+\item[{{\bf port\+\_\+in\+\_\+out} \&}]{port, }
+\item[{int}]{ms = {\ttfamily 100}}
+\end{DoxyParamCaption}
+)}\hypertarget{hwlib-demo_8hpp_file_af01d061e28150ea14c1e9d01183792d3}{}\label{hwlib-demo_8hpp_file_af01d061e28150ea14c1e9d01183792d3}
+
+
+kitt functions 
+
+These functions shows a kitt display on the pins of a port. Each L\+ED is on for m milliseconds. These functions never return.
+
+Similar functions exist thatb take a \hyperlink{classhwlib_1_1port__out}{port\+\_\+out} or \hyperlink{classhwlib_1_1port__oc}{port\+\_\+oc} parameter. 

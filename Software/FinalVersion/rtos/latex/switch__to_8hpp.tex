@@ -1,0 +1,25 @@
+\hypertarget{switch__to_8hpp}{}\section{switch\+\_\+to.\+hpp File Reference}
+\label{switch__to_8hpp}\index{switch\+\_\+to.\+hpp@{switch\+\_\+to.\+hpp}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{switch__to_8hpp_a36f9feecdc8cdbc03e96d7ba4cc27abe}{switch\+\_\+from\+\_\+to} (int $\ast$store\+\_\+old\+\_\+sp, int next\+\_\+sp)
+\begin{DoxyCompactList}\small\item\em Switch from the current execution context to a next one. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{switch\+\_\+to.\+hpp@{switch\+\_\+to.\+hpp}!switch\+\_\+from\+\_\+to@{switch\+\_\+from\+\_\+to}}
+\index{switch\+\_\+from\+\_\+to@{switch\+\_\+from\+\_\+to}!switch\+\_\+to.\+hpp@{switch\+\_\+to.\+hpp}}
+\subsubsection[{\texorpdfstring{switch\+\_\+from\+\_\+to(int $\ast$store\+\_\+old\+\_\+sp, int next\+\_\+sp)}{switch_from_to(int *store_old_sp, int next_sp)}}]{\setlength{\rightskip}{0pt plus 5cm}void switch\+\_\+from\+\_\+to (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{store\+\_\+old\+\_\+sp, }
+\item[{int}]{next\+\_\+sp}
+\end{DoxyParamCaption}
+)}\hypertarget{switch__to_8hpp_a36f9feecdc8cdbc03e96d7ba4cc27abe}{}\label{switch__to_8hpp_a36f9feecdc8cdbc03e96d7ba4cc27abe}
+
+
+Switch from the current execution context to a next one. 
+
+The store\+\_\+old\+\_\+sp pointer points to a location where the SP of the current execution context will be saved. The next\+\_\+sp contains the SP (not its address!) of the next executuion context (which was previously saved in this manner).
+
+The initial stack of a context must be constructed to be compatible with the switching code (file swicth\+\_\+to.\+asm). 
