@@ -1,0 +1,145 @@
+Inleiding
+
+
+Voor de studie HBO-ICT is er naar aanleiding van een projectopdracht een lasergame gemaakt wat uitgevoerd wordt op een Arduino Due. Dit lasergamesysteem maakt gebruik van een Real Time Operating System (RTOS) genaamd Arduino RTOS.
+
+Naast de Due zijn er echter veel alternatieve systems on a chip (SOC's). Ontwikkeling van software producten is dan ook een moeilijke taak, want de vraag blijft altijd of de software ook nog steeds past op andere hardware. De RTOS is de basis waarop de rest van de software wordt gemaakt en niet ieder RTOS past op alle SOC's en microcontrollers. [iets meer over concurrency praten misschien?]
+
+In dit onderzoeksrapport wordt gekeken naar de verschillende alternatieve RTOS'en die verenigbaar zijn met het project.  Niet alle RTOS'en zijn hier voor geschikt. Ten eerste moet een RTOS voldoen aan verschillende non functionele eisen, zoals ondersteuning van C en C++ en of het RTOS open source is of niet. 
+
+Daarnaast moet er duidelijk zijn welke functionaliteiten wel of niet aanwezig zijn in de RTOS'en die voldoen aan de non-functionele eisen. De kans is klein dat een RTOS specifiek alle functionaliteiten heeft, die het HU systeem ook biedt. 
+
+Om de verschillende eisen goed te kunnen onderzoeken heeft de opdrachtgever de volgende hoofdvraag opgesteld:
+
+
+	‘Met behulp van welk open source realtime operating system kunnen tasks en de concurrency mechanismen, pool, channel, flag(group), clock timer en mutex, zoals aangeboden door het Arduino RTOS, met zo weinig mogelijk overhead worden gerealiseerd?’ 
+
+Om deze vraag zo gestructureerd mogelijk te beantwoorden zijn er de volgende deelvragen gegeven:
+
+	Wat zijn de kenmerkende eigenschappen van tasks en de concurrency mechanismen van het Arduino RTOS? 
+	Welke open source RTOS-en zijn beschikbaar? 
+	Welk van de beschikbare RTOS-en biedt de meeste van de concurrency mechanismen van het Arduino RTOS aan zonder enige modificatie en biedt dezelfde functionaliteit om taken de realiseren 
+	Welke mechanismen van het Arduino RTOS worden niet ondersteund door de beschikbare RTOS-en? 
+	Hoe kunnen de mechanismen ban het Arduino RTOS die niet direct worden ondersteund door de beschikbare RTOS-en worden gerealiseerd met behulp van deze RTOS-en?
+	
+Op basis van deze deelvragen zal in het hoofdstuk onderzoeks methoden het onderzoeksplan opgesteld. In het hoofdstuk resultaten zullen de deelvragen beantwoord worden. In het hoofdstuk conclusie wordt de hoofdvraag beantwoord.
+
+Het onderzoek zal hoofdzakelijk bestaan uit een literatuurstudie die wordt uitgevoerd op het internet, op de documentatie van het Arduino RTOS en op de documentatie van de RTOS-en die in dit rapport worden onderzocht.
+
+  
+
+
+Onderzoeks methoden
+
+Er zijn vijf verschillende eisen waar rekening mee gehouden moet worden bij het vinden van een geschikt RTOS. Deze eisen zijn geformuleerd in de vorm van de vijf deelvragen die in de inleiding zijn genoemd. In dit hoofdstuk wordt beschreven hoe deze vragen worden beantwoord.
+
+
+Als er een alternatief wordt gebruikt voor het huidige RTOS moet deze ondersteuning bieden voor de beschikbare functionaliteiten. De vraag om deze eis te onderzoeken is:
+
+	"Wat zijn de kenmerkende eigenschappen van tasks en concurrency mechanismen van het Arduino RTOS"
+
+Er is een beeld van welke dit zijn. Voor dit onderzoek is er echter nog een beter overzicht nodig. Daarom zal de documentatie van het Arduino RTOS worden bestudeerd en op basis hiervan zal er een functionaliteiten lijst worden opgesteld.
+
+
+Er zijn ongelooflijk veel verschillende RTOS'en, maar een duidelijk overzicht van welke beschikbaar zijn, is er niet. De deelvraag
+"Welke open-source RTOS'en zijn beschikbaar"
+beantwoorden wij door een lijst van RTOS'en op te stellen. Om de lijst van beschikbare systemen behapbaar te maken is er op basis van het huidige systeem een lijst van 4 non-functionele eisen opgesteld:
+	Beschikbaar op het ARM platform 
+	Ondersteuning voor C en C++
+	Binnen het afgelopen jaar geupdate
+	Beschikbare documentatie met beschrijving over geboden functionaliteiten	
+Door middel van een literatuur onderzoek zal er gezocht worden naar de verschillende RTOS'en die voldoen aan deze eisen.
+
+
+Het moment dat er een ingekorte lijst is gemaakt van alle RTOS'en die voldoen aan de non functionele eisen kunnen de functionaliteiten van deze systemen vergeleken worden. Om 
+	Welk van de beschikbare RTOS-en biedt de meeste van de concurrency mechanismen van het Arduino RTOS aan zonder enige modificatie en biedt dezelfde functionaliteit om taken de realiseren 
+te beantwoorden bekijken we voor elk van de in deelvraag 2 gevonden RTOS-en of ze voldoen aan de lijst van functionaliteiten die is opgesteld voor deelvraag 1. De resultaten worden samengevoegd in een tabel zodat er een duidelijk overzicht van de compatibiliteit van de verschillende RTOS'en. Tabel 1 is een voorbeeld hiervan.
+
+
+Het is belangrijk duidelijk te hebben welke eigenschappen niet worden gedekt door een systeem. Door middel van de gegevens die komen uit de resultaten van deelvraag 3 wordt   
+	Welke mechanismen van het Arduino RTOS worden niet ondersteund door de beschikbare RTOS-en?
+beantwoord. De tabel geeft een duidelijk overzicht van ondersteunde mechanismen en welke hiervan nog moeten worden geimplementeerd. 
+
+
+Hoogstwaarschijnlijk is er niet een RTOS die alle benodigde functionaliteiten biedt. Sommige van de mechanismen zullen dus moeten worden geimplementeerd met op maat gemaakte code. Voor elk van de mechanismen gevonden door middel van deelvraag 4 zal worden gekeken hoe deze moeten worden geprogrammeerd. Hiermee wordt de laatste deelvraag, 
+	Hoe kunnen de mechanismen ban het Arduino RTOS die niet direct worden ondersteund door de beschikbare RTOS-en worden gerealiseerd met behulp van deze RTOS-en?
+beantwoordt. Daarnaast wordt er ook een inschatting gemaakt van de complexiteit van de implementatie. 
+
+De resultaten zullen in het hoofdstuk resultaten worden samengevat. Aan de hand van deze data zal in de conclusie de hoofdvraag worden beantwoord.
+
+ 
+Resultaten
+
+De Arduino RTOS documentatie is doorzocht op de verschillende functionaliteiten. In eerste instantie is er gezocht op de in de hoofdvraag genoemde mechanismen. Na verder onderzoek zijn hier nog [negen] extra functies bij gekomen. Deze zijn in tabel drie te zien.
+
+mailbox
+
+waitables
+
+task
+
+Message queue
+
+semaphore
+
+Threads
+
+Spinlock
+
+Scheduler
+
+
+Het opstellen van de lijst van mogelijke RTOS-en is gedaan aan de hand van de lijst van RTOS-en op wikipedia. Deze lijst heeft een beknopte samenvatting van kenmerken die gebruikt konden worden in het selectie proces. [RTOS lijst link vanuit wikipedia]
+
+De lijst is eerst gefilterd op de beschikbaarheid op het ARM platform. Binnen de lijst uit wikipedia staat ook of een systeem actief wordt onderhouden. Alleen de actief onderhouden systemen zijn verder beoordeeld. De lijst had geen informatie over de ondersteuning van C en C++ of over beschikbare informatie. Door middel van het onderzoeken van de overgebleven systemen is er een lijst opgesteld van potentiele rtos-en. Tabel 2 is een overzicht van deze 10 RTOS-en.
+ 
+[EcosPro 
+ 
+uKOS 
+ 
+cocoOS 
+ 
+Distortos 
+ 
+FreeRTOS 
+ 
+FunkOS 
+ 
+scmRTOS 
+ 
+NuttX 
+ 
+StratifyOS 
+ 
+mbed OS]
+
+
+[tabel 4]
+ 
+De resulaten van het functionaliteiten onderzoek zijn samengevoegd met de lijst van beschrikbare RTOS-en (zie tabel vier). Van de tien onderzochte systemen is er slecht 1 die alle functies beschikt, Nuttx. [Als er slechts gekeken wordt naar de functionaliteiten die beschikbaar zijn in het arduino RTOS, is ook scmRT OS een geschikte kandidaat.]
+
+
+Aan de hand van de resultaten in tabel vier, zijn er [10] functionaliteiten gevonden die missen. In tabel 5 is te zien welke functionaliteiten dit zijn en welke systemen ze missen.
+
+[tabel 5]
+
+De missende functionaliteiten kunnen gemimplementeerd worden door andere functionaliteiten te gebruiken. Voor elk van de functionaliteiten is in tabel 6 te zien hoe deze geimplementeerd kunnen worden.
+
+
+Conclusie
+
+Er zijn op dit moment [heel veel] RTOS-en. Veel hiervan voldoen niet aan de criteria van het Devices project. Een duidelijk overzicht van systemen is er niet en documentatie is regelmatig afwezig. Na [heel veel] bekeken te hebben via de wikipedia lijst zijn er twee systemen uitgekomen die voldoen aan alle benodigde functionaliteiten, NuttX en scmRT OS. Een keuze voor een RTOS hoeft echter niet te vallen op een van deze twee. Het is mogelijk om missende functionaliteiten eenvoudig te implementeren in een van de andere acht systemen. De conclusie van dit rapport is echter wel dat het antwoord op de hoofdvraag, 
+
+‘Met behulp van welk open source realtime operating system kunnen tasks en de concurrency mechanismen, pool, channel, flag(group), clock timer en mutex, zoals aangeboden door het Arduino RTOS, met zo weinig mogelijk overhead worden gerealiseerd?’ 
+
+is NuttX. Naast dat deze alle functionaliteiten bezit, is het uitgebreider dan bijvoorbeeld NuttX of het Arduino RTOS zelf.
+
+Discussie
+
+In dit rapport is voornamelijk gekeken naar functionaliteiten. Een van de vervolgstappen die bij dit marktonderzoek gedaan kan worden is het uitbreiden van zowel de non-functionele eisen als benodigde functionaliteiten. 
+
+Met het oog op non-functionele eisen is performance heel erg significant. NuttX is een uitgebreid systeem en de vraag is of de omvang van het pakket niet een negatieve invloed heeft op de werking van het realtime systeem. 
+
+Qua functionele eisen is het interessant om te kijken hoe bepaalde concurrency mechanismen worden geimplementeerd. Het is mogelijk dat bepaalde implementatie niet ideaal aansluiten op de door deze projectgroep geschreven code, of op de HWLIB van de hogeschool Utrecht. Het kan dat een systeem met meerdere missende functionaliteiten beter aansluit door andere functionaliteiten.
+
+Daarnaast is het de vraag of de functionaliteiten die het Arduino RTOS biedt, optimaal zijn voor het opzetten van een lasergamesysteem. Een van de functionaliteiten van het NuttX is een spinlock. Binnen het te bouwen systeem is een spinlock een interessante toevoeging. Een vervolg onderzoek is mogelijk om te kijken wat de functionaliteiten zijn die nodig zijn voor een lasergame systeem.
