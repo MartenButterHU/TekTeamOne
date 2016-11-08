@@ -2,7 +2,92 @@
 <Session Name="C:\Users\Arco Gelderblom\Documents\TekTeamOne-GitHub\TekTeamOne\Software\FinalVersion\__codelite.workspace">
   <int Value="0" Name="m_selectedTab"/>
   <wxString Value="C:\Users\Arco Gelderblom\Documents\TekTeamOne-GitHub\TekTeamOne\Software\FinalVersion\__codelite.workspace" Name="m_workspaceName"/>
-  <TabInfoArray Name="TabInfoArray"/>
+  <TabInfoArray Name="TabInfoArray">
+    <TabInfo>
+      <wxString Value="C:\Users\Arco Gelderblom\Documents\TekTeamOne-GitHub\TekTeamOne\Software\FinalVersion\Lasertag\main.cpp" Name="FileName"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="19" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="C:\Users\Arco Gelderblom\Documents\TekTeamOne-GitHub\TekTeamOne\Software\FinalVersion\Lasertag\GameData.hpp" Name="FileName"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="0" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="C:\Users\Arco Gelderblom\Documents\TekTeamOne-GitHub\TekTeamOne\Software\FinalVersion\Lasertag\GameData.cpp" Name="FileName"/>
+      <int Value="12" Name="FirstVisibleLine"/>
+      <int Value="51" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="C:\Users\Arco Gelderblom\Documents\TekTeamOne-GitHub\TekTeamOne\Software\FinalVersion\Lasertag\OLEDControl.hpp" Name="FileName"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="12" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="C:\Users\Arco Gelderblom\Documents\TekTeamOne-GitHub\TekTeamOne\Software\FinalVersion\Lasertag\OLEDControl.cpp" Name="FileName"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="3" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="C:\Users\Arco Gelderblom\Documents\TekTeamOne-GitHub\TekTeamOne\Software\FinalVersion\Lasertag\GameTimeControl.cpp" Name="FileName"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="17" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="C:\Users\Arco Gelderblom\Documents\TekTeamOne-GitHub\TekTeamOne\Software\FinalVersion\Lasertag\GameTimeControl.hpp" Name="FileName"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="18" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="C:\Users\Arco Gelderblom\Documents\TekTeamOne-GitHub\TekTeamOne\Software\FinalVersion\Lasertag\Keypad.cpp" Name="FileName"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="12" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="C:\Users\Arco Gelderblom\Documents\TekTeamOne-GitHub\TekTeamOne\Software\FinalVersion\Lasertag\Keypad.hpp" Name="FileName"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="10" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="C:\Users\Arco Gelderblom\Documents\TekTeamOne-GitHub\TekTeamOne\Software\FinalVersion\Lasertag\KeypadControl.hpp" Name="FileName"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="8" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="C:\Users\Arco Gelderblom\Documents\TekTeamOne-GitHub\TekTeamOne\Software\FinalVersion\Lasertag\KeypadControl.cpp" Name="FileName"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="0" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="C:\Users\Arco Gelderblom\Documents\TekTeamOne-GitHub\TekTeamOne\Software\FinalVersion\Lasertag\Makefile" Name="FileName"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="5" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+  </TabInfoArray>
   <SerializedObject Name="m_breakpoints">
     <long Value="0" Name="Count"/>
   </SerializedObject>

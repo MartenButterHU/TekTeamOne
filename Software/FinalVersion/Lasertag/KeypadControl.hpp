@@ -1,12 +1,12 @@
 #ifndef KEYPADCONTROL_HPP
 #define KEYPADCONTROL_HPP
 
+#include "hwlib.hpp"
+#include "rtos.hpp"
+
 class KeypadControl
 {
 public:
-	KeypadControl();
-	~KeypadControl();
-
 };
 
 #endif // KEYPADCONTROL_HPP

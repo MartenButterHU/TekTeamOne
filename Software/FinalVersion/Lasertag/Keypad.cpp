@@ -1,10 +1,12 @@
 #include "Keypad.hpp"
 
-Keypad::Keypad()
-{
-}
+Keypad::Keypad( hwlib::istream & keypadstream ):
+	keypadstream( keypadstream )
+{}
 
-Keypad::~Keypad()
-{
-}
-
+//	while(1) {
+//		bool c = keypadstream.char_available();
+//		if ( c ) {
+//			listener.keyPressed( keypadstream );
+//		}
+//	}

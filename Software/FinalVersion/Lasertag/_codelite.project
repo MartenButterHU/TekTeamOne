@@ -31,6 +31,16 @@
   <VirtualDirectory Name="source">
     <File Name="main.cpp"/>
     <File Name="Makefile"/>
+    <File Name="Keypad.cpp"/>
+    <File Name="Keypad.hpp"/>
+    <File Name="GameData.cpp"/>
+    <File Name="GameData.hpp"/>
+    <File Name="OLEDControl.hpp"/>
+    <File Name="OLEDControl.cpp"/>
+    <File Name="GameTimeControl.cpp"/>
+    <File Name="GameTimeControl.hpp"/>
+    <File Name="KeypadControl.hpp"/>
+    <File Name="KeypadControl.cpp"/>
   </VirtualDirectory>
   <Settings Type="Dynamic Library">
     <GlobalSettings>
@@ -43,7 +53,7 @@
       <ResourceCompiler Options=""/>
     </GlobalSettings>
     <Configuration Name="Debug" CompilerType="gnu g++" DebuggerType="GNU gdb debugger" Type="Executable" BuildCmpWithGlobalSettings="append" BuildLnkWithGlobalSettings="append" BuildResWithGlobalSettings="append">
-       <Compiler Options="-g;-O0;-std=c++11" C_Options="-g;-O0;-Wall" Assembler="" Required="yes" PreCompiledHeader="" PCHInCommandLine="no" PCHFlags="" PCHFlagsPolicy="0">
+      <Compiler Options="-g;-O0;-std=c++11" C_Options="-g;-O0;-Wall" Assembler="" Required="yes" PreCompiledHeader="" PCHInCommandLine="no" PCHFlags="" PCHFlagsPolicy="0">
         <IncludePath Value=".;../Catch/include"/>
       </Compiler>
       <Linker Options="" Required="yes"/>
@@ -119,4 +129,4 @@
       </Completion>
     </Configuration>
   </Settings>
-</CodeLite_Project>   
+</CodeLite_Project>

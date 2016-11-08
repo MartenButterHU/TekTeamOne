@@ -30,15 +30,15 @@ int main( void ){
    auto led = target::pin_out( target::pins::led );
    (void)led;
 
-   auto out0 = target::pin_oc( target::pins::a0 );
-   auto out1 = target::pin_oc( target::pins::a1 );
-   auto out2 = target::pin_oc( target::pins::a2 );
-   auto out3 = target::pin_oc( target::pins::a3 );
+   auto out0 = target::pin_oc( target::pins::a7 );
+   auto out1 = target::pin_oc( target::pins::a6 );
+   auto out2 = target::pin_oc( target::pins::a5 );
+   auto out3 = target::pin_oc( target::pins::a4 );
 
-   auto in0  = target::pin_in( target::pins::a4 );
-   auto in1  = target::pin_in( target::pins::a5 );
-   auto in2  = target::pin_in( target::pins::a6 );
-   auto in3  = target::pin_in( target::pins::a7 );
+   auto in0  = target::pin_in( target::pins::a3 );
+   auto in1  = target::pin_in( target::pins::a2 );
+   auto in2  = target::pin_in( target::pins::a1 );
+   auto in3  = target::pin_in( target::pins::a0 );
    
    auto out_port = hwlib::port_oc_from_pins( out0, out1, out2, out3 );
    auto in_port  = hwlib::port_in_from_pins( in0,  in1,  in2,  in3  );

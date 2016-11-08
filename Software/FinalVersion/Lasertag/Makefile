@@ -9,10 +9,10 @@
 #############################################################################
 
 # source files in this project (main.cpp is automatically assumed)
-SOURCES :=
+SOURCES := OLEDControl.cpp GameData.cpp GameTimeControl.cpp
 
 # header files in this project
-HEADERS :=
+HEADERS := OLEDControl.hpp GameData.hpp GameTimeControl.hpp
 
 # other places to look for files for this project
 SEARCH  := 

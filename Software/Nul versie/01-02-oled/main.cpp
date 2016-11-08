@@ -10,8 +10,8 @@ int main( void ){
    
    namespace target = hwlib::target;
    
-   auto scl = target::pin_oc( target::pins::scl );
-   auto sda = target::pin_oc( target::pins::sda );
+   auto scl = target::pin_oc( target::pins::sda );
+   auto sda = target::pin_oc( target::pins::scl );
    
    // The OLED display is connected in a very funny way:
    // the I2C pins are reversed, and two GPIO pins are
@@ -19,11 +19,11 @@ int main( void ){
    // This works, and makes it very easy to connect the LCD,
    // but don't take this as an advice to connect peripherals is this way
    // unless you know very well what you are doing.
-   auto i2c_bus = hwlib::i2c_bus_bit_banged_scl_sda( sda, scl );
-   auto pin_gnd = target::pin_out( target::pins::d19 );
-   pin_gnd.set( 1 );
-   auto pin_vcc = target::pin_out( target::pins::d18 );
-   pin_vcc.set( 0 );
+   auto i2c_bus = hwlib::i2c_bus_bit_banged_scl_sda( scl, sda );
+   auto pin_gnd = target::pin_out( target::pins::d18 );
+   pin_gnd.set( 0 );
+   auto pin_vcc = target::pin_out( target::pins::d19 );
+   pin_vcc.set( 1 );
    
    // use the buffered version
    auto oled = hwlib::glcd_oled_buffered( i2c_bus, 0x3c );  
@@ -52,7 +52,7 @@ int main( void ){
       << "==============\n"
       << "user: Wouter\n"
       << "score: " << 42 << "\n"
-      << "==============\n";     
+      << "==============\n";
       
    auto t1 = hwlib::now_us(); 
    oled.flush();
@@ -61,7 +61,7 @@ int main( void ){
       
    int n = 0;   
    for(;;){
-      hwlib::wait_ms( 1000 );
+      hwlib::wait_ms(1000);
       d1 << "\f" << ++n;
       d2 << "\t0502" << ": " << n + 42;
       oled.flush();
