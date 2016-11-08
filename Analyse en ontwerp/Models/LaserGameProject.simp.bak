@@ -243,7 +243,7 @@
       </counter>
       <counter>
         <item-type type-id="" type="AbstractElementGroup" />
-        <value>108</value>
+        <value>34</value>
       </counter>
     </entity-ids>
     <diagrams>
@@ -2657,7 +2657,7 @@
           </item>
         </layer>
       </diagram>
-      <diagram type="uml-statechart" id="p638027ab9b7443f2ae97815b36e2541b_285047593" name="20161025 LaserGunController STD" order-index="13" overview-order-index="10" show-id="false" show-name="true" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-special-indicators="false" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-description="false" show-field-description="false" auto-routed-paths="false" view-location="-319,-286">
+      <diagram type="uml-statechart" id="p638027ab9b7443f2ae97815b36e2541b_285047593" name="20161025 LaserGunController STD" order-index="13" overview-order-index="10" show-id="false" show-name="true" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-special-indicators="false" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-description="false" show-field-description="false" auto-routed-paths="false" view-location="-337,-286">
         <style>
           <background-color index="1" color="#FFFFFFFF" />
           <background-color index="2" color="#FFFFFFFF" />
@@ -2902,7 +2902,7 @@
             <layout ax="938.7737" ay="181.125" awidth="203.3754" aheight="63.42593" x="938.7737" y="181.125" width="203.3754" height="63.42593" />
           </item>
           <item id="di644538954432510514" iid="75a27d3a887a48469ec4bd48a5a978ea" creation-date="10/31/2016 15:23:30" order-index="34" type="relation">
-            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="1040" y1="153" x2="1040" y2="181" start-border-pos="0.625654224629584" end-border-pos="0.124432846828691" name-position="19,-2">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="1040" y1="153" x2="1040" y2="181" start-border-pos="0.625654257251056" end-border-pos="0.124432846828691" name-position="19,-2">
               <points>
                 <point x="1040" y="153" />
                 <point x="1040" y="181" />
@@ -4058,7 +4058,7 @@ hoe werkt uart_putc(char c) van hwlib, wat doet de pc? </comment>
           </item>
         </layer>
       </diagram>
-      <diagram type="uml-statechart" id="peafe3976c21542b18263d86a9698e1ad_646182457" name="20161101 GameLeaderController" order-index="25" overview-order-index="32" show-id="false" show-name="true" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-special-indicators="false" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-description="false" show-field-description="false" auto-routed-paths="false" view-location="0,-29">
+      <diagram type="uml-statechart" id="peafe3976c21542b18263d86a9698e1ad_646182457" name="20161101 GameLeaderController" order-index="25" overview-order-index="32" show-id="false" show-name="true" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-special-indicators="false" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-description="false" show-field-description="false" auto-routed-paths="false" view-location="0,61">
         <style>
           <background-color index="1" color="#FFFFFFFF" />
           <background-color index="2" color="#FFFFFFFF" />
