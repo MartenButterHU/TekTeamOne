@@ -1,10 +1,10 @@
-#include "RunGame.hpp"
+#include "RunGameState.hpp"
 
-RunGame::RunGame()
+RunGameState::RunGameState()
 {
 }
 
-RunGame::~RunGame()
+RunGameState::~RunGameState()
 {
 }
 
