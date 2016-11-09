@@ -304,6 +304,288 @@ Discarded input sections
                 0x00000000       0x70 GameTimeControl.o
  .data._ZN5hwlib12pin_oc_dummyE
                 0x00000000        0x4 GameTimeControl.o
+ .group         0x00000000        0x8 Keypad.o
+ .group         0x00000000        0x8 Keypad.o
+ .group         0x00000000        0x8 Keypad.o
+ .group         0x00000000        0x8 Keypad.o
+ .group         0x00000000        0x8 Keypad.o
+ .group         0x00000000        0x8 Keypad.o
+ .group         0x00000000        0x8 Keypad.o
+ .group         0x00000000        0x8 Keypad.o
+ .group         0x00000000        0x8 Keypad.o
+ .group         0x00000000        0x8 Keypad.o
+ .group         0x00000000        0x8 Keypad.o
+ .group         0x00000000        0x8 Keypad.o
+ .group         0x00000000        0x8 Keypad.o
+ .group         0x00000000        0x8 Keypad.o
+ .group         0x00000000        0x8 Keypad.o
+ .group         0x00000000        0x8 Keypad.o
+ .group         0x00000000        0x8 Keypad.o
+ .group         0x00000000        0x8 Keypad.o
+ .group         0x00000000        0x8 Keypad.o
+ .group         0x00000000        0x8 Keypad.o
+ .group         0x00000000        0x8 Keypad.o
+ .group         0x00000000        0x8 Keypad.o
+ .group         0x00000000        0x8 Keypad.o
+ .group         0x00000000        0x8 Keypad.o
+ .text          0x00000000        0x0 Keypad.o
+ .data          0x00000000        0x0 Keypad.o
+ .bss           0x00000000        0x0 Keypad.o
+ .text._ZN5hwlib19_pin_in_dummy_class3getEv
+                0x00000000        0x4 Keypad.o
+ .text._ZN5hwlib20_pin_out_dummy_class3setEb
+                0x00000000        0x2 Keypad.o
+ .text._ZN5hwlib23_pin_in_out_dummy_class3setEb
+                0x00000000        0x2 Keypad.o
+ .text._ZN5hwlib23_pin_in_out_dummy_class3getEv
+                0x00000000        0x4 Keypad.o
+ .text._ZN5hwlib23_pin_in_out_dummy_class19direction_set_inputEv
+                0x00000000        0x2 Keypad.o
+ .text._ZN5hwlib23_pin_in_out_dummy_class20direction_set_outputEv
+                0x00000000        0x2 Keypad.o
+ .text._ZN5hwlib19_pin_oc_dummy_class3setEb
+                0x00000000        0x2 Keypad.o
+ .text._ZN5hwlib19_pin_oc_dummy_class3getEv
+                0x00000000        0x4 Keypad.o
+ .text._ZN5hwlib7ostream5flushEv
+                0x00000000        0x2 Keypad.o
+ .text._ZN5hwlib20cout_using_uart_putc4putcEc
+                0x00000000        0x6 Keypad.o
+ .text._ZN5hwlib19cin_using_uart_getc4getcEv
+                0x00000000        0x4 Keypad.o
+ .text._ZN5hwlib19cin_using_uart_getc14char_availableEv
+                0x00000000        0x4 Keypad.o
+ .text._ZN5hwlib6window5writeENS_8locationENS_5colorE
+                0x00000000       0x3e Keypad.o
+ .text._ZN5hwlib4line4drawERNS_6windowE
+                0x00000000       0xa4 Keypad.o
+ .text._ZN5hwlib6circle4drawERNS_6windowE
+                0x00000000      0x2ec Keypad.o
+ .text._ZN5hwlib5blinkERNS_7pin_outEi
+                0x00000000       0x28 Keypad.o
+ .text._ZN5hwlib4kittERNS_11port_in_outEi
+                0x00000000       0x54 Keypad.o
+ .text._ZN5hwlib4kittERNS_8port_outEi
+                0x00000000       0x4e Keypad.o
+ .text._ZN5hwlib4kittERNS_7port_ocEi
+                0x00000000       0x4e Keypad.o
+ .text._ZN5hwlib4randEv
+                0x00000000       0x20 Keypad.o
+ .text._ZN5hwlib15random_in_rangeEjj
+                0x00000000       0x1a Keypad.o
+ .text._ZN5hwlib21graphics_random_linesERNS_6windowE
+                0x00000000       0xe8 Keypad.o
+ .text._ZN5hwlib23graphics_random_circlesERNS_6windowE
+                0x00000000       0x8c Keypad.o
+ .text._ZN6sam3xa10SystemInitEv
+                0x00000000       0x88 Keypad.o
+ .text._ZN3due8pin_infoENS_4pinsE
+                0x00000000       0x20 Keypad.o
+ .text._ZN3due11ad_pin_infoENS_7ad_pinsE
+                0x00000000       0x1c Keypad.o
+ .text._ZN3due11ad_seq_infoEi
+                0x00000000       0x20 Keypad.o
+ .text._ZN3due14port_registersEi
+                0x00000000       0x48 Keypad.o
+ .text._ZN3due9now_ticksEv
+                0x00000000       0x70 Keypad.o
+ .text._ZN3due6now_usEv
+                0x00000000       0x10 Keypad.o
+ .text._ZN5hwlib9now_ticksEv
+                0x00000000        0x8 Keypad.o
+ .text._ZN5hwlib24uart_putc_bit_banged_pinEcRNS_7pin_outE
+                0x00000000       0xc8 Keypad.o
+ .text._ZN5hwlib24uart_getc_bit_banged_pinERNS_6pin_inE
+                0x00000000       0xaa Keypad.o
+ .text._ZN5hwlib6now_usEv
+                0x00000000        0x8 Keypad.o
+ .rodata._ZTVN5hwlib19_pin_in_dummy_classE
+                0x00000000        0xc Keypad.o
+ .rodata._ZTVN5hwlib20_pin_out_dummy_classE
+                0x00000000        0xc Keypad.o
+ .rodata._ZTVN5hwlib23_pin_in_out_dummy_classE
+                0x00000000       0x18 Keypad.o
+ .rodata._ZTVN5hwlib19_pin_oc_dummy_classE
+                0x00000000       0x10 Keypad.o
+ .rodata._ZTVN5hwlib20cout_using_uart_putcE
+                0x00000000       0x10 Keypad.o
+ .rodata._ZTVN5hwlib19cin_using_uart_getcE
+                0x00000000       0x10 Keypad.o
+ .rodata._ZTVN5hwlib4lineE
+                0x00000000        0xc Keypad.o
+ .rodata._ZTVN5hwlib6circleE
+                0x00000000        0xc Keypad.o
+ .data._ZN5hwlib3cinE
+                0x00000000        0x4 Keypad.o
+ .data._ZN5hwlib12pin_in_dummyE
+                0x00000000        0x4 Keypad.o
+ .data._ZN5hwlib16pin_in_out_dummyE
+                0x00000000        0x4 Keypad.o
+ .bss._ZZN3due9now_ticksEvE4high
+                0x00000000        0x8 Keypad.o
+ .data._ZN5hwlib12pin_oc_dummyE
+                0x00000000        0x4 Keypad.o
+ .bss._ZZN5hwlib4randEvE1n
+                0x00000000        0x4 Keypad.o
+ .data._ZN5hwlib13pin_out_dummyE
+                0x00000000        0x4 Keypad.o
+ .data._ZN6sam3xa15SystemCoreClockE
+                0x00000000        0x4 Keypad.o
+ .rodata._ZZN3due11ad_pin_infoENS_7ad_pinsEE17ad_pin_info_array
+                0x00000000        0xc Keypad.o
+ .rodata.str1.1
+                0x00000000       0x17 Keypad.o
+ .bss._ZZN3due9now_ticksEvE8last_low
+                0x00000000        0x4 Keypad.o
+ .bss._ZZN3due9now_ticksEvE9init_done
+                0x00000000        0x1 Keypad.o
+ .rodata._ZZN3due8pin_infoENS_4pinsEE14pin_info_array
+                0x00000000       0xa4 Keypad.o
+ .rodata._ZZN3due11ad_seq_infoEiE12ad_seq_array
+                0x00000000       0x70 Keypad.o
+ .data._ZN5hwlib4coutE
+                0x00000000       0x14 Keypad.o
+ .group         0x00000000        0x8 KeypadControl.o
+ .group         0x00000000        0x8 KeypadControl.o
+ .group         0x00000000        0x8 KeypadControl.o
+ .group         0x00000000        0x8 KeypadControl.o
+ .group         0x00000000        0x8 KeypadControl.o
+ .group         0x00000000        0x8 KeypadControl.o
+ .group         0x00000000        0x8 KeypadControl.o
+ .group         0x00000000        0x8 KeypadControl.o
+ .group         0x00000000        0x8 KeypadControl.o
+ .group         0x00000000        0x8 KeypadControl.o
+ .group         0x00000000        0x8 KeypadControl.o
+ .group         0x00000000        0x8 KeypadControl.o
+ .group         0x00000000        0x8 KeypadControl.o
+ .group         0x00000000        0x8 KeypadControl.o
+ .group         0x00000000        0x8 KeypadControl.o
+ .group         0x00000000        0x8 KeypadControl.o
+ .group         0x00000000        0x8 KeypadControl.o
+ .group         0x00000000        0x8 KeypadControl.o
+ .group         0x00000000        0x8 KeypadControl.o
+ .group         0x00000000        0x8 KeypadControl.o
+ .group         0x00000000        0x8 KeypadControl.o
+ .group         0x00000000        0x8 KeypadControl.o
+ .group         0x00000000        0x8 KeypadControl.o
+ .group         0x00000000        0x8 KeypadControl.o
+ .text          0x00000000        0x0 KeypadControl.o
+ .data          0x00000000        0x0 KeypadControl.o
+ .bss           0x00000000        0x0 KeypadControl.o
+ .text._ZN5hwlib19_pin_in_dummy_class3getEv
+                0x00000000        0x4 KeypadControl.o
+ .text._ZN5hwlib20_pin_out_dummy_class3setEb
+                0x00000000        0x2 KeypadControl.o
+ .text._ZN5hwlib23_pin_in_out_dummy_class3setEb
+                0x00000000        0x2 KeypadControl.o
+ .text._ZN5hwlib23_pin_in_out_dummy_class3getEv
+                0x00000000        0x4 KeypadControl.o
+ .text._ZN5hwlib23_pin_in_out_dummy_class19direction_set_inputEv
+                0x00000000        0x2 KeypadControl.o
+ .text._ZN5hwlib23_pin_in_out_dummy_class20direction_set_outputEv
+                0x00000000        0x2 KeypadControl.o
+ .text._ZN5hwlib19_pin_oc_dummy_class3setEb
+                0x00000000        0x2 KeypadControl.o
+ .text._ZN5hwlib19_pin_oc_dummy_class3getEv
+                0x00000000        0x4 KeypadControl.o
+ .text._ZN5hwlib7ostream5flushEv
+                0x00000000        0x2 KeypadControl.o
+ .text._ZN5hwlib20cout_using_uart_putc4putcEc
+                0x00000000        0x6 KeypadControl.o
+ .text._ZN5hwlib19cin_using_uart_getc4getcEv
+                0x00000000        0x4 KeypadControl.o
+ .text._ZN5hwlib19cin_using_uart_getc14char_availableEv
+                0x00000000        0x4 KeypadControl.o
+ .text._ZN5hwlib6window5writeENS_8locationENS_5colorE
+                0x00000000       0x3e KeypadControl.o
+ .text._ZN5hwlib4line4drawERNS_6windowE
+                0x00000000       0xa4 KeypadControl.o
+ .text._ZN5hwlib6circle4drawERNS_6windowE
+                0x00000000      0x2ec KeypadControl.o
+ .text._ZN5hwlib5blinkERNS_7pin_outEi
+                0x00000000       0x28 KeypadControl.o
+ .text._ZN5hwlib4kittERNS_11port_in_outEi
+                0x00000000       0x54 KeypadControl.o
+ .text._ZN5hwlib4kittERNS_8port_outEi
+                0x00000000       0x4e KeypadControl.o
+ .text._ZN5hwlib4kittERNS_7port_ocEi
+                0x00000000       0x4e KeypadControl.o
+ .text._ZN5hwlib4randEv
+                0x00000000       0x20 KeypadControl.o
+ .text._ZN5hwlib15random_in_rangeEjj
+                0x00000000       0x1a KeypadControl.o
+ .text._ZN5hwlib21graphics_random_linesERNS_6windowE
+                0x00000000       0xe8 KeypadControl.o
+ .text._ZN5hwlib23graphics_random_circlesERNS_6windowE
+                0x00000000       0x8c KeypadControl.o
+ .text._ZN6sam3xa10SystemInitEv
+                0x00000000       0x88 KeypadControl.o
+ .text._ZN3due8pin_infoENS_4pinsE
+                0x00000000       0x20 KeypadControl.o
+ .text._ZN3due11ad_pin_infoENS_7ad_pinsE
+                0x00000000       0x1c KeypadControl.o
+ .text._ZN3due11ad_seq_infoEi
+                0x00000000       0x20 KeypadControl.o
+ .text._ZN3due14port_registersEi
+                0x00000000       0x48 KeypadControl.o
+ .text._ZN3due9now_ticksEv
+                0x00000000       0x70 KeypadControl.o
+ .text._ZN3due6now_usEv
+                0x00000000       0x10 KeypadControl.o
+ .text._ZN5hwlib9now_ticksEv
+                0x00000000        0x8 KeypadControl.o
+ .text._ZN5hwlib24uart_putc_bit_banged_pinEcRNS_7pin_outE
+                0x00000000       0xc8 KeypadControl.o
+ .text._ZN5hwlib24uart_getc_bit_banged_pinERNS_6pin_inE
+                0x00000000       0xaa KeypadControl.o
+ .text._ZN5hwlib6now_usEv
+                0x00000000        0x8 KeypadControl.o
+ .rodata._ZTVN5hwlib19_pin_in_dummy_classE
+                0x00000000        0xc KeypadControl.o
+ .rodata._ZTVN5hwlib20_pin_out_dummy_classE
+                0x00000000        0xc KeypadControl.o
+ .rodata._ZTVN5hwlib23_pin_in_out_dummy_classE
+                0x00000000       0x18 KeypadControl.o
+ .rodata._ZTVN5hwlib19_pin_oc_dummy_classE
+                0x00000000       0x10 KeypadControl.o
+ .rodata._ZTVN5hwlib20cout_using_uart_putcE
+                0x00000000       0x10 KeypadControl.o
+ .rodata._ZTVN5hwlib19cin_using_uart_getcE
+                0x00000000       0x10 KeypadControl.o
+ .rodata._ZTVN5hwlib4lineE
+                0x00000000        0xc KeypadControl.o
+ .rodata._ZTVN5hwlib6circleE
+                0x00000000        0xc KeypadControl.o
+ .data._ZN5hwlib3cinE
+                0x00000000        0x4 KeypadControl.o
+ .data._ZN5hwlib12pin_in_dummyE
+                0x00000000        0x4 KeypadControl.o
+ .data._ZN5hwlib16pin_in_out_dummyE
+                0x00000000        0x4 KeypadControl.o
+ .bss._ZZN3due9now_ticksEvE4high
+                0x00000000        0x8 KeypadControl.o
+ .data._ZN5hwlib12pin_oc_dummyE
+                0x00000000        0x4 KeypadControl.o
+ .bss._ZZN5hwlib4randEvE1n
+                0x00000000        0x4 KeypadControl.o
+ .data._ZN5hwlib13pin_out_dummyE
+                0x00000000        0x4 KeypadControl.o
+ .data._ZN6sam3xa15SystemCoreClockE
+                0x00000000        0x4 KeypadControl.o
+ .rodata._ZZN3due11ad_pin_infoENS_7ad_pinsEE17ad_pin_info_array
+                0x00000000        0xc KeypadControl.o
+ .rodata.str1.1
+                0x00000000       0x17 KeypadControl.o
+ .bss._ZZN3due9now_ticksEvE8last_low
+                0x00000000        0x4 KeypadControl.o
+ .bss._ZZN3due9now_ticksEvE9init_done
+                0x00000000        0x1 KeypadControl.o
+ .rodata._ZZN3due8pin_infoENS_4pinsEE14pin_info_array
+                0x00000000       0xa4 KeypadControl.o
+ .rodata._ZZN3due11ad_seq_infoEiE12ad_seq_array
+                0x00000000       0x70 KeypadControl.o
+ .data._ZN5hwlib4coutE
+                0x00000000       0x14 KeypadControl.o
  .group         0x00000000        0x8 hwlib.o
  .group         0x00000000        0x8 hwlib.o
  .group         0x00000000        0x8 hwlib.o
@@ -943,6 +1225,8 @@ LOAD c:/program files (x86)/gnu tools arm embedded/5.3 2016q1/bin/../lib/gcc/arm
 LOAD OLEDControl.o
 LOAD GameData.o
 LOAD GameTimeControl.o
+LOAD Keypad.o
+LOAD KeypadControl.o
 LOAD hwlib.o
 LOAD coroutine.o
 LOAD switch_to.o
@@ -1622,6 +1906,8 @@ END GROUP
                                  0x6f (size before relaxing)
  .comment       0x0000006e       0x6f GameData.o
  .comment       0x0000006e       0x6f GameTimeControl.o
+ .comment       0x0000006e       0x6f Keypad.o
+ .comment       0x0000006e       0x6f KeypadControl.o
  .comment       0x0000006e       0x6f hwlib.o
  .comment       0x0000006e       0x6f coroutine.o
  .comment       0x0000006e       0x6f rtos.o
@@ -1664,29 +1950,33 @@ END GROUP
  .ARM.attributes
                 0x00000066       0x33 GameTimeControl.o
  .ARM.attributes
-                0x00000099       0x33 hwlib.o
+                0x00000099       0x33 Keypad.o
  .ARM.attributes
-                0x000000cc       0x33 coroutine.o
+                0x000000cc       0x33 KeypadControl.o
  .ARM.attributes
-                0x000000ff       0x21 switch_to.o
+                0x000000ff       0x33 hwlib.o
  .ARM.attributes
-                0x00000120       0x33 rtos.o
+                0x00000132       0x33 coroutine.o
  .ARM.attributes
-                0x00000153       0x33 main.o
+                0x00000165       0x21 switch_to.o
  .ARM.attributes
-                0x00000186       0x33 bmptk_cortex.o
+                0x00000186       0x33 rtos.o
  .ARM.attributes
-                0x000001b9       0x33 bmptk_heap_bmptk.o
+                0x000001b9       0x33 main.o
  .ARM.attributes
-                0x000001ec       0x33 bmptk_fixed_size_stack.o
+                0x000001ec       0x33 bmptk_cortex.o
  .ARM.attributes
-                0x0000021f       0x1d c:/program files (x86)/gnu tools arm embedded/5.3 2016q1/bin/../lib/gcc/arm-none-eabi/5.3.1/armv7-m\libgcc.a(_aeabi_ldivmod.o)
+                0x0000021f       0x33 bmptk_heap_bmptk.o
  .ARM.attributes
-                0x0000023c       0x2d c:/program files (x86)/gnu tools arm embedded/5.3 2016q1/bin/../lib/gcc/arm-none-eabi/5.3.1/armv7-m\libgcc.a(_udivmoddi4.o)
+                0x00000252       0x33 bmptk_fixed_size_stack.o
  .ARM.attributes
-                0x00000269       0x1d c:/program files (x86)/gnu tools arm embedded/5.3 2016q1/bin/../lib/gcc/arm-none-eabi/5.3.1/armv7-m\libgcc.a(_dvmd_tls.o)
+                0x00000285       0x1d c:/program files (x86)/gnu tools arm embedded/5.3 2016q1/bin/../lib/gcc/arm-none-eabi/5.3.1/armv7-m\libgcc.a(_aeabi_ldivmod.o)
  .ARM.attributes
-                0x00000286       0x1b c:/program files (x86)/gnu tools arm embedded/5.3 2016q1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv7-m\libc.a(lib_a-memcpy.o)
+                0x000002a2       0x2d c:/program files (x86)/gnu tools arm embedded/5.3 2016q1/bin/../lib/gcc/arm-none-eabi/5.3.1/armv7-m\libgcc.a(_udivmoddi4.o)
+ .ARM.attributes
+                0x000002cf       0x1d c:/program files (x86)/gnu tools arm embedded/5.3 2016q1/bin/../lib/gcc/arm-none-eabi/5.3.1/armv7-m\libgcc.a(_dvmd_tls.o)
+ .ARM.attributes
+                0x000002ec       0x1b c:/program files (x86)/gnu tools arm embedded/5.3 2016q1/bin/../lib/gcc/arm-none-eabi/5.3.1/../../../../arm-none-eabi/lib/armv7-m\libc.a(lib_a-memcpy.o)
 
 /DISCARD/
  *(.note.GNU-stack)

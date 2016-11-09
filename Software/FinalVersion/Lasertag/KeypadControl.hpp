@@ -3,10 +3,17 @@
 
 #include "hwlib.hpp"
 #include "rtos.hpp"
+#include "GameControl.hpp"
 
-class KeypadControl
+class KeypadControl : public rtos::task<>
 {
+private:
+	void main();
+	hwlib::keypad& keypad;
+	GameControl& gameControl;
 public:
+	KeypadControl( hwlib::keypad& keypad, GameControl& gameControl );
+	
 };
 
 #endif // KEYPADCONTROL_HPP
