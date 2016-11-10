@@ -8,7 +8,7 @@ class DebugState : public GameStateInterface {
 public:
 	DebugState();
 	void keyPressed( GameControlInterface* gameControl );
-	void commandReceived( GameControlInterface* gameControl );
+	void commandReadyToSend( GameControlInterface* gameControl );
 	void dataChanged( GameControlInterface* gameControl );
 };
 

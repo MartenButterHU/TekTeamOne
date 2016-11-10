@@ -29,8 +29,9 @@ public:
 	void updateScreen();
 	void sendCommand( COMMAND command );
 	void setCommand( COMMAND command );
-	void commandReceived();
 	COMMAND readCommand();
+	void commandReceived();
+	void commandReadyToSend();
 	void dataChanged();
 };
 

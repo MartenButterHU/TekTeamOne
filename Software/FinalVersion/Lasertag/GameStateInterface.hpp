@@ -6,7 +6,7 @@
 
 class GameStateInterface {
 public:
-	virtual void commandReceived( GameControlInterface* gameControl ) = 0;
+	virtual void commandReadyToSend( GameControlInterface* gameControl ) = 0;
 	virtual void keyPressed( GameControlInterface* gameControl ) = 0;
 	virtual void dataChanged( GameControlInterface* gameControl ) = 0;
 };

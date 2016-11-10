@@ -40,7 +40,7 @@ void OLEDControl::updateScreen() {
 		<< "Time: " << minutes << ":" << seconds << "\n"
 		<< "score: " << score << "\n"
 		<< "==============\n";
-	oled.flush();
+	//oled.flush();
 }
 
 void OLEDControl::dataChanged() {

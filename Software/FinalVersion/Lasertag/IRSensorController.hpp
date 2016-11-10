@@ -24,7 +24,7 @@ public:
 
 	//void IRSensorGet(char** commandString);
 	
-	COMMAND getSignal(); //<---WHAT ISHJ DEZAAH?!
+	COMMAND getSignal();
 	void storeSignal();
 
 };

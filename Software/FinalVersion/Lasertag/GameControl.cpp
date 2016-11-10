@@ -1,7 +1,8 @@
 #include "GameControl.hpp"
 
 void test( rtos::event& e, const char* string = "" ) {
-	e.print( hwlib::cout<<" ["<<string<<"] "<<'\n' );
+	e.print( hwlib::cout );
+	hwlib::cout<<" ["<<string<<"] "<<'\n';
 }
 
 GameControl::GameControl( OLEDControl& oled, IRLedController& irLedController, IRSensorController& irSensorController ) :
@@ -21,9 +22,7 @@ char GameControl::readKey() {
 }
 
 void GameControl::keyPressed( char c ) {
-	test( keyChannel );
 	keyChannel.write( c );
-	test( keyChannel );
 }
 
 void GameControl::updateScreen() {
@@ -31,20 +30,16 @@ void GameControl::updateScreen() {
 }
 
 void GameControl::sendCommand( COMMAND command ) {
-	test( commandChannel );
 	irLedController.writeCommand(static_cast<int>(command));
-	test( commandChannel );
 }
 
 void GameControl::setCommand( COMMAND command ) {
-	test( commandChannel );
 	commandChannel.write( command );
-	commandReceived();
-	test( commandChannel );
+	commandReadyToSend();
 }
 
-void GameControl::commandReceived() {
-	currentState.commandReceived( this );
+void GameControl::commandReadyToSend() {
+	currentState.commandReadyToSend( this );
 }
 
 COMMAND GameControl::readCommand() {
@@ -59,6 +54,7 @@ void GameControl::main() {
 	while(1) {
 		rtos::event w = wait( keyChannel + dataChangedFlag );
 		if ( w ==  keyChannel ) {
+			keyChannel.read(); // MEEGEVEN WELKE KEY ER GEREAD WORDT?
 			currentState.keyPressed( this );
 		}
 		else if ( w == dataChangedFlag ) {

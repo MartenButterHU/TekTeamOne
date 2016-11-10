@@ -729,8 +729,6 @@ Discarded input sections
  .group         0x00000000        0x8 OLEDControl.o
  .group         0x00000000        0x8 OLEDControl.o
  .group         0x00000000        0x8 OLEDControl.o
- .group         0x00000000        0x8 OLEDControl.o
- .group         0x00000000        0x8 OLEDControl.o
  .text          0x00000000        0x0 OLEDControl.o
  .data          0x00000000        0x0 OLEDControl.o
  .bss           0x00000000        0x0 OLEDControl.o
@@ -893,6 +891,7 @@ Discarded input sections
  .group         0x00000000        0x8 GameControl.o
  .group         0x00000000        0x8 GameControl.o
  .group         0x00000000        0x8 GameControl.o
+ .group         0x00000000        0x8 GameControl.o
  .text          0x00000000        0x0 GameControl.o
  .data          0x00000000        0x0 GameControl.o
  .bss           0x00000000        0x0 GameControl.o
@@ -966,6 +965,8 @@ Discarded input sections
                 0x00000000       0xaa GameControl.o
  .text._ZN5hwlib6now_usEv
                 0x00000000        0x8 GameControl.o
+ .text._Z4testRN4rtos5eventEPKc
+                0x00000000       0x34 GameControl.o
  .rodata._ZTVN5hwlib19_pin_in_dummy_classE
                 0x00000000        0xc GameControl.o
  .rodata._ZTVN5hwlib20_pin_out_dummy_classE
@@ -1583,6 +1584,8 @@ Discarded input sections
                 0x00000000       0x3c rtos.o
  .text._ZNK4rtos5eventneERKNS_8waitableE
                 0x00000000       0x1a rtos.o
+ .text._ZNK4rtos5event5printERN5hwlib7ostreamE
+                0x00000000       0x30 rtos.o
  .text._ZN4rtos5timer5startEm
                 0x00000000        0xe rtos.o
  .text._ZN4rtos8waitable5clearEv
@@ -1993,7 +1996,7 @@ END GROUP
                 [!provide]                PROVIDE (__ram_size, __ram_size)
                 [!provide]                PROVIDE (__ram_end, __ram_end)
 
-.text           0x00000000     0x43c8
+.text           0x00000000     0x4224
                 0x00000000                . = ALIGN (0x4)
                 0x00000000                __text_start = .
                 [!provide]                PROVIDE (__text_start, __text_start)
@@ -2066,689 +2069,680 @@ END GROUP
                 0x000004b2                rtos::channel<int, 16>::write(int)
  *fill*         0x000004ee        0x2 
  .text._ZN18IRSensorController11storeSignalEv
-                0x000004f0       0x98 IRSensorController.o
+                0x000004f0       0x9c IRSensorController.o
                 0x000004f0                IRSensorController::storeSignal()
  .text.startup._ZN18IRSensorController4mainEv
-                0x00000588       0x48 IRSensorController.o
-                0x00000588                IRSensorController::main()
+                0x0000058c       0x3a IRSensorController.o
+                0x0000058c                IRSensorController::main()
  .text._ZN8IRSensorC2ERN3due6pin_inE
-                0x000005d0        0x8 IRSensor.o
-                0x000005d0                IRSensor::IRSensor(due::pin_in&)
-                0x000005d0                IRSensor::IRSensor(due::pin_in&)
+                0x000005c6        0x8 IRSensor.o
+                0x000005c6                IRSensor::IRSensor(due::pin_in&)
+                0x000005c6                IRSensor::IRSensor(due::pin_in&)
  .text._ZN8IRSensor3getEv
-                0x000005d8        0x8 IRSensor.o
-                0x000005d8                IRSensor::get()
+                0x000005ce        0x8 IRSensor.o
+                0x000005ce                IRSensor::get()
+ *fill*         0x000005d6        0x2 
  .text._ZN3due8d2_36kHz3setEb
-                0x000005e0       0x18 IRLed.o
-                0x000005e0                due::d2_36kHz::set(bool)
+                0x000005d8       0x18 IRLed.o
+                0x000005d8                due::d2_36kHz::set(bool)
  .text._ZN5IRLedC2ERN3due8d2_36kHzE
-                0x000005f8        0xc IRLed.o
-                0x000005f8                IRLed::IRLed(due::d2_36kHz&)
-                0x000005f8                IRLed::IRLed(due::d2_36kHz&)
+                0x000005f0        0xc IRLed.o
+                0x000005f0                IRLed::IRLed(due::d2_36kHz&)
+                0x000005f0                IRLed::IRLed(due::d2_36kHz&)
  .text._ZN5IRLed2onEv
-                0x00000604       0x10 IRLed.o
-                0x00000604                IRLed::on()
+                0x000005fc       0x10 IRLed.o
+                0x000005fc                IRLed::on()
  .text._ZN5IRLed3offEv
-                0x00000614       0x10 IRLed.o
-                0x00000614                IRLed::off()
+                0x0000060c       0x10 IRLed.o
+                0x0000060c                IRLed::off()
  .text._ZN4rtos7channelIiLi10EE5clearEv
-                0x00000624       0x12 IRLedController.o
-                0x00000624                rtos::channel<int, 10>::clear()
- *fill*         0x00000636        0x2 
+                0x0000061c       0x12 IRLedController.o
+                0x0000061c                rtos::channel<int, 10>::clear()
+ *fill*         0x0000062e        0x2 
  .text._ZN15IRLedControllerC2ER5IRLed
-                0x00000638       0x90 IRLedController.o
-                0x00000638                IRLedController::IRLedController(IRLed&)
-                0x00000638                IRLedController::IRLedController(IRLed&)
+                0x00000630       0x90 IRLedController.o
+                0x00000630                IRLedController::IRLedController(IRLed&)
+                0x00000630                IRLedController::IRLedController(IRLed&)
  .text._ZN15IRLedController7sendBitEb
-                0x000006c8       0x80 IRLedController.o
-                0x000006c8                IRLedController::sendBit(bool)
+                0x000006c0       0x80 IRLedController.o
+                0x000006c0                IRLedController::sendBit(bool)
  .text._ZN15IRLedController12writeCommandEi
-                0x00000748       0x40 IRLedController.o
-                0x00000748                IRLedController::writeCommand(int)
+                0x00000740       0x40 IRLedController.o
+                0x00000740                IRLedController::writeCommand(int)
  .text._ZN15IRLedController11sendCommandEi
-                0x00000788       0x26 IRLedController.o
-                0x00000788                IRLedController::sendCommand(int)
- *fill*         0x000007ae        0x2 
+                0x00000780       0x26 IRLedController.o
+                0x00000780                IRLedController::sendCommand(int)
+ *fill*         0x000007a6        0x2 
  .text.startup._ZN15IRLedController4mainEv
-                0x000007b0       0xb4 IRLedController.o
-                0x000007b0                IRLedController::main()
+                0x000007a8       0xb4 IRLedController.o
+                0x000007a8                IRLedController::main()
  .text._ZN4rtos8callback6cancelEv
-                0x00000864        0xa GameTimeControl.o
-                0x00000864                rtos::callback::cancel()
- *fill*         0x0000086e        0x2 
+                0x0000085c        0xa GameTimeControl.o
+                0x0000085c                rtos::callback::cancel()
+ *fill*         0x00000866        0x2 
  .text.startup._ZN15GameTimeControl4mainEv
-                0x00000870       0x8c GameTimeControl.o
-                0x00000870                GameTimeControl::main()
+                0x00000868       0x80 GameTimeControl.o
+                0x00000868                GameTimeControl::main()
  .text._ZN15GameTimeControlC2ER8GameDataR11GameControl
-                0x000008fc       0x68 GameTimeControl.o
-                0x000008fc                GameTimeControl::GameTimeControl(GameData&, GameControl&)
-                0x000008fc                GameTimeControl::GameTimeControl(GameData&, GameControl&)
+                0x000008e8       0x68 GameTimeControl.o
+                0x000008e8                GameTimeControl::GameTimeControl(GameData&, GameControl&)
+                0x000008e8                GameTimeControl::GameTimeControl(GameData&, GameControl&)
  .text._ZN5hwlib7console7goto_xyEii
-                0x00000964        0xa OLEDControl.o
-                0x00000964                hwlib::console::goto_xy(int, int)
+                0x00000950        0xa OLEDControl.o
+                0x00000950                hwlib::console::goto_xy(int, int)
  .text._ZN5hwlib14window_ostream22goto_xy_implementationEii
-                0x0000096e       0x20 OLEDControl.o
-                0x0000096e                hwlib::window_ostream::goto_xy_implementation(int, int)
+                0x0000095a       0x20 OLEDControl.o
+                0x0000095a                hwlib::window_ostream::goto_xy_implementation(int, int)
  .text._ZN5hwlib14window_ostream5clearEv
-                0x0000098e       0x1c OLEDControl.o
-                0x0000098e                hwlib::window_ostream::clear()
- *fill*         0x000009aa        0x2 
+                0x0000097a       0x1c OLEDControl.o
+                0x0000097a                hwlib::window_ostream::clear()
+ *fill*         0x00000996        0x2 
  .text._ZNK5hwlib16font_default_8x8ixEc
-                0x000009ac       0x14 OLEDControl.o
-                0x000009ac                hwlib::font_default_8x8::operator[](char) const
+                0x00000998       0x14 OLEDControl.o
+                0x00000998                hwlib::font_default_8x8::operator[](char) const
  .text._ZN5hwlib7console4putcEc
-                0x000009c0       0xba OLEDControl.o
-                0x000009c0                hwlib::console::putc(char)
+                0x000009ac       0xba OLEDControl.o
+                0x000009ac                hwlib::console::putc(char)
  .text._ZN5hwliblsERNS_7ostreamEi
-                0x00000a7a       0xd4 OLEDControl.o
-                0x00000a7a                hwlib::operator<<(hwlib::ostream&, int)
+                0x00000a66       0xd4 OLEDControl.o
+                0x00000a66                hwlib::operator<<(hwlib::ostream&, int)
  .text._ZN5hwlib6window5clearEv
-                0x00000b4e       0x32 OLEDControl.o
-                0x00000b4e                hwlib::window::clear()
+                0x00000b3a       0x32 OLEDControl.o
+                0x00000b3a                hwlib::window::clear()
  .text._ZN5hwlib11window_part20write_implementationENS_8locationENS_5colorE
-                0x00000b80       0x2e OLEDControl.o
-                0x00000b80                hwlib::window_part::write_implementation(hwlib::location, hwlib::color)
+                0x00000b6c       0x2e OLEDControl.o
+                0x00000b6c                hwlib::window_part::write_implementation(hwlib::location, hwlib::color)
  .text._ZN5hwlib14window_ostream19putc_implementationEc
-                0x00000bae       0x80 OLEDControl.o
-                0x00000bae                hwlib::window_ostream::putc_implementation(char)
- *fill*         0x00000c2e        0x2 
+                0x00000b9a       0x80 OLEDControl.o
+                0x00000b9a                hwlib::window_ostream::putc_implementation(char)
+ *fill*         0x00000c1a        0x2 
  .text._ZN5hwlib14window_ostreamC2ERNS_6windowERKNS_4fontE
-                0x00000c30       0x60 OLEDControl.o
-                0x00000c30                hwlib::window_ostream::window_ostream(hwlib::window&, hwlib::font const&)
-                0x00000c30                hwlib::window_ostream::window_ostream(hwlib::window&, hwlib::font const&)
- .text._ZN5hwlib18glcd_oled_buffered7commandEhhh
-                0x00000c90       0x30 OLEDControl.o
-                0x00000c90                hwlib::glcd_oled_buffered::command(unsigned char, unsigned char, unsigned char)
- .text._ZN5hwlib18glcd_oled_buffered5flushEv
-                0x00000cc0       0x58 OLEDControl.o
-                0x00000cc0                hwlib::glcd_oled_buffered::flush()
+                0x00000c1c       0x60 OLEDControl.o
+                0x00000c1c                hwlib::window_ostream::window_ostream(hwlib::window&, hwlib::font const&)
+                0x00000c1c                hwlib::window_ostream::window_ostream(hwlib::window&, hwlib::font const&)
  .text._ZN11OLEDControlC2ERN5hwlib18glcd_oled_bufferedER8GameData
-                0x00000d18        0x6 OLEDControl.o
-                0x00000d18                OLEDControl::OLEDControl(hwlib::glcd_oled_buffered&, GameData&)
-                0x00000d18                OLEDControl::OLEDControl(hwlib::glcd_oled_buffered&, GameData&)
- *fill*         0x00000d1e        0x2 
+                0x00000c7c        0x6 OLEDControl.o
+                0x00000c7c                OLEDControl::OLEDControl(hwlib::glcd_oled_buffered&, GameData&)
+                0x00000c7c                OLEDControl::OLEDControl(hwlib::glcd_oled_buffered&, GameData&)
+ *fill*         0x00000c82        0x2 
  .text._ZN11OLEDControl12updateScreenEv
-                0x00000d20      0x1bc OLEDControl.o
-                0x00000d20                OLEDControl::updateScreen()
+                0x00000c84      0x1b0 OLEDControl.o
+                0x00000c84                OLEDControl::updateScreen()
  .text._ZN11OLEDControl11dataChangedEv
-                0x00000edc        0x4 OLEDControl.o
-                0x00000edc                OLEDControl::dataChanged()
+                0x00000e34        0x4 OLEDControl.o
+                0x00000e34                OLEDControl::dataChanged()
  .text._ZN8GameData7getDataEi
-                0x00000ee0       0x20 GameData.o
-                0x00000ee0                GameData::getData(int)
+                0x00000e38       0x20 GameData.o
+                0x00000e38                GameData::getData(int)
  .text._ZN8GameData10updateTimeEv
-                0x00000f00        0x8 GameData.o
-                0x00000f00                GameData::updateTime()
+                0x00000e58        0x8 GameData.o
+                0x00000e58                GameData::updateTime()
  .text._ZN11GameControl12updateScreenEv
-                0x00000f08        0xa GameControl.o
-                0x00000f08                GameControl::updateScreen()
+                0x00000e60        0xa GameControl.o
+                0x00000e60                GameControl::updateScreen()
  .text._ZThn4228_N11GameControl12updateScreenEv
-                0x00000f12        0xc GameControl.o
-                0x00000f12                non-virtual thunk to GameControl::updateScreen()
- .text.startup._ZN11GameControl4mainEv
-                0x00000f1e       0x68 GameControl.o
-                0x00000f1e                GameControl::main()
- .text._ZN5hwlib7ostreamlsEc
-                0x00000f86        0xe GameControl.o
-                0x00000f86                hwlib::ostream::operator<<(char)
- .text._ZN4rtos7channelI7COMMANDLi50EE4readEv.part.7
-                0x00000f94       0x28 GameControl.o
- .text._ZN4rtos8waitable5clearEv
-                0x00000fbc        0xa GameControl.o
-                0x00000fbc                rtos::waitable::clear()
- .text._ZN4rtos7channelIcLi1EE5clearEv
-                0x00000fc6       0x10 GameControl.o
-                0x00000fc6                rtos::channel<char, 1>::clear()
- .text._ZN4rtos7channelI7COMMANDLi50EE5clearEv
-                0x00000fd6       0x10 GameControl.o
-                0x00000fd6                rtos::channel<COMMAND, 50>::clear()
- .text._ZN4rtos8waitable3setEv
-                0x00000fe6        0xa GameControl.o
-                0x00000fe6                rtos::waitable::set()
- .text._ZN11GameControl7readKeyEv
-                0x00000ff0       0x52 GameControl.o
-                0x00000ff0                GameControl::readKey()
- .text._ZThn4228_N11GameControl7readKeyEv
-                0x00001042        0xc GameControl.o
-                0x00001042                non-virtual thunk to GameControl::readKey()
- .text._ZN11GameControl11readCommandEv
-                0x0000104e       0x50 GameControl.o
-                0x0000104e                GameControl::readCommand()
- .text._ZThn4228_N11GameControl11readCommandEv
-                0x0000109e        0xc GameControl.o
-                0x0000109e                non-virtual thunk to GameControl::readCommand()
- *fill*         0x000010aa        0x2 
- .text._Z4testRN4rtos5eventEPKc
-                0x000010ac       0x38 GameControl.o
-                0x000010ac                test(rtos::event&, char const*)
+                0x00000e6a        0xc GameControl.o
+                0x00000e6a                non-virtual thunk to GameControl::updateScreen()
  .text._ZN11GameControl11sendCommandE7COMMAND
-                0x000010e4       0x34 GameControl.o
-                0x000010e4                GameControl::sendCommand(COMMAND)
+                0x00000e76        0xa GameControl.o
+                0x00000e76                GameControl::sendCommand(COMMAND)
  .text._ZThn4228_N11GameControl11sendCommandE7COMMAND
-                0x00001118        0xc GameControl.o
-                0x00001118                non-virtual thunk to GameControl::sendCommand(COMMAND)
+                0x00000e80        0xc GameControl.o
+                0x00000e80                non-virtual thunk to GameControl::sendCommand(COMMAND)
+ .text._ZN5hwlib7ostreamlsEc
+                0x00000e8c        0xe GameControl.o
+                0x00000e8c                hwlib::ostream::operator<<(char)
+ *fill*         0x00000e9a        0x2 
+ .text._ZN4rtos7channelI7COMMANDLi50EE4readEv.part.7
+                0x00000e9c       0x28 GameControl.o
+ .text._ZN4rtos8waitable5clearEv
+                0x00000ec4        0xa GameControl.o
+                0x00000ec4                rtos::waitable::clear()
+ .text._ZN4rtos7channelIcLi1EE5clearEv
+                0x00000ece       0x10 GameControl.o
+                0x00000ece                rtos::channel<char, 1>::clear()
+ .text._ZN4rtos7channelI7COMMANDLi50EE5clearEv
+                0x00000ede       0x10 GameControl.o
+                0x00000ede                rtos::channel<COMMAND, 50>::clear()
+ .text._ZN4rtos8waitable3setEv
+                0x00000eee        0xa GameControl.o
+                0x00000eee                rtos::waitable::set()
+ .text._ZN11GameControl11readCommandEv
+                0x00000ef8       0x50 GameControl.o
+                0x00000ef8                GameControl::readCommand()
+ .text._ZThn4228_N11GameControl11readCommandEv
+                0x00000f48        0xc GameControl.o
+                0x00000f48                non-virtual thunk to GameControl::readCommand()
  .text._ZN11GameControlC2ER11OLEDControlR15IRLedControllerR18IRSensorController
-                0x00001124       0xe0 GameControl.o
-                0x00001124                GameControl::GameControl(OLEDControl&, IRLedController&, IRSensorController&)
-                0x00001124                GameControl::GameControl(OLEDControl&, IRLedController&, IRSensorController&)
+                0x00000f54       0xe0 GameControl.o
+                0x00000f54                GameControl::GameControl(OLEDControl&, IRLedController&, IRSensorController&)
+                0x00000f54                GameControl::GameControl(OLEDControl&, IRLedController&, IRSensorController&)
  .text._ZN11GameControl10keyPressedEc
-                0x00001204       0x5c GameControl.o
-                0x00001204                GameControl::keyPressed(char)
- .text._ZN11GameControl15commandReceivedEv
-                0x00001260       0x14 GameControl.o
-                0x00001260                GameControl::commandReceived()
+                0x00001034       0x3a GameControl.o
+                0x00001034                GameControl::keyPressed(char)
+ .text._ZN11GameControl18commandReadyToSendEv
+                0x0000106e       0x14 GameControl.o
+                0x0000106e                GameControl::commandReadyToSend()
  .text._ZN11GameControl10setCommandE7COMMAND
-                0x00001274       0x60 GameControl.o
-                0x00001274                GameControl::setCommand(COMMAND)
+                0x00001082       0x42 GameControl.o
+                0x00001082                GameControl::setCommand(COMMAND)
  .text._ZThn4228_N11GameControl10setCommandE7COMMAND
-                0x000012d4        0xc GameControl.o
-                0x000012d4                non-virtual thunk to GameControl::setCommand(COMMAND)
+                0x000010c4        0xc GameControl.o
+                0x000010c4                non-virtual thunk to GameControl::setCommand(COMMAND)
  .text._ZN11GameControl11dataChangedEv
-                0x000012e0        0xa GameControl.o
-                0x000012e0                GameControl::dataChanged()
+                0x000010d0        0xa GameControl.o
+                0x000010d0                GameControl::dataChanged()
+ .text._ZN4rtos7channelIcLi1EE4readEv
+                0x000010da       0x4a GameControl.o
+                0x000010da                rtos::channel<char, 1>::read()
+ .text._ZN11GameControl7readKeyEv
+                0x00001124        0xe GameControl.o
+                0x00001124                GameControl::readKey()
+ .text._ZThn4228_N11GameControl7readKeyEv
+                0x00001132        0xc GameControl.o
+                0x00001132                non-virtual thunk to GameControl::readKey()
+ .text.startup._ZN11GameControl4mainEv
+                0x0000113e       0x6e GameControl.o
+                0x0000113e                GameControl::main()
  .text._ZN10DebugState11dataChangedEP20GameControlInterface
-                0x000012ea        0x8 DebugState.o
-                0x000012ea                DebugState::dataChanged(GameControlInterface*)
- *fill*         0x000012f2        0x2 
- .text._ZN10DebugState15commandReceivedEP20GameControlInterface
-                0x000012f4       0x2c DebugState.o
-                0x000012f4                DebugState::commandReceived(GameControlInterface*)
+                0x000011ac        0x8 DebugState.o
+                0x000011ac                DebugState::dataChanged(GameControlInterface*)
+ .text._ZN10DebugState18commandReadyToSendEP20GameControlInterface
+                0x000011b4       0x2c DebugState.o
+                0x000011b4                DebugState::commandReadyToSend(GameControlInterface*)
  .text._ZN10DebugState10keyPressedEP20GameControlInterface
-                0x00001320       0x24 DebugState.o
-                0x00001320                DebugState::keyPressed(GameControlInterface*)
+                0x000011e0       0x24 DebugState.o
+                0x000011e0                DebugState::keyPressed(GameControlInterface*)
  .text._ZN10DebugStateC2Ev
-                0x00001344        0xc DebugState.o
-                0x00001344                DebugState::DebugState()
-                0x00001344                DebugState::DebugState()
+                0x00001204        0xc DebugState.o
+                0x00001204                DebugState::DebugState()
+                0x00001204                DebugState::DebugState()
  .text.startup._ZN13KeypadControl4mainEv
-                0x00001350       0x54 KeypadControl.o
-                0x00001350                KeypadControl::main()
+                0x00001210       0x54 KeypadControl.o
+                0x00001210                KeypadControl::main()
  .text._ZN13KeypadControlC2ERN5hwlib6keypadILi16EEER11GameControl
-                0x000013a4       0x7c KeypadControl.o
-                0x000013a4                KeypadControl::KeypadControl(hwlib::keypad<16>&, GameControl&)
-                0x000013a4                KeypadControl::KeypadControl(hwlib::keypad<16>&, GameControl&)
+                0x00001264       0x7c KeypadControl.o
+                0x00001264                KeypadControl::KeypadControl(hwlib::keypad<16>&, GameControl&)
+                0x00001264                KeypadControl::KeypadControl(hwlib::keypad<16>&, GameControl&)
  .text._ZNK5hwlib9image_8x818get_implementationENS_8locationE
-                0x00001420       0x4c hwlib.o
-                0x00001420                hwlib::image_8x8::get_implementation(hwlib::location) const
+                0x000012e0       0x4c hwlib.o
+                0x000012e0                hwlib::image_8x8::get_implementation(hwlib::location) const
  .text._ZN3due6pin_in3getEv
-                0x0000146c       0x10 hwlib.o
-                0x0000146c                due::pin_in::get()
+                0x0000132c       0x10 hwlib.o
+                0x0000132c                due::pin_in::get()
  .text._ZN3due7pin_out3setEb
-                0x0000147c        0xe hwlib.o
-                0x0000147c                due::pin_out::set(bool)
- *fill*         0x0000148a        0x2 
+                0x0000133c        0xe hwlib.o
+                0x0000133c                due::pin_out::set(bool)
+ *fill*         0x0000134a        0x2 
  .text._ZN5hwlib9uart_putcEc
-                0x0000148c       0x3c hwlib.o
-                0x0000148c                hwlib::uart_putc(char)
- .text          0x000014c8       0x24 switch_to.o
-                0x000014c8                switch_from_to
+                0x0000134c       0x3c hwlib.o
+                0x0000134c                hwlib::uart_putc(char)
+ .text          0x00001388       0x24 switch_to.o
+                0x00001388                switch_from_to
  .text._ZN5hwlib7ostream7reverse10add_prefixERKS0_.part.1.constprop.23
-                0x000014ec       0x4c rtos.o
+                0x000013ac       0x4c rtos.o
  .text._ZN5hwliblsERNS_7ostreamEx
-                0x00001538       0xbc rtos.o
-                0x00001538                hwlib::operator<<(hwlib::ostream&, long long)
+                0x000013f8       0xbc rtos.o
+                0x000013f8                hwlib::operator<<(hwlib::ostream&, long long)
  .text._ZN5hwliblsERNS_7ostreamEj
-                0x000015f4        0xc rtos.o
-                0x000015f4                hwlib::operator<<(hwlib::ostream&, unsigned int)
+                0x000014b4        0xc rtos.o
+                0x000014b4                hwlib::operator<<(hwlib::ostream&, unsigned int)
  .text._Z6strlenPKc
-                0x00001600       0x10 rtos.o
-                0x00001600                strlen(char const*)
+                0x000014c0       0x10 rtos.o
+                0x000014c0                strlen(char const*)
  .text._Z6strcpyPcPKc
-                0x00001610       0x14 rtos.o
-                0x00001610                strcpy(char*, char const*)
+                0x000014d0       0x14 rtos.o
+                0x000014d0                strcpy(char*, char const*)
  .text._Z15string_allocatePKc
-                0x00001624       0x26 rtos.o
-                0x00001624                string_allocate(char const*)
+                0x000014e4       0x26 rtos.o
+                0x000014e4                string_allocate(char const*)
  .text._Z12nr_from_maskj
-                0x0000164a       0x1c rtos.o
-                0x0000164a                nr_from_mask(unsigned int)
- *fill*         0x00001666        0x2 
+                0x0000150a       0x1c rtos.o
+                0x0000150a                nr_from_mask(unsigned int)
+ *fill*         0x00001526        0x2 
  .text._Z15task_trampolinev
-                0x00001668       0x34 rtos.o
-                0x00001668                task_trampoline()
+                0x00001528       0x34 rtos.o
+                0x00001528                task_trampoline()
  .text._ZN4rtos9task_base7releaseEv
-                0x0000169c       0x24 rtos.o
-                0x0000169c                rtos::task_base::release()
+                0x0000155c       0x24 rtos.o
+                0x0000155c                rtos::task_base::release()
  .text._ZN4rtos9task_base7suspendEv
-                0x000016c0        0x8 rtos.o
-                0x000016c0                rtos::task_base::suspend()
+                0x00001580        0x8 rtos.o
+                0x00001580                rtos::task_base::suspend()
  .text._ZN4rtos9task_base6resumeEv
-                0x000016c8        0x8 rtos.o
-                0x000016c8                rtos::task_base::resume()
+                0x00001588        0x8 rtos.o
+                0x00001588                rtos::task_base::resume()
  .text._ZN4rtos9task_base7unblockEv
-                0x000016d0       0x14 rtos.o
-                0x000016d0                rtos::task_base::unblock()
+                0x00001590       0x14 rtos.o
+                0x00001590                rtos::task_base::unblock()
  .text._ZN4rtos9task_base5blockEv
-                0x000016e4       0x70 rtos.o
-                0x000016e4                rtos::task_base::block()
+                0x000015a4       0x70 rtos.o
+                0x000015a4                rtos::task_base::block()
  .text._ZNK4rtos9task_base5printERN5hwlib7ostreamEb
-                0x00001754      0x160 rtos.o
-                0x00001754                rtos::task_base::print(hwlib::ostream&, bool) const
+                0x00001614      0x160 rtos.o
+                0x00001614                rtos::task_base::print(hwlib::ostream&, bool) const
  .text._ZNK4rtos5eventeqERKS0_
-                0x000018b4       0x3c rtos.o
-                0x000018b4                rtos::event::operator==(rtos::event const&) const
+                0x00001774       0x3c rtos.o
+                0x00001774                rtos::event::operator==(rtos::event const&) const
  .text._ZNK4rtos5eventeqERKNS_8waitableE
-                0x000018f0       0x1a rtos.o
-                0x000018f0                rtos::event::operator==(rtos::waitable const&) const
- *fill*         0x0000190a        0x2 
+                0x000017b0       0x1a rtos.o
+                0x000017b0                rtos::event::operator==(rtos::waitable const&) const
+ *fill*         0x000017ca        0x2 
  .text._ZNK4rtos5eventplERKS0_
-                0x0000190c       0x3c rtos.o
-                0x0000190c                rtos::event::operator+(rtos::event const&) const
- .text._ZNK4rtos5event5printERN5hwlib7ostreamE
-                0x00001948       0x30 rtos.o
-                0x00001948                rtos::event::print(hwlib::ostream&) const
+                0x000017cc       0x3c rtos.o
+                0x000017cc                rtos::event::operator+(rtos::event const&) const
  .text._ZNK4rtos4flag5printERN5hwlib7ostreamEb
-                0x00001978       0xcc rtos.o
-                0x00001978                rtos::flag::print(hwlib::ostream&, bool) const
+                0x00001808       0xcc rtos.o
+                0x00001808                rtos::flag::print(hwlib::ostream&, bool) const
  .text._ZN4rtos5timer3setEm
-                0x00001a44        0xe rtos.o
-                0x00001a44                rtos::timer::set(unsigned long)
- *fill*         0x00001a52        0x2 
+                0x000018d4        0xe rtos.o
+                0x000018d4                rtos::timer::set(unsigned long)
+ *fill*         0x000018e2        0x2 
  .text._ZNK4rtos5timer5printERN5hwlib7ostreamEb
-                0x00001a54       0xd0 rtos.o
-                0x00001a54                rtos::timer::print(hwlib::ostream&, bool) const
+                0x000018e4       0xd0 rtos.o
+                0x000018e4                rtos::timer::print(hwlib::ostream&, bool) const
  .text._ZNK4rtos5clock5printERN5hwlib7ostreamEb
-                0x00001b24       0xd8 rtos.o
-                0x00001b24                rtos::clock::print(hwlib::ostream&, bool) const
+                0x000019b4       0xd8 rtos.o
+                0x000019b4                rtos::clock::print(hwlib::ostream&, bool) const
  .text._ZN4rtos12waitable_set17waitable_allocateEv
-                0x00001bfc       0x38 rtos.o
-                0x00001bfc                rtos::waitable_set::waitable_allocate()
+                0x00001a8c       0x38 rtos.o
+                0x00001a8c                rtos::waitable_set::waitable_allocate()
  .text._ZN4rtos8waitableC2EPNS_9task_baseEPKc
-                0x00001c34       0x2c rtos.o
-                0x00001c34                rtos::waitable::waitable(rtos::task_base*, char const*)
-                0x00001c34                rtos::waitable::waitable(rtos::task_base*, char const*)
+                0x00001ac4       0x2c rtos.o
+                0x00001ac4                rtos::waitable::waitable(rtos::task_base*, char const*)
+                0x00001ac4                rtos::waitable::waitable(rtos::task_base*, char const*)
  .text._ZN4rtos12waitable_set3setERKNS_8waitableE
-                0x00001c60       0x14 rtos.o
-                0x00001c60                rtos::waitable_set::set(rtos::waitable const&)
+                0x00001af0       0x14 rtos.o
+                0x00001af0                rtos::waitable_set::set(rtos::waitable const&)
  .text._ZN4rtos5clock7time_upEv
-                0x00001c74       0x2e rtos.o
-                0x00001c74                rtos::clock::time_up()
+                0x00001b04       0x2e rtos.o
+                0x00001b04                rtos::clock::time_up()
  .text._ZThn16_N4rtos5clock7time_upEv
-                0x00001ca2        0x8 rtos.o
-                0x00001ca2                non-virtual thunk to rtos::clock::time_up()
+                0x00001b32        0x8 rtos.o
+                0x00001b32                non-virtual thunk to rtos::clock::time_up()
  .text._ZN4rtos5timer7time_upEv
-                0x00001caa       0x10 rtos.o
-                0x00001caa                rtos::timer::time_up()
-                0x00001cb4                non-virtual thunk to rtos::timer::time_up()
+                0x00001b3a       0x10 rtos.o
+                0x00001b3a                rtos::timer::time_up()
+                0x00001b44                non-virtual thunk to rtos::timer::time_up()
  .text._ZN4rtos4flag3setEv
-                0x00001cba       0x10 rtos.o
-                0x00001cba                rtos::flag::set()
+                0x00001b4a       0x10 rtos.o
+                0x00001b4a                rtos::flag::set()
  .text._ZN4rtos12waitable_set5clearERKNS_8waitableE
-                0x00001cca        0xc rtos.o
-                0x00001cca                rtos::waitable_set::clear(rtos::waitable const&)
+                0x00001b5a        0xc rtos.o
+                0x00001b5a                rtos::waitable_set::clear(rtos::waitable const&)
  .text._ZN4rtos5timer6cancelEv
-                0x00001cd6       0x16 rtos.o
-                0x00001cd6                rtos::timer::cancel()
+                0x00001b66       0x16 rtos.o
+                0x00001b66                rtos::timer::cancel()
  .text._ZThn16_N4rtos5timer6cancelEv
-                0x00001cec        0x8 rtos.o
-                0x00001cec                non-virtual thunk to rtos::timer::cancel()
+                0x00001b7c        0x8 rtos.o
+                0x00001b7c                non-virtual thunk to rtos::timer::cancel()
  .text._ZN4rtos5clock5clearEv
-                0x00001cf4        0x8 rtos.o
-                0x00001cf4                rtos::clock::clear()
+                0x00001b84        0x8 rtos.o
+                0x00001b84                rtos::clock::clear()
  .text._ZN4rtos12waitable_set4waitEj
-                0x00001cfc       0x64 rtos.o
-                0x00001cfc                rtos::waitable_set::wait(unsigned int)
+                0x00001b8c       0x64 rtos.o
+                0x00001b8c                rtos::waitable_set::wait(unsigned int)
  .text._ZN4rtos9task_base5sleepEm
-                0x00001d60       0x20 rtos.o
-                0x00001d60                rtos::task_base::sleep(unsigned long)
+                0x00001bf0       0x20 rtos.o
+                0x00001bf0                rtos::task_base::sleep(unsigned long)
  .text._ZNK4rtos5mutex5printERN5hwlib7ostreamEb
-                0x00001d80       0xec rtos.o
-                0x00001d80                rtos::mutex::print(hwlib::ostream&, bool) const
+                0x00001c10       0xec rtos.o
+                0x00001c10                rtos::mutex::print(hwlib::ostream&, bool) const
  .text._ZNK4rtos12channel_base5printERN5hwlib7ostreamEb
-                0x00001e6c       0xe0 rtos.o
-                0x00001e6c                rtos::channel_base::print(hwlib::ostream&, bool) const
+                0x00001cfc       0xe0 rtos.o
+                0x00001cfc                rtos::channel_base::print(hwlib::ostream&, bool) const
  .text._ZNK4rtos9pool_base5printERN5hwlib7ostreamEb
-                0x00001f4c       0x78 rtos.o
-                0x00001f4c                rtos::pool_base::print(hwlib::ostream&, bool) const
+                0x00001ddc       0x78 rtos.o
+                0x00001ddc                rtos::pool_base::print(hwlib::ostream&, bool) const
  .text._ZNK4rtos12mailbox_base5printERN5hwlib7ostreamEb
-                0x00001fc4       0xc4 rtos.o
-                0x00001fc4                rtos::mailbox_base::print(hwlib::ostream&, bool) const
+                0x00001e54       0xc4 rtos.o
+                0x00001e54                rtos::mailbox_base::print(hwlib::ostream&, bool) const
  .text._ZN4rtos3addEPNS_4flagE
-                0x00002088       0x10 rtos.o
-                0x00002088                rtos::add(rtos::flag*)
+                0x00001f18       0x10 rtos.o
+                0x00001f18                rtos::add(rtos::flag*)
  .text._ZN4rtos4flagC2EPNS_9task_baseEPKc
-                0x00002098       0x20 rtos.o
-                0x00002098                rtos::flag::flag(rtos::task_base*, char const*)
-                0x00002098                rtos::flag::flag(rtos::task_base*, char const*)
+                0x00001f28       0x20 rtos.o
+                0x00001f28                rtos::flag::flag(rtos::task_base*, char const*)
+                0x00001f28                rtos::flag::flag(rtos::task_base*, char const*)
  .text._ZN4rtos3addEPNS_5timerE
-                0x000020b8       0x10 rtos.o
-                0x000020b8                rtos::add(rtos::timer*)
+                0x00001f48       0x10 rtos.o
+                0x00001f48                rtos::add(rtos::timer*)
  .text._ZN4rtos3addEPNS_5clockE
-                0x000020c8       0x10 rtos.o
-                0x000020c8                rtos::add(rtos::clock*)
+                0x00001f58       0x10 rtos.o
+                0x00001f58                rtos::add(rtos::clock*)
  .text._ZN4rtos3addEPNS_12channel_baseE
-                0x000020d8       0x10 rtos.o
-                0x000020d8                rtos::add(rtos::channel_base*)
+                0x00001f68       0x10 rtos.o
+                0x00001f68                rtos::add(rtos::channel_base*)
  .text._ZN4rtos12channel_baseC2EPNS_9task_baseEPKc
-                0x000020e8       0x30 rtos.o
-                0x000020e8                rtos::channel_base::channel_base(rtos::task_base*, char const*)
-                0x000020e8                rtos::channel_base::channel_base(rtos::task_base*, char const*)
+                0x00001f78       0x30 rtos.o
+                0x00001f78                rtos::channel_base::channel_base(rtos::task_base*, char const*)
+                0x00001f78                rtos::channel_base::channel_base(rtos::task_base*, char const*)
  .text._ZN4rtos5printERN5hwlib7ostreamE
-                0x00002118      0x1b4 rtos.o
-                0x00002118                rtos::print(hwlib::ostream&)
+                0x00001fa8      0x1b4 rtos.o
+                0x00001fa8                rtos::print(hwlib::ostream&)
  .text._ZN4rtos4beatEv
-                0x000022cc      0x14c rtos.o
-                0x000022cc                rtos::beat()
+                0x0000215c      0x14c rtos.o
+                0x0000215c                rtos::beat()
  .text._ZN4rtos8run_timeEv
-                0x00002418        0x8 rtos.o
-                0x00002418                rtos::run_time()
+                0x000022a8        0x8 rtos.o
+                0x000022a8                rtos::run_time()
  .text._ZN4rtos3runEv
-                0x00002420       0x40 rtos.o
-                0x00002420                rtos::run()
+                0x000022b0       0x40 rtos.o
+                0x000022b0                rtos::run()
  .text._ZN4rtos3addEPNS_8callbackE
-                0x00002460       0x10 rtos.o
-                0x00002460                rtos::add(rtos::callback*)
+                0x000022f0       0x10 rtos.o
+                0x000022f0                rtos::add(rtos::callback*)
  .text._ZN4rtos8callbackC2EPKc
-                0x00002470       0x2c rtos.o
-                0x00002470                rtos::callback::callback(char const*)
-                0x00002470                rtos::callback::callback(char const*)
+                0x00002300       0x2c rtos.o
+                0x00002300                rtos::callback::callback(char const*)
+                0x00002300                rtos::callback::callback(char const*)
  .text._ZN4rtos5timerC2EPNS_9task_baseEPKc
-                0x0000249c       0x34 rtos.o
-                0x0000249c                rtos::timer::timer(rtos::task_base*, char const*)
-                0x0000249c                rtos::timer::timer(rtos::task_base*, char const*)
+                0x0000232c       0x34 rtos.o
+                0x0000232c                rtos::timer::timer(rtos::task_base*, char const*)
+                0x0000232c                rtos::timer::timer(rtos::task_base*, char const*)
  .text._ZN4rtos5clockC2EPNS_9task_baseEmPKc
-                0x000024d0       0x3c rtos.o
-                0x000024d0                rtos::clock::clock(rtos::task_base*, unsigned long, char const*)
-                0x000024d0                rtos::clock::clock(rtos::task_base*, unsigned long, char const*)
+                0x00002360       0x3c rtos.o
+                0x00002360                rtos::clock::clock(rtos::task_base*, unsigned long, char const*)
+                0x00002360                rtos::clock::clock(rtos::task_base*, unsigned long, char const*)
  .text._ZN4rtos3addEPNS_9task_baseE
-                0x0000250c       0x7c rtos.o
-                0x0000250c                rtos::add(rtos::task_base*)
+                0x0000239c       0x7c rtos.o
+                0x0000239c                rtos::add(rtos::task_base*)
  .text._ZN4rtos9task_baseC2ER9coroutineILi0EEjPKc
-                0x00002588       0x4c rtos.o
-                0x00002588                rtos::task_base::task_base(coroutine<0>&, unsigned int, char const*)
-                0x00002588                rtos::task_base::task_base(coroutine<0>&, unsigned int, char const*)
+                0x00002418       0x4c rtos.o
+                0x00002418                rtos::task_base::task_base(coroutine<0>&, unsigned int, char const*)
+                0x00002418                rtos::task_base::task_base(coroutine<0>&, unsigned int, char const*)
  .text._ZN5hwlib7wait_usEi
-                0x000025d4       0x40 rtos.o
-                0x000025d4                hwlib::wait_us(int)
+                0x00002464       0x40 rtos.o
+                0x00002464                hwlib::wait_us(int)
  .text._ZN5hwlib7wait_msEi
-                0x00002614       0x16 rtos.o
-                0x00002614                hwlib::wait_ms(int)
+                0x000024a4       0x16 rtos.o
+                0x000024a4                hwlib::wait_ms(int)
  .text._ZN5hwlib17port_in_from_pins14number_of_pinsEv
-                0x0000262a        0x4 main.o
-                0x0000262a                hwlib::port_in_from_pins::number_of_pins()
+                0x000024ba        0x4 main.o
+                0x000024ba                hwlib::port_in_from_pins::number_of_pins()
  .text._ZN5hwlib17port_in_from_pins3getEv
-                0x0000262e       0x2e main.o
-                0x0000262e                hwlib::port_in_from_pins::get()
+                0x000024be       0x2e main.o
+                0x000024be                hwlib::port_in_from_pins::get()
  .text._ZN5hwlib17port_oc_from_pins14number_of_pinsEv
-                0x0000265c        0x4 main.o
-                0x0000265c                hwlib::port_oc_from_pins::number_of_pins()
+                0x000024ec        0x4 main.o
+                0x000024ec                hwlib::port_oc_from_pins::number_of_pins()
  .text._ZN5hwlib17port_oc_from_pins3getEv
-                0x00002660       0x2e main.o
-                0x00002660                hwlib::port_oc_from_pins::get()
+                0x000024f0       0x2e main.o
+                0x000024f0                hwlib::port_oc_from_pins::get()
  .text._ZN5hwlib17port_oc_from_pins3setEj
-                0x0000268e       0x26 main.o
-                0x0000268e                hwlib::port_oc_from_pins::set(unsigned int)
+                0x0000251e       0x26 main.o
+                0x0000251e                hwlib::port_oc_from_pins::set(unsigned int)
  .text._ZN5hwlib18glcd_oled_buffered5clearEv
-                0x000026b4       0x1e main.o
-                0x000026b4                hwlib::glcd_oled_buffered::clear()
+                0x00002544       0x1e main.o
+                0x00002544                hwlib::glcd_oled_buffered::clear()
  .text._ZN3due6pin_oc3getEv
-                0x000026d2       0x10 main.o
-                0x000026d2                due::pin_oc::get()
+                0x00002562       0x10 main.o
+                0x00002562                due::pin_oc::get()
  .text._ZN3due6pin_oc3setEb
-                0x000026e2       0x10 main.o
-                0x000026e2                due::pin_oc::set(bool)
+                0x00002572       0x10 main.o
+                0x00002572                due::pin_oc::set(bool)
  .text._ZN5hwlib6keypadILi16EE4getcEv
-                0x000026f2       0x24 main.o
-                0x000026f2                hwlib::keypad<16>::getc()
+                0x00002582       0x24 main.o
+                0x00002582                hwlib::keypad<16>::getc()
  .text._ZN5hwlib33spi_bus_bit_banged_sclk_mosi_miso16wait_half_periodEv.isra.3
-                0x00002716        0x6 main.o
+                0x000025a6        0x6 main.o
  .text._ZNK5hwlib5coloreqES0_
-                0x0000271c       0x36 main.o
-                0x0000271c                hwlib::color::operator==(hwlib::color) const
- *fill*         0x00002752        0x2 
+                0x000025ac       0x36 main.o
+                0x000025ac                hwlib::color::operator==(hwlib::color) const
+ *fill*         0x000025e2        0x2 
  .text._ZN5hwlib18glcd_oled_buffered20write_implementationENS_8locationENS_5colorE
-                0x00002754       0x78 main.o
-                0x00002754                hwlib::glcd_oled_buffered::write_implementation(hwlib::location, hwlib::color)
+                0x000025e4       0x78 main.o
+                0x000025e4                hwlib::glcd_oled_buffered::write_implementation(hwlib::location, hwlib::color)
  .text._ZN5hwlib26i2c_bus_bit_banged_scl_sda9write_bitEb
-                0x000027cc       0x30 main.o
-                0x000027cc                hwlib::i2c_bus_bit_banged_scl_sda::write_bit(bool)
+                0x0000265c       0x30 main.o
+                0x0000265c                hwlib::i2c_bus_bit_banged_scl_sda::write_bit(bool)
  .text._ZN5hwlib26i2c_bus_bit_banged_scl_sda8read_bitEv
-                0x000027fc       0x3c main.o
-                0x000027fc                hwlib::i2c_bus_bit_banged_scl_sda::read_bit()
+                0x0000268c       0x3c main.o
+                0x0000268c                hwlib::i2c_bus_bit_banged_scl_sda::read_bit()
  .text._ZN5hwlib26i2c_bus_bit_banged_scl_sda11write_startEv
-                0x00002838       0x24 main.o
-                0x00002838                hwlib::i2c_bus_bit_banged_scl_sda::write_start()
+                0x000026c8       0x24 main.o
+                0x000026c8                hwlib::i2c_bus_bit_banged_scl_sda::write_start()
  .text._ZN5hwlib26i2c_bus_bit_banged_scl_sda10write_stopEv
-                0x0000285c       0x40 main.o
-                0x0000285c                hwlib::i2c_bus_bit_banged_scl_sda::write_stop()
+                0x000026ec       0x40 main.o
+                0x000026ec                hwlib::i2c_bus_bit_banged_scl_sda::write_stop()
  .text._ZN5hwlib26i2c_bus_bit_banged_scl_sda10write_byteEj
-                0x0000289c       0x1c main.o
-                0x0000289c                hwlib::i2c_bus_bit_banged_scl_sda::write_byte(unsigned int)
+                0x0000272c       0x1c main.o
+                0x0000272c                hwlib::i2c_bus_bit_banged_scl_sda::write_byte(unsigned int)
  .text._ZN5hwlib26i2c_bus_bit_banged_scl_sda5writeEjPKhj
-                0x000028b8       0x3a main.o
-                0x000028b8                hwlib::i2c_bus_bit_banged_scl_sda::write(unsigned int, unsigned char const*, unsigned int)
+                0x00002748       0x3a main.o
+                0x00002748                hwlib::i2c_bus_bit_banged_scl_sda::write(unsigned int, unsigned char const*, unsigned int)
  .text._ZN5hwlib26i2c_bus_bit_banged_scl_sda4readEjPhj
-                0x000028f2       0x60 main.o
-                0x000028f2                hwlib::i2c_bus_bit_banged_scl_sda::read(unsigned int, unsigned char*, unsigned int)
- *fill*         0x00002952        0x2 
+                0x00002782       0x60 main.o
+                0x00002782                hwlib::i2c_bus_bit_banged_scl_sda::read(unsigned int, unsigned char*, unsigned int)
+ *fill*         0x000027e2        0x2 
  .text._ZN3due6pin_inC2ENS_4pinsE
-                0x00002954       0x34 main.o
-                0x00002954                due::pin_in::pin_in(due::pins)
-                0x00002954                due::pin_in::pin_in(due::pins)
+                0x000027e4       0x34 main.o
+                0x000027e4                due::pin_in::pin_in(due::pins)
+                0x000027e4                due::pin_in::pin_in(due::pins)
  .text._ZN3due6pin_ocC2ENS_4pinsE
-                0x00002988       0x34 main.o
-                0x00002988                due::pin_oc::pin_oc(due::pins)
-                0x00002988                due::pin_oc::pin_oc(due::pins)
+                0x00002818       0x34 main.o
+                0x00002818                due::pin_oc::pin_oc(due::pins)
+                0x00002818                due::pin_oc::pin_oc(due::pins)
  .text._ZN5hwlib6keypadILi16EE14char_availableEv
-                0x000029bc       0x98 main.o
-                0x000029bc                hwlib::keypad<16>::char_available()
+                0x0000284c       0x98 main.o
+                0x0000284c                hwlib::keypad<16>::char_available()
  .text._ZN4rtos8callbackD2Ev
-                0x00002a54       0x30 main.o
-                0x00002a54                rtos::callback::~callback()
-                0x00002a54                rtos::callback::~callback()
+                0x000028e4       0x30 main.o
+                0x000028e4                rtos::callback::~callback()
+                0x000028e4                rtos::callback::~callback()
  .text.startup.main
-                0x00002a84      0x2d4 main.o
-                0x00002a84                main
+                0x00002914      0x2d4 main.o
+                0x00002914                main
  .text.Int27_Handler
-                0x00002d58        0x2 bmptk_cortex.o
-                0x00002d58                Int27_Handler
- *fill*         0x00002d5a        0x2 
+                0x00002be8        0x2 bmptk_cortex.o
+                0x00002be8                Int27_Handler
+ *fill*         0x00002bea        0x2 
  .text.__startup
-                0x00002d5c       0x48 bmptk_cortex.o
-                0x00002d5c                __startup
+                0x00002bec       0x48 bmptk_cortex.o
+                0x00002bec                __startup
  .text.SysTick_Handler
-                0x00002da4        0x2 bmptk_cortex.o
-                0x00002da4                SysTick_Handler
+                0x00002c34        0x2 bmptk_cortex.o
+                0x00002c34                SysTick_Handler
  .text.__cxa_pure_virtual
-                0x00002da6        0x2 bmptk_cortex.o
-                0x00002da6                __cxa_pure_virtual
- .text.malloc   0x00002da8       0x24 bmptk_heap_bmptk.o
-                0x00002da8                malloc
- .text          0x00002dcc       0xa0 c:/program files (x86)/gnu tools arm embedded/5.3 2016q1/bin/../lib/gcc/arm-none-eabi/5.3.1/armv7-m\libgcc.a(_aeabi_ldivmod.o)
-                0x00002dcc                __aeabi_ldivmod
- .text          0x00002e6c      0x2ec c:/program files (x86)/gnu tools arm embedded/5.3 2016q1/bin/../lib/gcc/arm-none-eabi/5.3.1/armv7-m\libgcc.a(_udivmoddi4.o)
-                0x00002e6c                __udivmoddi4
- .text          0x00003158        0x4 c:/program files (x86)/gnu tools arm embedded/5.3 2016q1/bin/../lib/gcc/arm-none-eabi/5.3.1/armv7-m\libgcc.a(_dvmd_tls.o)
-                0x00003158                __aeabi_ldiv0
-                0x0000315c                . = ALIGN (0x4)
+                0x00002c36        0x2 bmptk_cortex.o
+                0x00002c36                __cxa_pure_virtual
+ .text.malloc   0x00002c38       0x24 bmptk_heap_bmptk.o
+                0x00002c38                malloc
+ .text          0x00002c5c       0xa0 c:/program files (x86)/gnu tools arm embedded/5.3 2016q1/bin/../lib/gcc/arm-none-eabi/5.3.1/armv7-m\libgcc.a(_aeabi_ldivmod.o)
+                0x00002c5c                __aeabi_ldivmod
+ .text          0x00002cfc      0x2ec c:/program files (x86)/gnu tools arm embedded/5.3 2016q1/bin/../lib/gcc/arm-none-eabi/5.3.1/armv7-m\libgcc.a(_udivmoddi4.o)
+                0x00002cfc                __udivmoddi4
+ .text          0x00002fe8        0x4 c:/program files (x86)/gnu tools arm embedded/5.3 2016q1/bin/../lib/gcc/arm-none-eabi/5.3.1/armv7-m\libgcc.a(_dvmd_tls.o)
+                0x00002fe8                __aeabi_ldiv0
+                0x00002fec                . = ALIGN (0x4)
  *(.glue_7t .glue_7)
- .glue_7        0x0000315c        0x0 linker stubs
- .glue_7t       0x0000315c        0x0 linker stubs
-                0x0000315c                . = ALIGN (0x4)
+ .glue_7        0x00002fec        0x0 linker stubs
+ .glue_7t       0x00002fec        0x0 linker stubs
+                0x00002fec                . = ALIGN (0x4)
  *(.rodata .rodata.* .gnu.linkonce.r.*)
  .rodata._ZTVN5hwlib19_pin_in_dummy_classE
-                0x0000315c        0xc IRSensorController.o
-                0x0000315c                vtable for hwlib::_pin_in_dummy_class
+                0x00002fec        0xc IRSensorController.o
+                0x00002fec                vtable for hwlib::_pin_in_dummy_class
  .rodata._ZTVN5hwlib19_pin_oc_dummy_classE
-                0x00003168       0x10 IRSensorController.o
-                0x00003168                vtable for hwlib::_pin_oc_dummy_class
+                0x00002ff8       0x10 IRSensorController.o
+                0x00002ff8                vtable for hwlib::_pin_oc_dummy_class
  .rodata._ZTVN5hwlib20cout_using_uart_putcE
-                0x00003178       0x10 IRSensorController.o
-                0x00003178                vtable for hwlib::cout_using_uart_putc
+                0x00003008       0x10 IRSensorController.o
+                0x00003008                vtable for hwlib::cout_using_uart_putc
  .rodata._ZTVN4rtos7channelIiLi16EEE
-                0x00003188        0xc IRSensorController.o
-                0x00003188                vtable for rtos::channel<int, 16>
+                0x00003018        0xc IRSensorController.o
+                0x00003018                vtable for rtos::channel<int, 16>
  .rodata.str1.1
-                0x00003194       0x9d IRSensorController.o
-                                 0x9f (size before relaxing)
- *fill*         0x00003231        0x3 
+                0x00003024       0x8b IRSensorController.o
+                                 0x8d (size before relaxing)
+ *fill*         0x000030af        0x1 
  .rodata._ZTV18IRSensorController
-                0x00003234       0x14 IRSensorController.o
-                0x00003234                vtable for IRSensorController
+                0x000030b0       0x14 IRSensorController.o
+                0x000030b0                vtable for IRSensorController
  .rodata._ZZN3due8pin_infoENS_4pinsEE14pin_info_array
-                0x00003248       0xa4 IRSensorController.o
+                0x000030c4       0xa4 IRSensorController.o
  .rodata._ZTVN3due8d2_36kHzE
-                0x000032ec        0xc IRLed.o
-                0x000032ec                vtable for due::d2_36kHz
+                0x00003168        0xc IRLed.o
+                0x00003168                vtable for due::d2_36kHz
  .rodata._ZTVN4rtos7channelIiLi10EEE
-                0x000032f8        0xc IRLedController.o
-                0x000032f8                vtable for rtos::channel<int, 10>
+                0x00003174        0xc IRLedController.o
+                0x00003174                vtable for rtos::channel<int, 10>
  .rodata.str1.1
-                0x00003304       0x38 IRLedController.o
+                0x00003180       0x38 IRLedController.o
                                  0x83 (size before relaxing)
  .rodata._ZTV15IRLedController
-                0x0000333c       0x14 IRLedController.o
-                0x0000333c                vtable for IRLedController
+                0x000031b8       0x14 IRLedController.o
+                0x000031b8                vtable for IRLedController
  .rodata._ZTVN4rtos8callbackE
-                0x00003350       0x10 GameTimeControl.o
-                0x00003350                vtable for rtos::callback
+                0x000031cc       0x10 GameTimeControl.o
+                0x000031cc                vtable for rtos::callback
  .rodata._ZTV15GameTimeControl
-                0x00003360       0x14 GameTimeControl.o
-                0x00003360                vtable for GameTimeControl
+                0x000031dc       0x14 GameTimeControl.o
+                0x000031dc                vtable for GameTimeControl
  .rodata.str1.1
-                0x00003374       0x56 GameTimeControl.o
-                                 0x81 (size before relaxing)
- *fill*         0x000033ca        0x2 
+                0x000031f0       0x37 GameTimeControl.o
+                                 0x62 (size before relaxing)
+ *fill*         0x00003227        0x1 
  .rodata._ZTVN5hwlib14window_ostreamE
-                0x000033cc       0x20 OLEDControl.o
-                0x000033cc                vtable for hwlib::window_ostream
+                0x00003228       0x20 OLEDControl.o
+                0x00003228                vtable for hwlib::window_ostream
  .rodata._ZTVN5hwlib11window_partE
-                0x000033ec       0x10 OLEDControl.o
-                0x000033ec                vtable for hwlib::window_part
+                0x00003248       0x10 OLEDControl.o
+                0x00003248                vtable for hwlib::window_part
  .rodata._ZTVN5hwlib16font_default_8x8E
-                0x000033fc        0xc OLEDControl.o
-                0x000033fc                vtable for hwlib::font_default_8x8
+                0x00003258        0xc OLEDControl.o
+                0x00003258                vtable for hwlib::font_default_8x8
  .rodata.str1.1
-                0x00003408       0x4a OLEDControl.o
+                0x00003264       0x4a OLEDControl.o
                                  0x63 (size before relaxing)
- *fill*         0x00003452        0x2 
+ *fill*         0x000032ae        0x2 
  .rodata._ZTVN4rtos7channelIcLi1EEE
-                0x00003454        0xc GameControl.o
-                0x00003454                vtable for rtos::channel<char, 1>
+                0x000032b0        0xc GameControl.o
+                0x000032b0                vtable for rtos::channel<char, 1>
  .rodata._ZTVN4rtos7channelI7COMMANDLi50EEE
-                0x00003460        0xc GameControl.o
-                0x00003460                vtable for rtos::channel<COMMAND, 50>
+                0x000032bc        0xc GameControl.o
+                0x000032bc                vtable for rtos::channel<COMMAND, 50>
  .rodata._ZTV11GameControl
-                0x0000346c       0x44 GameControl.o
-                0x0000346c                vtable for GameControl
+                0x000032c8       0x44 GameControl.o
+                0x000032c8                vtable for GameControl
  .rodata.str1.1
-                0x000034b0       0x2d GameControl.o
-                                 0x88 (size before relaxing)
+                0x0000330c       0x2d GameControl.o
+                                 0x87 (size before relaxing)
  .rodata.str1.1
-                0x000034dd       0x1d DebugState.o
+                0x00003339       0x1d DebugState.o
                                  0x34 (size before relaxing)
- *fill*         0x000034fa        0x2 
+ *fill*         0x00003356        0x2 
  .rodata._ZTV10DebugState
-                0x000034fc       0x14 DebugState.o
-                0x000034fc                vtable for DebugState
+                0x00003358       0x14 DebugState.o
+                0x00003358                vtable for DebugState
  .rodata._ZTV13KeypadControl
-                0x00003510       0x14 KeypadControl.o
-                0x00003510                vtable for KeypadControl
+                0x0000336c       0x14 KeypadControl.o
+                0x0000336c                vtable for KeypadControl
  .rodata.str1.1
-                0x00003524       0x1a KeypadControl.o
+                0x00003380       0x1a KeypadControl.o
                                  0x31 (size before relaxing)
- *fill*         0x0000353e        0x2 
+ *fill*         0x0000339a        0x2 
  .rodata._ZTVN5hwlib9image_8x8E
-                0x00003540        0xc hwlib.o
-                0x00003540                vtable for hwlib::image_8x8
+                0x0000339c        0xc hwlib.o
+                0x0000339c                vtable for hwlib::image_8x8
  .rodata._ZTVN3due6pin_inE
-                0x0000354c        0xc hwlib.o
-                0x0000354c                vtable for due::pin_in
+                0x000033a8        0xc hwlib.o
+                0x000033a8                vtable for due::pin_in
  .rodata._ZTVN3due7pin_outE
-                0x00003558        0xc hwlib.o
-                0x00003558                vtable for due::pin_out
+                0x000033b4        0xc hwlib.o
+                0x000033b4                vtable for due::pin_out
  .rodata._ZN5hwlibL5blackE
-                0x00003564        0x4 hwlib.o
+                0x000033c0        0x4 hwlib.o
  .rodata._ZN5hwlibL5whiteE
-                0x00003568        0x4 hwlib.o
+                0x000033c4        0x4 hwlib.o
  .rodata._ZN5hwlib16font_default_8x86imagesE
-                0x0000356c      0xa00 hwlib.o
-                0x0000356c                hwlib::font_default_8x8::images
+                0x000033c8      0xa00 hwlib.o
+                0x000033c8                hwlib::font_default_8x8::images
  .rodata._ZTVN4rtos8waitableE
-                0x00003f6c        0xc rtos.o
-                0x00003f6c                vtable for rtos::waitable
+                0x00003dc8        0xc rtos.o
+                0x00003dc8                vtable for rtos::waitable
  .rodata._ZTVN4rtos4flagE
-                0x00003f78        0xc rtos.o
-                0x00003f78                vtable for rtos::flag
+                0x00003dd4        0xc rtos.o
+                0x00003dd4                vtable for rtos::flag
  .rodata._ZTVN4rtos12channel_baseE
-                0x00003f84        0xc rtos.o
-                0x00003f84                vtable for rtos::channel_base
+                0x00003de0        0xc rtos.o
+                0x00003de0                vtable for rtos::channel_base
  .rodata._ZTVN4rtos5clockE
-                0x00003f90       0x20 rtos.o
-                0x00003f90                vtable for rtos::clock
+                0x00003dec       0x20 rtos.o
+                0x00003dec                vtable for rtos::clock
  .rodata.str1.1
-                0x00003fb0      0x30d rtos.o
+                0x00003e0c      0x30d rtos.o
                                 0x338 (size before relaxing)
- *fill*         0x000042bd        0x3 
+ *fill*         0x00004119        0x3 
  .rodata._ZTVN4rtos5timerE
-                0x000042c0       0x24 rtos.o
-                0x000042c0                vtable for rtos::timer
+                0x0000411c       0x24 rtos.o
+                0x0000411c                vtable for rtos::timer
  .rodata._ZTVN4rtos9task_baseE
-                0x000042e4       0x14 rtos.o
-                0x000042e4                vtable for rtos::task_base
+                0x00004140       0x14 rtos.o
+                0x00004140                vtable for rtos::task_base
  .rodata._ZTVN5hwlib17port_in_from_pinsE
-                0x000042f8       0x10 main.o
-                0x000042f8                vtable for hwlib::port_in_from_pins
+                0x00004154       0x10 main.o
+                0x00004154                vtable for hwlib::port_in_from_pins
  .rodata._ZTVN5hwlib17port_oc_from_pinsE
-                0x00004308       0x14 main.o
-                0x00004308                vtable for hwlib::port_oc_from_pins
+                0x00004164       0x14 main.o
+                0x00004164                vtable for hwlib::port_oc_from_pins
  .rodata._ZTVN5hwlib26i2c_bus_bit_banged_scl_sdaE
-                0x0000431c       0x10 main.o
-                0x0000431c                vtable for hwlib::i2c_bus_bit_banged_scl_sda
+                0x00004178       0x10 main.o
+                0x00004178                vtable for hwlib::i2c_bus_bit_banged_scl_sda
  .rodata._ZTVN5hwlib18glcd_oled_bufferedE
-                0x0000432c       0x10 main.o
-                0x0000432c                vtable for hwlib::glcd_oled_buffered
+                0x00004188       0x10 main.o
+                0x00004188                vtable for hwlib::glcd_oled_buffered
  .rodata._ZTVN3due6pin_ocE
-                0x0000433c       0x10 main.o
-                0x0000433c                vtable for due::pin_oc
+                0x00004198       0x10 main.o
+                0x00004198                vtable for due::pin_oc
  .rodata._ZTVN5hwlib6keypadILi16EEE
-                0x0000434c       0x10 main.o
-                0x0000434c                vtable for hwlib::keypad<16>
+                0x000041a8       0x10 main.o
+                0x000041a8                vtable for hwlib::keypad<16>
  .rodata._ZZN5hwlib18glcd_oled_bufferedC4ERNS_7i2c_busEjE13init_sequence
-                0x0000435c       0x29 main.o
-                0x0000435c                hwlib::glcd_oled_buffered::glcd_oled_buffered(hwlib::i2c_bus&, unsigned int)::init_sequence
+                0x000041b8       0x29 main.o
+                0x000041b8                hwlib::glcd_oled_buffered::glcd_oled_buffered(hwlib::i2c_bus&, unsigned int)::init_sequence
  .rodata.str1.1
-                0x00004385       0x42 main.o
+                0x000041e1       0x42 main.o
                                  0x8e (size before relaxing)
-                0x000043c8                . = ALIGN (0x4)
- *fill*         0x000043c7        0x1 
+                0x00004224                . = ALIGN (0x4)
+ *fill*         0x00004223        0x1 
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x000043c8                . = ALIGN (0x4)
+                0x00004224                . = ALIGN (0x4)
  *(.gcc_except_table)
-                0x000043c8                . = ALIGN (0x4)
+                0x00004224                . = ALIGN (0x4)
  *(.eh_frame_hdr)
-                0x000043c8                . = ALIGN (0x4)
+                0x00004224                . = ALIGN (0x4)
  *(.eh_frame)
-                0x000043c8                . = ALIGN (0x4)
-                0x000043c8                __text_end = .
+                0x00004224                . = ALIGN (0x4)
+                0x00004224                __text_end = .
                 [!provide]                PROVIDE (__text_end, __text_end)
 
-.vfp11_veneer   0x000043c8        0x0
- .vfp11_veneer  0x000043c8        0x0 linker stubs
+.vfp11_veneer   0x00004224        0x0
+ .vfp11_veneer  0x00004224        0x0 linker stubs
 
-.v4_bx          0x000043c8        0x0
- .v4_bx         0x000043c8        0x0 linker stubs
+.v4_bx          0x00004224        0x0
+ .v4_bx         0x00004224        0x0 linker stubs
 
-.iplt           0x000043c8        0x0
- .iplt          0x000043c8        0x0 IRSensorController.o
+.iplt           0x00004224        0x0
+ .iplt          0x00004224        0x0 IRSensorController.o
 
 .IF_YOU_SEE_THIS_YOU_HAVE_ONE_OR_MORE_GLOBAL_OBJECT_CONSTRUCTORS
  *(.init)
  *(.preinit_array)
  *(SORT(.init_array.*))
  *(.init_array)
-                0x000043c8                . = ALIGN (0x4)
-                0x000043c8                __exidx_start = .
+                0x00004224                . = ALIGN (0x4)
+                0x00004224                __exidx_start = .
                 [!provide]                PROVIDE (__exidx_start, __exidx_start)
 
-.ARM.exidx      0x000043c8        0x8
+.ARM.exidx      0x00004224        0x8
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
- .ARM.exidx     0x000043c8        0x8 c:/program files (x86)/gnu tools arm embedded/5.3 2016q1/bin/../lib/gcc/arm-none-eabi/5.3.1/armv7-m\libgcc.a(_udivmoddi4.o)
+ .ARM.exidx     0x00004224        0x8 c:/program files (x86)/gnu tools arm embedded/5.3 2016q1/bin/../lib/gcc/arm-none-eabi/5.3.1/armv7-m\libgcc.a(_udivmoddi4.o)
 
-.rel.dyn        0x000043d0        0x0
- .rel.iplt      0x000043d0        0x0 IRSensorController.o
-                0x000043d0                . = ALIGN (0x4)
-                0x000043d0                __exidx_end = .
+.rel.dyn        0x0000422c        0x0
+ .rel.iplt      0x0000422c        0x0 IRSensorController.o
+                0x0000422c                . = ALIGN (0x4)
+                0x0000422c                __exidx_end = .
                 [!provide]                PROVIDE (__exidx_end, __exidx_end)
 
 .bss            0x20000000    0x14058
@@ -2830,9 +2824,9 @@ END GROUP
                 0x20014058                __bss_end = .
                 [!provide]                PROVIDE (__bss_end, __bss_end)
 
-.data           0x20014058       0x2c load address 0x000043d0
+.data           0x20014058       0x2c load address 0x0000422c
                 0x20014058                . = ALIGN (0x4)
-                0x000043d0                __data_init_start = LOADADDR (.data)
+                0x0000422c                __data_init_start = LOADADDR (.data)
                 [!provide]                PROVIDE (__data_init_start, __data_init_start)
                 0x20014058                __data_start = .
                 [!provide]                PROVIDE (__data_start, __data_start)
@@ -2862,13 +2856,13 @@ END GROUP
                 0x20014084                . = ALIGN (0x4)
                 0x20014084                __data_end = .
                 [!provide]                PROVIDE (__data_end, __data_end)
-                0x000043d0                __data_init_end = LOADADDR (.data)
+                0x0000422c                __data_init_end = LOADADDR (.data)
                 [!provide]                PROVIDE (__data_init_end, __data_init_end)
                 0x0000002c                PROVIDE (__data_size, (__data_end - __data_start))
                 0x0000002c                PROVIDE (__data_init_size, __data_size)
                 [!provide]                PROVIDE (__data_init_end, (__data_init_start + __data_init_size))
 
-.igot.plt       0x20014084        0x0 load address 0x000043fc
+.igot.plt       0x20014084        0x0 load address 0x00004258
  .igot.plt      0x20014084        0x0 IRSensorController.o
                 0x20014084                . = ALIGN (0x4)
                 0x20014084                __heap_start = .

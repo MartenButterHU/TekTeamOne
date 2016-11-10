@@ -9,7 +9,6 @@ GameTimeControl::GameTimeControl( GameData& data, GameControl& gameControl ):
 void GameTimeControl::main() {
 	int time;
 	rtos::clock clock(this, (1000 * rtos::ms), "clock");
-	hwlib::cout<<"HOI IK BEN IN GAMETIMECONTROL\n";
 	while (1) {
 		wait( clock );
 		data.updateTime();

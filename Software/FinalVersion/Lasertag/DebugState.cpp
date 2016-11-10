@@ -2,7 +2,7 @@
 
 DebugState::DebugState() {}
 
-void DebugState::commandReceived( GameControlInterface* gameControl ) {
+void DebugState::commandReadyToSend( GameControlInterface* gameControl ) {
 	hwlib::cout<<"command received\n";
 	gameControl->sendCommand( gameControl->readCommand() );
 }

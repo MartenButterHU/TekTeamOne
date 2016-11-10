@@ -1,5 +1,6 @@
 #include "IRSensorController.hpp"
 
+void test( rtos::event& e, const char* string = "" ) ;
 
 IRSensorController::IRSensorController(IRSensor & sensor):
 	task( 0, "IRSensorController" ),
@@ -10,8 +11,7 @@ IRSensorController::IRSensorController(IRSensor & sensor):
 
 void IRSensorController::main() {
 	while(1) {
-		if( !sensor.get() ) {
-			hwlib::cout<<"There is a signal\n";
+		if( sensor.get() == 0 ) {
 			storeSignal();
 		}
 		IRSensorTimer.set( 400 * rtos::us );
@@ -33,12 +33,16 @@ int IRSensorController::count_signal() {
 }
 
 
-void IRSensorController::storeSignal(){
+void IRSensorController::storeSignal() {
 	int check1 = 0;
 	int check2 = 0;
 	while(1){
-		if( sensor.get() == 0 ){
-			hwlib::cout <<"signaal ontvangen";
+		if(index > 15){
+//			hwlib::cout<<"\n";
+			index = 0;
+			break;
+		}
+		else if( sensor.get() == 0 ) {
 			check1 = count_signal();
 			check2 = count_signal();
 			
@@ -58,18 +62,11 @@ void IRSensorController::storeSignal(){
 			check1 = 0;
 			check2 = 0;
 		}
-		else{
-			
-		}
-		if(index > 15){
-//			hwlib::cout<<"\n";
-			index = 0;
-			break;
-		}
 	}
+	hwlib::cout <<"signaal ontvangen\n";
 }
 
-COMMAND IRSensorController::getSignal(){
+COMMAND IRSensorController::getSignal() {
 	unsigned volatile int binary_command;
 	for(int n = 0; n < 16; n++){
 //		ret = ret & (ret << n);

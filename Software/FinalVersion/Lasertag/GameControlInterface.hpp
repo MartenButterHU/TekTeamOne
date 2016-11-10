@@ -11,6 +11,7 @@ public:
 	virtual void setCommand( COMMAND ) = 0;
 	virtual COMMAND readCommand() = 0;
 	virtual void sendCommand( COMMAND ) = 0;
+	virtual void commandReceived() = 0;
 };
 
 #endif // GAMECONTROLINTERFACE_HPP
