@@ -11,11 +11,11 @@ IRSensorController::IRSensorController(IRSensor & sensor):
 
 void IRSensorController::main() {
 	while(1) {
+		///De sensor is active low, dus wordt er hier gewacht op een lage waarde.
 		if( sensor.get() == 0 ) {
-			storeSignal();
+			
 		}
-		IRSensorTimer.set( 400 * rtos::us );
-		wait( IRSensorTimer );
+		sleep(400 * rtos::us);
 	}
 }
 
@@ -63,35 +63,12 @@ void IRSensorController::storeSignal() {
 			check2 = 0;
 		}
 	}
-	hwlib::cout <<"signaal ontvangen\n";
 }
 
 COMMAND IRSensorController::getSignal() {
 	unsigned volatile int binary_command;
 	for(int n = 0; n < 16; n++){
-//		ret = ret & (ret << n);
 		binary_command = signalChannel.read() | ( binary_command << n );
 	}
 	return static_cast< COMMAND >(binary_command);
 }
-
-
-//void IRSensorController::IRSensorGet(char** commandString){
-//	IRSensor sensor(diode);
-//	
-//	while(bitStream[0] != 1){
-//		sensor.IRGet(bitStream);
-//	}
-//	
-//	for(int i = 0; i < 16; i++){
-//		if(bitStream[i] > 0){
-//			BitStreamAsInt += CurrentBitValue;
-//		}
-//		CurrentBitValue /= 2;
-//	}
-//	CurrentBitValue = 65536;
-//	
-//	CommandsBTS com;
-//	com.BinaryToString(BitStreamAsInt, &commandString);
-//	
-//}

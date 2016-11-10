@@ -5,11 +5,14 @@
 #include "IRSensor.hpp"
 #include "COMMANDS.hpp"
 
+
+///Processes the signal
 class IRSensorController : public rtos::task<>
 {
 private:
-	rtos::channel<int,16> signalChannel;
-	rtos::timer IRSensorTimer;
+
+	//
+	rtos::pool<COMMAND> lastCommand;
 	IRSensor& sensor;
 	
 	unsigned int volatile signal;
