@@ -3,17 +3,17 @@
 
 #include "hwlib.hpp"
 #include "rtos.hpp"
-#include "OLEDControl.hpp"
+#include "GameControl.hpp"
 #include "GameData.hpp"
 
 class GameTimeControl : public rtos::task<>
 {
 private:
 	GameData& data;
-	OLEDControl& oled;
+	GameControl& gameControl;
 	void main();
 public:
-	GameTimeControl( GameData& data, OLEDControl& oled );
+	GameTimeControl( GameData& data, GameControl& gameControl );
 };
 
 #endif // GAMETIMECONTROL_HPP

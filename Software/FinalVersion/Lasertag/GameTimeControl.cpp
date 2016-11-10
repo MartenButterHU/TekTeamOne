@@ -1,18 +1,19 @@
 #include "GameTimeControl.hpp"
 
-GameTimeControl::GameTimeControl( GameData& data, OLEDControl& oled ):
-	task( "GameTimeControl"),
+GameTimeControl::GameTimeControl( GameData& data, GameControl& gameControl ):
+	task( 4, "GameTimeControl" ),
 	data(data),
-	oled(oled)
+	gameControl(gameControl)
 {}
 
 void GameTimeControl::main() {
 	int time;
 	rtos::clock clock(this, (1000 * rtos::ms), "clock");
+	hwlib::cout<<"HOI IK BEN IN GAMETIMECONTROL\n";
 	while (1) {
 		wait( clock );
 		data.updateTime();
-		oled.dataChanged();
+		gameControl.dataChanged();
 		time = data.getData( 3 );
 		if ( time == 0 ) {
 			break;

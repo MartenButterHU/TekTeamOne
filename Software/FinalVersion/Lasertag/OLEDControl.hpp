@@ -2,23 +2,20 @@
 #define OLEDCONTROL_HPP
 
 #include "hwlib.hpp"
-#include "rtos.hpp"
 #include "GameData.hpp"
 
-class OLEDControl : public rtos::task<>
+class OLEDControl
 {
 private:
-	hwlib::glcd_oled_buffered oled;
+	hwlib::glcd_oled_buffered& oled;
 	GameData& data;
-	rtos::flag dataChangedFlag;
-	void main();
 public:
 	/// Constructor
 	//
 	/// Constructs an OLED Control, the first param is the oled itself
 	/// and the second param is the GameData from who the OLEDControl
 	/// needs to get it's information
-	OLEDControl( hwlib::glcd_oled_buffered oled, GameData& data );
+	OLEDControl( hwlib::glcd_oled_buffered& oled, GameData& data );
 	
 	/// Data Change
 	//

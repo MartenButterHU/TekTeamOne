@@ -9,10 +9,11 @@
 #############################################################################
 
 # source files in this project (main.cpp is automatically assumed)
-SOURCES := OLEDControl.cpp GameData.cpp GameTimeControl.cpp Keypad.cpp KeypadControl.cpp
+SOURCES := IRSensorController.cpp IRSensor.cpp IRLed.cpp IRLedController.cpp GameTimeControl.cpp OLEDControl.cpp GameData.cpp GameControl.cpp DebugState.cpp KeypadControl.cpp
+
 
 # header files in this project
-HEADERS := OLEDControl.hpp GameData.hpp GameTimeControl.hpp Keypad.hpp KeypadControl.hpp
+HEADERS := IRSensorController.hpp IRSensor.hpp COMMANDS.hpp IRLed.hpp IRLedController.hpp GameTimeControl.hpp OLEDControl.hpp GameData.hpp GameControl.hpp DebugState.hpp GameStateInterface.hpp StateCollection.hpp KeypadControl.hpp GameControlInterface.hpp
 
 # other places to look for files for this project
 SEARCH  := 

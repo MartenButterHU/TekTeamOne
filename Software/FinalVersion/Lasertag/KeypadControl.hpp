@@ -1,18 +1,17 @@
 #ifndef KEYPADCONTROL_HPP
 #define KEYPADCONTROL_HPP
 
-#include "hwlib.hpp"
-#include "rtos.hpp"
 #include "GameControl.hpp"
 
 class KeypadControl : public rtos::task<>
 {
 private:
-	void main();
-	hwlib::keypad& keypad;
+	rtos::timer keypadTimer;
+	hwlib::keypad< 16 >& keypad;
 	GameControl& gameControl;
+	void main();
 public:
-	KeypadControl( hwlib::keypad& keypad, GameControl& gameControl );
+	KeypadControl( hwlib::keypad< 16 >& keypad, GameControl& gameControl );
 	
 };
 

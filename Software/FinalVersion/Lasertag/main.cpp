@@ -1,11 +1,12 @@
-#include "hwlib.hpp"
-#include "rtos.hpp"
-
 #include "OLEDControl.hpp"
 #include "GameData.hpp"
 #include "GameTimeControl.hpp"
+#include "GameControl.hpp"
+#include "IRLedController.hpp"
 #include "KeypadControl.hpp"
-#include "Keypad.hpp"
+#include "IRLed.hpp"
+#include "IRSensor.hpp"
+#include "IRSensorController.hpp"
 
 int main( void ) {
 	// kill the watchdog
@@ -18,6 +19,12 @@ int main( void ) {
 	auto scl = hwlib::target::pin_oc( hwlib::target::pins::sda );
 	auto sda = hwlib::target::pin_oc( hwlib::target::pins::scl );
 	
+	// Setup the pin for the IRLed
+	auto IRLedPin = target::d2_36kHz();
+	
+	// Setup the pin for the IRSensor
+	auto IRSensorPin = target::pin_in(target::pins::d8);
+	
 	// Setup all pins for the keypad
 	auto in0  = hwlib::target::pin_in( hwlib::target::pins::a3 );
 	auto in1  = hwlib::target::pin_in( hwlib::target::pins::a2 );
@@ -28,24 +35,27 @@ int main( void ) {
 	auto out2 = hwlib::target::pin_oc( hwlib::target::pins::a5 );
 	auto out3 = hwlib::target::pin_oc( hwlib::target::pins::a4 );
 	
-	// Setup nessecary items for the screen
+	// Setup necessary items for the screen
 	auto i2c_bus = hwlib::i2c_bus_bit_banged_scl_sda( scl, sda );
 	auto oled = hwlib::glcd_oled_buffered( i2c_bus, 0x3c );
 	
-	// Setup nessecary items for the keypad
+	// Setup necessary items for the keypad
 	auto out_port = hwlib::port_oc_from_pins( out0, out1, out2, out3 );
 	auto in_port = hwlib::port_in_from_pins( in0, in1, in2, in3 );
 	auto matrix = hwlib::matrix_of_switches( out_port, in_port );
 	auto keypadstream = hwlib::keypad< 16 >( matrix, "123A456B789C*0#D" );
 	
-	// Setup all objects
 	GameData data;
-	OLEDControl oledcontrol( oled, data );
-	GameTimeControl timer( data, oledcontrol );
+	OLEDControl _oled( oled, data );
+	IRLed irLed(IRLedPin);
+	IRLedController IR( irLed );
 	
+	IRSensor sensor( IRSensorPin );
+	IRSensorController sensorController( sensor );
 	
-	
-	data.setData( 3, 600 ); // test purposes, set the gametime using this
+	GameControl gc(_oled, IR, sensorController );
+	GameTimeControl timer( data, gc );
+	KeypadControl keypad( keypadstream, gc );
 	
 	rtos::run();
 }

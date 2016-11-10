@@ -1,18 +1,9 @@
 #include "OLEDControl.hpp"
 
-OLEDControl::OLEDControl( hwlib::glcd_oled_buffered oled, GameData& data ) :
-	task( "OLEDControl" ),
+OLEDControl::OLEDControl( hwlib::glcd_oled_buffered& oled, GameData& data ) :
 	oled(oled),
-	data(data),
-	dataChangedFlag( this, "dataChangedFlag" )
+	data(data)
 {}
-
-void OLEDControl::main() {
-	while(1) {
-		wait( dataChangedFlag );
-		updateScreen();
-	}
-}
 
 void OLEDControl::updateScreen() {
 	int playerID = data.getData( 0 );
@@ -42,17 +33,16 @@ void OLEDControl::updateScreen() {
 		<< "Lasergame" << "\n" 
 		<< "TekTeamOne" << "\n"
 		<< "Weapon: " << weapon << "\n" 
-		<< "player: "<<playerID;
+		<< "player: "<< playerID;
 		
 	d2 << "\f"
 		<< "==============\n"
 		<< "Time: " << minutes << ":" << seconds << "\n"
 		<< "score: " << score << "\n"
 		<< "==============\n";
-	
 	oled.flush();
 }
 
 void OLEDControl::dataChanged() {
-	dataChangedFlag.set();
+	updateScreen();
 }
