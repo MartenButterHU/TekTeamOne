@@ -16,7 +16,7 @@ SOURCES := IRSensorController.cpp IRSensor.cpp IRLed.cpp IRLedController.cpp Gam
 HEADERS := IRSensorController.hpp IRSensor.hpp COMMANDS.hpp IRLed.hpp IRLedController.hpp GameTimeControl.hpp OLEDControl.hpp GameData.hpp GameControl.hpp DebugState.hpp GameStateInterface.hpp StateCollection.hpp KeypadControl.hpp GameControlInterface.hpp
 
 # other places to look for files for this project
-SEARCH  := 
+SEARCH  := C:\Users\marte\OneDrive\Documenten\Studie\HU\Thema opdracht devices\TekTeamOne\Software\FinalVersion\Lasertag
 
 # set BMPTK to the next higher directory and defer to the Makefile.due
 BMPTK := $(BMPTK)../
