@@ -10,35 +10,55 @@ IRSensorController::IRSensorController(IRSensor & sensor):
 {}
 
 void IRSensorController::main() {
+	unsigned int initialMessage;
+	unsigned int redundantMessage;
 	while(1) {
 		///De sensor is active low, dus wordt er hier gewacht op een lage waarde.
 		if( sensor.get() == 0 ) {
 			
+			if(!initial){
+				initialMessage = signalToBinary();
+				sleep (2500 *rtos::us);
+			}
+			else{
+				if(initialMessage == signalToBinary){
+					Decoder d(initialMessage);
+					lastCommand = d.get();
+				}
+				initialMessage = 0;
+			}
 		}
 		sleep(400 * rtos::us);
 	}
 }
 
 
-int IRSensorController::count_signal() {
-	int signal_counter = 0;
-	for(int i = 0; i < 267; i++){
-		if(sensor.get() == 0){
-			signal_counter++;
+unsigned int IRSensorController::signalToBinary() {
+	int index = 15;
+	int signalCounter = 1;
+	unsigned volatile int signal= 0;
+	while(index >= 0){
+		sleep(400 * rtos::us);
+		if(!sensor.get()){
+			signalCounter++;
 		}
-		IRSensorTimer.set( 3 * rtos::us );
-		wait( IRSensorTimer );
+		else{
+			signal &= (signalCounter >= 4) << index;
+		}
 	}
-	return signal_counter;
+	return signal;
 }
 
 
 void IRSensorController::storeSignal() {
-	int check1 = 0;
+	int check
+	
+	
+	1 = 0;
 	int check2 = 0;
 	while(1){
+		int index = 0;
 		if(index > 15){
-//			hwlib::cout<<"\n";
 			index = 0;
 			break;
 		}
@@ -48,13 +68,11 @@ void IRSensorController::storeSignal() {
 			
 			if(check1 > (check2 - 5) || check1 > (check2 + 5) ) {
 				signalChannel.write( 1 );
-				IRSensorTimer.set( 800 * rtos::us );
-				wait( IRSensorTimer );
+				sleep(800 * rtos::us);
 			}
 			else {
 				signalChannel.write( 0 );
-				IRSensorTimer.set( 800 * rtos::us );
-				wait( IRSensorTimer );
+				sleep(800 * rtos::us);
 			}
 			
 //			last_signal = hwlib::now_us();
