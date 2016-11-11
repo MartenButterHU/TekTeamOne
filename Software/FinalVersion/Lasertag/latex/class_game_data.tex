@@ -1,0 +1,67 @@
+\hypertarget{class_game_data}{}\section{Game\+Data Class Reference}
+\label{class_game_data}\index{Game\+Data@{Game\+Data}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_game_data_a6266b99e1f60313355edc62ebc90b1b2}{get\+Data} (int data\+To\+Get)
+\begin{DoxyCompactList}\small\item\em Get Data. \end{DoxyCompactList}\item 
+void \hyperlink{class_game_data_a3e36817b28b4ef7f48c8c4a5c5d6d3b4}{set\+Data} (int data\+To\+Set, int data)
+\begin{DoxyCompactList}\small\item\em Set Data. \end{DoxyCompactList}\item 
+void \hyperlink{class_game_data_a16b5607cbc3200e8bad2f1495a7a9acd}{update\+Score} (int lost\+Points)
+\begin{DoxyCompactList}\small\item\em Update Score. \end{DoxyCompactList}\item 
+void \hyperlink{class_game_data_a05ec828c88b522f9037b3929a4d0ecd7}{update\+Time} ()
+\begin{DoxyCompactList}\small\item\em Update Time. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{Game\+Data@{Game\+Data}!get\+Data@{get\+Data}}
+\index{get\+Data@{get\+Data}!Game\+Data@{Game\+Data}}
+\subsubsection[{\texorpdfstring{get\+Data(int data\+To\+Get)}{getData(int dataToGet)}}]{\setlength{\rightskip}{0pt plus 5cm}int Game\+Data\+::get\+Data (
+\begin{DoxyParamCaption}
+\item[{int}]{data\+To\+Get}
+\end{DoxyParamCaption}
+)}\hypertarget{class_game_data_a6266b99e1f60313355edc62ebc90b1b2}{}\label{class_game_data_a6266b99e1f60313355edc62ebc90b1b2}
+
+
+Get Data. 
+
+get\+Data can be utilised to get the data specified with the integer that is given. 0 stands for\+: player\+ID 1 stands for\+: weapon 2 stands for\+: score 3 stands for\+: game\+Time \index{Game\+Data@{Game\+Data}!set\+Data@{set\+Data}}
+\index{set\+Data@{set\+Data}!Game\+Data@{Game\+Data}}
+\subsubsection[{\texorpdfstring{set\+Data(int data\+To\+Set, int data)}{setData(int dataToSet, int data)}}]{\setlength{\rightskip}{0pt plus 5cm}void Game\+Data\+::set\+Data (
+\begin{DoxyParamCaption}
+\item[{int}]{data\+To\+Set, }
+\item[{int}]{data}
+\end{DoxyParamCaption}
+)}\hypertarget{class_game_data_a3e36817b28b4ef7f48c8c4a5c5d6d3b4}{}\label{class_game_data_a3e36817b28b4ef7f48c8c4a5c5d6d3b4}
+
+
+Set Data. 
+
+Uses the same integer values as get\+Data but can only access the player\+ID, weapon and game\+Time and sets the data accordingly. \index{Game\+Data@{Game\+Data}!update\+Score@{update\+Score}}
+\index{update\+Score@{update\+Score}!Game\+Data@{Game\+Data}}
+\subsubsection[{\texorpdfstring{update\+Score(int lost\+Points)}{updateScore(int lostPoints)}}]{\setlength{\rightskip}{0pt plus 5cm}void Game\+Data\+::update\+Score (
+\begin{DoxyParamCaption}
+\item[{int}]{lost\+Points}
+\end{DoxyParamCaption}
+)}\hypertarget{class_game_data_a16b5607cbc3200e8bad2f1495a7a9acd}{}\label{class_game_data_a16b5607cbc3200e8bad2f1495a7a9acd}
+
+
+Update Score. 
+
+When the score needs to be changed it can be done using this function. It will substract the amount of lost\+Points of the total value of score \index{Game\+Data@{Game\+Data}!update\+Time@{update\+Time}}
+\index{update\+Time@{update\+Time}!Game\+Data@{Game\+Data}}
+\subsubsection[{\texorpdfstring{update\+Time()}{updateTime()}}]{\setlength{\rightskip}{0pt plus 5cm}void Game\+Data\+::update\+Time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_game_data_a05ec828c88b522f9037b3929a4d0ecd7}{}\label{class_game_data_a05ec828c88b522f9037b3929a4d0ecd7}
+
+
+Update Time. 
+
+This function gets called when there needs to be a update of the game\+Time, this will occur every second. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Game\+Data.\+hpp\item 
+Game\+Data.\+cpp\end{DoxyCompactItemize}

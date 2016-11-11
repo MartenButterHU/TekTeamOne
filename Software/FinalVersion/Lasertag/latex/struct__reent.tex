@@ -1,0 +1,108 @@
+\hypertarget{struct__reent}{}\section{\+\_\+reent Struct Reference}
+\label{struct__reent}\index{\+\_\+reent@{\+\_\+reent}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries \+\_\+sig\+\_\+func} (int)\hypertarget{struct__reent_a08b5a867727a46f3ba59b69b8f71c35a}{}\label{struct__reent_a08b5a867727a46f3ba59b69b8f71c35a}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries \+\_\+errno}\hypertarget{struct__reent_aa2018c00e4e6d13737fcc92a051e5c31}{}\label{struct__reent_aa2018c00e4e6d13737fcc92a051e5c31}
+
+\item 
+\hyperlink{struct____s_f_i_l_e}{\+\_\+\+\_\+\+F\+I\+LE} $\ast$ {\bfseries \+\_\+stdin}\hypertarget{struct__reent_ad171265329bc751cabc9b6468f8917af}{}\label{struct__reent_ad171265329bc751cabc9b6468f8917af}
+
+\item 
+\hyperlink{struct____s_f_i_l_e}{\+\_\+\+\_\+\+F\+I\+LE} $\ast$ {\bfseries \+\_\+stdout}\hypertarget{struct__reent_ab08562706a54f6ecddccb8ac17a8753b}{}\label{struct__reent_ab08562706a54f6ecddccb8ac17a8753b}
+
+\item 
+\hyperlink{struct____s_f_i_l_e}{\+\_\+\+\_\+\+F\+I\+LE} $\ast$ {\bfseries \+\_\+stderr}\hypertarget{struct__reent_a5dbc3be4306beff17d907c4fb4fc5b0a}{}\label{struct__reent_a5dbc3be4306beff17d907c4fb4fc5b0a}
+
+\item 
+int {\bfseries \+\_\+inc}\hypertarget{struct__reent_a4b429899dbc75585164a807e2b235a58}{}\label{struct__reent_a4b429899dbc75585164a807e2b235a58}
+
+\item 
+char {\bfseries \+\_\+emergency} \mbox{[}25\mbox{]}\hypertarget{struct__reent_a3a6976113082b5dae250e289f3e14ba5}{}\label{struct__reent_a3a6976113082b5dae250e289f3e14ba5}
+
+\item 
+int {\bfseries \+\_\+current\+\_\+category}\hypertarget{struct__reent_ac72b94ee625aaae4a185772c8f68b752}{}\label{struct__reent_ac72b94ee625aaae4a185772c8f68b752}
+
+\item 
+const char $\ast$ {\bfseries \+\_\+current\+\_\+locale}\hypertarget{struct__reent_a2b828dff99c6d0fb1c0037cf84d6e277}{}\label{struct__reent_a2b828dff99c6d0fb1c0037cf84d6e277}
+
+\item 
+int {\bfseries \+\_\+\+\_\+sdidinit}\hypertarget{struct__reent_a7e7b34bde20a94e1f67b3a122d883bac}{}\label{struct__reent_a7e7b34bde20a94e1f67b3a122d883bac}
+
+\item 
+void($\ast$ {\bfseries \+\_\+\+\_\+cleanup} )(struct \hyperlink{struct__reent}{\+\_\+reent} $\ast$)\hypertarget{struct__reent_a7f488b070580e2b1f122a31d850842e5}{}\label{struct__reent_a7f488b070580e2b1f122a31d850842e5}
+
+\item 
+struct \hyperlink{struct___bigint}{\+\_\+\+Bigint} $\ast$ {\bfseries \+\_\+result}\hypertarget{struct__reent_abc5987907563e7fd3e12face8f880d23}{}\label{struct__reent_abc5987907563e7fd3e12face8f880d23}
+
+\item 
+int {\bfseries \+\_\+result\+\_\+k}\hypertarget{struct__reent_af0ada26d5fd678370bcd11e33c0a2005}{}\label{struct__reent_af0ada26d5fd678370bcd11e33c0a2005}
+
+\item 
+struct \hyperlink{struct___bigint}{\+\_\+\+Bigint} $\ast$ {\bfseries \+\_\+p5s}\hypertarget{struct__reent_aa7c13a152fb8018eafea0ca8a8148d44}{}\label{struct__reent_aa7c13a152fb8018eafea0ca8a8148d44}
+
+\item 
+struct \hyperlink{struct___bigint}{\+\_\+\+Bigint} $\ast$$\ast$ {\bfseries \+\_\+freelist}\hypertarget{struct__reent_ad65ac4e14e4109d1ee8b7c91af1e6907}{}\label{struct__reent_ad65ac4e14e4109d1ee8b7c91af1e6907}
+
+\item 
+int {\bfseries \+\_\+cvtlen}\hypertarget{struct__reent_a0bb383b2e3e613b00a6346ba9874fa29}{}\label{struct__reent_a0bb383b2e3e613b00a6346ba9874fa29}
+
+\item 
+char $\ast$ {\bfseries \+\_\+cvtbuf}\hypertarget{struct__reent_a4b128193382783721049c7e2167d9a19}{}\label{struct__reent_a4b128193382783721049c7e2167d9a19}
+
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \{\\
+\>\>unsigned int {\bfseries \_unused\_rand}\\
+\>\>char $\ast$ {\bfseries \_strtok\_last}\\
+\>\>char {\bfseries \_asctime\_buf} \mbox{[}26\mbox{]}\\
+\>\>struct \hyperlink{struct____tm}{\_\_tm} {\bfseries \_localtime\_buf}\\
+\>\>int {\bfseries \_gamma\_signgam}\\
+\>\>\_\_extension\_\_ unsigned long long {\bfseries \_rand\_next}\\
+\>\>struct \hyperlink{struct__rand48}{\_rand48} {\bfseries \_r48}\\
+\>\>\hyperlink{struct__mbstate__t}{\_mbstate\_t} {\bfseries \_mblen\_state}\\
+\>\>\hyperlink{struct__mbstate__t}{\_mbstate\_t} {\bfseries \_mbtowc\_state}\\
+\>\>\hyperlink{struct__mbstate__t}{\_mbstate\_t} {\bfseries \_wctomb\_state}\\
+\>\>char {\bfseries \_l64a\_buf} \mbox{[}8\mbox{]}\\
+\>\>char {\bfseries \_signal\_buf} \mbox{[}24\mbox{]}\\
+\>\>int {\bfseries \_getdate\_err}\\
+\>\>\hyperlink{struct__mbstate__t}{\_mbstate\_t} {\bfseries \_mbrlen\_state}\\
+\>\>\hyperlink{struct__mbstate__t}{\_mbstate\_t} {\bfseries \_mbrtowc\_state}\\
+\>\>\hyperlink{struct__mbstate__t}{\_mbstate\_t} {\bfseries \_mbsrtowcs\_state}\\
+\>\>\hyperlink{struct__mbstate__t}{\_mbstate\_t} {\bfseries \_wcrtomb\_state}\\
+\>\>\hyperlink{struct__mbstate__t}{\_mbstate\_t} {\bfseries \_wcsrtombs\_state}\\
+\>\>int {\bfseries \_h\_errno}\\
+\>\} {\bfseries \_reent}\\
+\>struct \{\\
+\>\>unsigned char $\ast$ {\bfseries \_nextf} \mbox{[}30\mbox{]}\\
+\>\>unsigned int {\bfseries \_nmalloc} \mbox{[}30\mbox{]}\\
+\>\} {\bfseries \_unused}\\
+\} {\bfseries \_new}\hypertarget{struct__reent_ab96edd51d9384a9f1e8e87e0d5ce7f75}{}\label{struct__reent_ab96edd51d9384a9f1e8e87e0d5ce7f75}
+\\
+
+\end{tabbing}\item 
+struct \hyperlink{struct__atexit}{\+\_\+atexit} $\ast$ {\bfseries \+\_\+atexit}\hypertarget{struct__reent_ad96650c254abfeffd3e417d21215c3b3}{}\label{struct__reent_ad96650c254abfeffd3e417d21215c3b3}
+
+\item 
+struct \hyperlink{struct__atexit}{\+\_\+atexit} {\bfseries \+\_\+atexit0}\hypertarget{struct__reent_a824f2ece1a1954856ce9338976f4fb29}{}\label{struct__reent_a824f2ece1a1954856ce9338976f4fb29}
+
+\item 
+struct \hyperlink{struct__glue}{\+\_\+glue} {\bfseries \+\_\+\+\_\+sglue}\hypertarget{struct__reent_a30fe201b8c795e829146818bc943aee2}{}\label{struct__reent_a30fe201b8c795e829146818bc943aee2}
+
+\item 
+\hyperlink{struct____s_f_i_l_e}{\+\_\+\+\_\+\+F\+I\+LE} {\bfseries \+\_\+\+\_\+sf} \mbox{[}3\mbox{]}\hypertarget{struct__reent_ac461ce45c0325c5046bf7193ea0b3289}{}\label{struct__reent_ac461ce45c0325c5046bf7193ea0b3289}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+bmptk\+\_\+fixed\+\_\+size\+\_\+stack.\+c\end{DoxyCompactItemize}

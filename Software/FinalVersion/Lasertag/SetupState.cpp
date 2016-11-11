@@ -7,4 +7,3 @@ SetupGame::RegisterGame()
 SetupGame::~RegisterGame()
 {
 }
-
