@@ -22,8 +22,6 @@ public:
 	//
 	///The sensor is active low. Return false when detecting IR and true when there is no signal present.
 	bool get();
-
-
 };
 
 #endif // IRSENSOR_HPP

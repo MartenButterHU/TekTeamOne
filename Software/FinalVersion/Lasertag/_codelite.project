@@ -69,8 +69,7 @@
     <File Name="COMMANDS.hpp"/>
     <File Name="IRSensorController.hpp"/>
     <File Name="IRSensorController.cpp"/>
-    <File Name="Decoder.hpp"/>
-    <File Name="Decoder.cpp"/>
+    <File Name="commandListener.hpp"/>
   </VirtualDirectory>
   <Settings Type="Dynamic Library">
     <GlobalSettings>

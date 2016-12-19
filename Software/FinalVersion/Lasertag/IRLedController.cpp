@@ -4,7 +4,6 @@
 IRLedController::IRLedController(IRLed & led):
 	task( 1, "IRLedController" ),
 	commandChannel( this, "commandChannel" ),
-	IRLedTimer( this, "IRLedTimer" ),
 	led(led)
 {}
 
@@ -12,29 +11,23 @@ void IRLedController::main() {
 	while(1) {
 		int command = commandChannel.read();
 		sendCommand( command );
-		hwlib::cout<<"\ncommandsend\n";
-		IRLedTimer.set( 3 * rtos::ms );
-		wait( IRLedTimer );
+		sleep( 3 * rtos::ms );
 		sendCommand( command );
 	}
 }
 
-void IRLedController::sendBit( bool state) {
+void IRLedController::sendBit( bool state ) {
 	if( state == 1 ) {
-		IRLedTimer.set( 1600 * rtos::us );
 		led.on();
-		wait( IRLedTimer );
-		IRLedTimer.set( 800 * rtos::us );
+		sleep( 1600 * rtos::us );
 		led.off();
-		wait( IRLedTimer );
+		sleep( 800 * rtos::us );
 	}
 	else {
-		IRLedTimer.set( 800 * rtos::us );
 		led.on();
-		wait( IRLedTimer );
-		IRLedTimer.set( 1600 * rtos::us );
+		sleep( 800 * rtos::us );
 		led.off();
-		wait( IRLedTimer );
+		sleep( 1600 * rtos::us );
 	}
 	
 }
@@ -44,11 +37,7 @@ void IRLedController::writeCommand( int command ) {
 }
 
 void IRLedController::sendCommand( int command ){
-	for(int i = 0; i < 16; i++) {
-			sendBit( ( (command & (0x01 << i)) > 0) ? 1 : 0 );
+	for(int i = 15; i >= 0; i--) {
+		sendBit( ( (command & (0x01 << i)) > 0) ? 1 : 0 );
 	}
 }
-
-
-
-

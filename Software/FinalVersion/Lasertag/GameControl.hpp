@@ -9,14 +9,17 @@
 #include "OLEDControl.hpp"
 #include "IRLedController.hpp"
 #include "IRSensorController.hpp"
+#include "commandListener.hpp"
 
-class GameControl : public rtos::task<>, GameControlInterface
+class GameControl : public rtos::task<>, GameControlInterface, public commandListener
 {
 private:
 	StateCollection sc;
 	rtos::flag dataChangedFlag; //Flag die wordt gezet voor commands
 	rtos::channel< char, 1 > keyChannel;
-	rtos::channel< COMMAND, 50 > commandChannel;
+	rtos::channel< COMMAND, 50 > commandChannelOut;
+	rtos::channel< COMMAND, 50 > commandChannelIn;
+	rtos::flag commandFlag;
 	GameStateInterface& currentState;
 	OLEDControl& oled;
 	IRLedController& irLedController;
@@ -29,10 +32,11 @@ public:
 	void updateScreen();
 	void sendCommand( COMMAND command );
 	void setCommand( COMMAND command );
-	COMMAND readCommand();
-	void commandReceived();
+	COMMAND readCommandOut();
+	COMMAND readCommandIn();
 	void commandReadyToSend();
 	void dataChanged();
+	void commandReceivedIn( IRSensorController* sensorControl );
 };
 
 #endif // GAMECONTROL_HPP

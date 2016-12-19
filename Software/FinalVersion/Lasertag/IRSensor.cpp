@@ -9,5 +9,3 @@ IRSensor::IRSensor(target::pin_in & diode):
 bool IRSensor::get(){
 	return diode.get();
 }
-
-

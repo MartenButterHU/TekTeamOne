@@ -14,7 +14,7 @@ private:
 	///Command channel
 	//
 	///The channel on which another proces can place a binary signal
-	rtos::channel< int, 10 > binarySignalChannel;
+	rtos::channel< int, 10 > commandChannel;
 	
 	///Led interface
 	IRLed & led;
@@ -22,6 +22,10 @@ private:
 	///Methode for sending a single bit
 	void sendBit(bool state);
 	
+	///Send signal method
+	//
+	/// Send command from channel head
+	void sendCommand( int command );
 	
 	///The ledcontroller proces
 	void main();
@@ -36,8 +40,6 @@ public:
 	//
 	///This is the method that can be called to write a command in the signal channel
 	void writeCommand( int command );
-	
-
 };
 
 

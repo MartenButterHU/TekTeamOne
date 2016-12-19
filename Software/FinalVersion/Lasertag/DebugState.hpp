@@ -10,6 +10,7 @@ public:
 	void keyPressed( GameControlInterface* gameControl );
 	void commandReadyToSend( GameControlInterface* gameControl );
 	void dataChanged( GameControlInterface* gameControl );
+	void commandReceived( GameControlInterface* gameControl );
 };
 
 #endif // DEBUGSTATE_HPP
